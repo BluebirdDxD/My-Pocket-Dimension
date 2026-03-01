@@ -1,0 +1,46 @@
+#-------------------------------
+[LEADERIAN]
+Name = Leaderian
+Types = BUG,FIGHTING
+BaseStats = 70,115,60,105,60,90
+GenderRatio = Female25Percent
+GrowthRate = Fast
+BaseExp = 175
+EVs = ATTACK,2,SPEED,1
+CatchRate = 90
+Happiness = 50
+Abilities = IRONFIST
+Moves = 1,TACKLE,1,SUPERSONIC,1,SWIFT,1,DRAINPUNCH,1,DYNAMICPUNCH,5,SUPERSONIC,8,SWIFT,12,LIGHTSCREEN,12,REFLECT,12,SAFEGUARD,15,MACHPUNCH,20,SILVERWIND,24,COMETPUNCH,29,BATONPASS,33,AGILITY,35,HEROICPUNCH,38,BUGBUZZ,41,AIRSLASH,45,METEORMASH,47,DOUBLEEDGE,51,DIZZYPUNCH,56,SUPERPOWER
+EggGroups = Bug
+HatchSteps = 1920
+Height = 1.5
+Weight = 45.6
+Color = Red
+Shape = Insectoid
+Habitat = Forest
+Category = Héroe Estelar
+Pokedex = Mientras que Palafin es el héroe de los mares, Leaderian es el héroe de los bosques, protegiendo a pokémon débiles y promoviendo la paz en el ecosistema.
+Generation = 10
+#-------------------------------
+[BANANASTRO]
+Name = Bananastro
+Types = GRASS,FIRE
+BaseStats = 119,78,93,61,102,97
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 208
+EVs = HP,3
+CatchRate = 45
+Happiness = 70
+Abilities = CHLOROPHYLL,SOLARPOWER
+HiddenAbilities = HARVEST
+Moves = 1,GROWTH,1,SUNNYDAY,1,LEER,1,GUST,1,RAZORLEAF,1,HEATWAVE,1,LEAFSTORM,1,OVERHEAT,6,SWEETSCENT,10,STOMP,16,MAGICALLEAF,21,WHIRLWIND,26,LEAFTORNADO,30,NATURALGIFT,36,MEGAHORN,41,BODYSLAM,46,BESTOW,50,SYNTHESIS,56,SOLARBEAM,61,LEAFSTORM
+EggGroups = Monster,Grass
+HatchSteps = 6630
+Height = 2.5
+Weight = 137
+Color = Green
+Habitat = Forest
+Category = Fruto
+Pokedex = Al estar expuestos mucho tiempo en el sol abrasador. Aumentan de tamaño y adquieren propiedades de un tipo fuego.
+Generation = 10

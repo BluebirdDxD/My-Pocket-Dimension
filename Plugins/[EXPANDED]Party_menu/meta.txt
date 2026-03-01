@@ -1,0 +1,4 @@
+Name         = [EXPANDED]Party_Menu
+Version      = 1.0.0
+Essentials   = 21.1
+Credits      = DRAGONHice

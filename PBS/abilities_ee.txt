@@ -1,0 +1,8 @@
+#-------------------------------
+[MIGRANTSONG]
+Name = Canto Migrante
+Description = Al entrar en combate, aumenta la Velocidad y Ataque Especial.
+#-------------------------------
+[ADORABLE]
+Name = Adorabilidad
+Description = Al entrar en combate, encanta al rival de tal manera que su Ataque Especial disminuye.

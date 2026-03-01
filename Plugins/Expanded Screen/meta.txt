@@ -1,0 +1,7 @@
+﻿Name      = Expanded Screen
+Version   = 1.0
+Essentials = 21.0
+Optional   = [DBK_000] Deluxe Battle Kit,2.0
+Optional   = [LBDSKY] [Plugin] Pokémon Animados para DBK
+Optional = [LBDSKY] [Plugin] Pantalla de Título Animada
+Credits   = DraonHice

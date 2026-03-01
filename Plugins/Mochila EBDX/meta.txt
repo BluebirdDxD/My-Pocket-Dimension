@@ -1,0 +1,4 @@
+Name         = Mochila EBDX
+Version      = 1.5
+Essentials   = 21.1
+Credits      = Maryn, Clara, Luka S.j, Fnc-Jinta, Dpertierra, Skyflyer

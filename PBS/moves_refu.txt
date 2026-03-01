@@ -1,0 +1,12 @@
+#-------------------------------
+[HEROICPUNCH]
+Name = Puño Heróico
+Type = FIGHTING
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = Foe
+Priority = 1
+Flags = Contact,CanMirrorMove
+Description = Se envuelve el puño con un torrente y propina un golpe imperceptible. Tiene prioridad alta.

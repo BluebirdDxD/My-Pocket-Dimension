@@ -1,0 +1,6 @@
+Name       = Combate Estilo EBDX
+Version    = 1.0.2
+Essentials = 21.1
+Requires   = [DBK] Enhanced Battle UI,2.0
+Credits    = Maryn @cosmic_pipo/@PkmnRadiante(en TW/X),Luka s.j(Por los graficos del EBDX),LAITWO(backsprite de red 5ta),Wolfang62(Backsprite de Hoja 5ta)
+Disabled   = false

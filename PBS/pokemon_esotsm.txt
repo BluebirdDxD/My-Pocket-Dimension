@@ -1,0 +1,47 @@
+#-------------------------------
+[GREVOURMOUS]
+Name = Grevourmous
+Types = GRASS,DARK
+BaseStats = 70,90,60,105,80,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 182
+EVs = SPEED,2
+CatchRate = 45
+Happiness = 30
+Abilities = HARVEST
+HiddenAbilities = INFILTRATOR
+Moves = 1,POUND,1,LEER,3,ABSORB,7,BITE,12,AIRCUTTER,16,LEECHSEED,16,SLEEPPOWDER,16,STUNSPORE,21,SCREECH,26,DRAINFANG,33,CRUNCH,38,LEECHLIFE,43,NASTYPLOT
+HatchSteps = 1024
+Height = 0.7
+Weight = 7
+Color = Green
+Shape = Winged
+Habitat = Forest
+Category = Revolución Verde
+Pokedex = Dejaron las cuevas en busca de comida. Formaron alianzas con granjeros locales, quienes los dejan alimentarse a cambio de fertilizar los cultivos con el polen que sale de las hojas de su cuello.
+Generation = 10
+WildItemRare = RAZORFANG
+#-------------------------------
+[MARXKORMACE]
+Name = Marxkormace
+Types = FIRE,POISON
+BaseStats = 76,106,67,50,100,67
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 182
+EVs = ATTACK,2
+CatchRate = 45
+Happiness = 30
+Abilities = HYPERCUTTER
+HiddenAbilities = ANGERPOINT
+Moves = 1,FURYCUTTER,2,GROWL,3,POISONSTING,7,EMBER,13,FURYSWIPES,16,INCINERATE,21,POISONTAIL,26,FELLSTINGER,33,TOXICSPIKES,38,FLAMETHROWER,43,GUNKSHOT
+EggGroups = Bug
+HatchSteps = 1020
+Height = 0.3
+Weight = 0.7
+Color = Red
+Habitat = Cave
+Category = Amenaza Roja
+Pokedex = Usa su aguijón como una hoz para cortar la hierba alta. Tienen un alto temperamento.
+Generation = 10

@@ -1,0 +1,70 @@
+#-------------------------------
+[POMMEL]
+Name = Pommel
+Types = NORMAL
+BaseStats = 40,60,50,65,30,50
+GenderRatio = Female50Percent
+GrowthRate = Parabolic
+BaseExp = 62
+EVs = SPEED,11
+CatchRate = 190
+Happiness = 69
+Abilities = ADORABLE,RUNAWAY
+HiddenAbilities = PICKUP
+Moves = 1,TAILWHIP,1,TACKLE,5,ODORSLEUTH,7,BITE,13,BABYDOLLEYES,18,HEADBUTT,22,WORKUP,27,PAYBACK,35,ROAR,42,DOUBLEEDGE
+EggGroups = Field
+HatchSteps = 5355
+Height = 0.3
+Weight = 3
+Color = Brown
+Shape = Quadruped
+Habitat = Urban
+Pokedex = Suelen ser muy juguetones con humanos y otros pokémon, su pelaje esponjoso los hacen populares como acompañantes de casa.
+Generation = 10
+Evolutions = SHIBARUU,Level,23
+#-------------------------------
+[SHIBARUU]
+Name = Shibaruu
+Types = NORMAL
+BaseStats = 77,85,85,95,70,50
+GenderRatio = Female50Percent
+GrowthRate = Parabolic
+BaseExp = 172
+EVs = SPEED,2
+CatchRate = 45
+Happiness = 50
+HiddenAbilities = RATTLED
+Moves = 1,TACKLE,5,ODORSLEUTH,7,BITE,13,BABYDOLLEYES,18,HEADBUTT,22,WORKUP,27,PAYBACK,35,ROAR,39,AGILITY,43,EXTREMESPEED,48,DOUBLEEDGE
+EggGroups = Field
+HatchSteps = 5355
+Height = 0.7
+Weight = 24.9
+Color = Brown
+Habitat = Urban
+Category = Perrito
+Pokedex = Son impresionantes gracias a su pelaje grueso y afelpado, solian habitar regiones frias como tundras.
+Generation = 10
+#-------------------------------
+[TROPICALLY]
+Name = Tropically
+Types = GRASS,FLYING
+BaseStats = 79,50,47,30,47,31
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 61
+EVs = HP,1
+CatchRate = 200
+Happiness = 70
+Abilities = CHLOROPHYLL
+HiddenAbilities = HARVEST
+Moves = 1,LEER,1,ABSORB,3,GUST,6,SWEETSCENT,10,STOMP,13,INGRAIN,17,WHIRLWIND,21,LEAFTORNADO,24,NATURALGIFT,27,AIRSLASH,29,SOLARBEAM,32,BODYSLAM,36,BESTOW,39,SYNTHESIS,42,LEAFSTORM
+EggGroups = Undiscovered
+HatchSteps = 6630
+Height = 0.6
+Weight = 40
+Color = Green
+Habitat = Forest
+Category = Fruto
+Pokedex = La región endémica de estos pokémon es Asere, al no haber tanta urbanización en la región, estos pueden campar a sus anchas sin preocupaciones.
+Generation = 10
+Evolutions = TROPIUS,HasMove,SOLARBEAM

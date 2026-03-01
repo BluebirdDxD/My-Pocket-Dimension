@@ -1,0 +1,537 @@
+﻿# Flavor = [Spicy,Dry,Sweet,Bitter,Sour] aka [Cool,Beauty,Cute,Smart,Tough]
+#-------------------------------
+[CHERIBERRY]
+Size = 2.0
+Firmness = Soft
+Flavor = 10,0,0,0,0
+Smoothness = 25
+Color = Red
+Description = Brillante baya roja con un sabor picante y provocativo. Florece en forma de pequeñas y preciosas flores.
+#-------------------------------
+[CHESTOBERRY]
+Size = 8.0
+Firmness = Super Hard
+Flavor = 0,10,0,0,0
+Smoothness = 25
+Color = Blue
+Description = La dura piel de esta Baya son muy duras y ásperas al gusto. Sin embargo, es completamente comestible.
+#-------------------------------
+[PECHABERRY]
+Size = 4.0
+Firmness = Very Soft
+Flavor = 0,0,10,0,0
+Smoothness = 25
+Color = Pink
+Description = Debido a que está hueca por dentro, no hay mucho que comer. Sin embargo, lo poco que se puede comer está delicioso.
+#-------------------------------
+[RAWSTBERRY]
+Size = 3.2
+Firmness = Hard
+Flavor = 0,0,0,10,0
+Smoothness = 25
+Color = Green
+Description = Si sus hojas crecen de forma más ondulada y larga que la promedio, tendrá un sabor más amargo.
+#-------------------------------
+[ASPEARBERRY]
+Size = 5.0
+Firmness = Super Hard
+Flavor = 0,0,0,0,10
+Smoothness = 25
+Color = Yellow
+Description = La cáscara de esta fruta es dura, pero la pulpa es muy jugosa. Destaca por su acidez vigorizante.
+#-------------------------------
+[LEPPABERRY]
+Size = 2.8
+Firmness = Very Hard
+Flavor = 10,0,10,10,10
+Smoothness = 20
+Color = Red
+Description = Tarda mucho más tiempo en madurar que otras bayas, pero lo compensan con un sabor altamente dulce y nutritivo.
+#-------------------------------
+[ORANBERRY]
+Size = 3.5
+Firmness = Super Hard
+Flavor = 10,10,0,10,10
+Smoothness = 20
+Color = Blue
+Description = Uno de los regalos de la naturaleza. Puede tener sabores diferentes según el clima, la tierra en la que se planta, etc.
+#-------------------------------
+[PERSIMBERRY]
+Size = 4.7
+Firmness = Hard
+Flavor = 10,10,10,0,10
+Smoothness = 20
+Color = Pink
+Description = Cuanto más expuesta esté al sol, mayor será la vividez de sus colores
+#-------------------------------
+[LUMBERRY]
+Size = 3.4
+Firmness = Super Hard
+Flavor =  10,10,10,10,0
+Smoothness = 20
+Color = Green
+Description = Madura lentamente debido a su capacidad de tener nutrientes beneficiosos para la salud de los Pokémon.
+#-------------------------------
+[SITRUSBERRY]
+Size = 9.5
+Firmness = Very Hard
+Flavor = 0,10,10,10,10
+Smoothness = 20
+Color = Yellow
+Description = La Zidra es de la misma familia que las Aranja, diferenciándose en el tamaño, color, sabor y nutrientes.
+#-------------------------------
+[FIGYBERRY]
+Size = 10.0
+Firmness = Soft
+Flavor = 15,0,0,0,0
+Smoothness = 25
+Color = Red
+Description = Tiene una forma extraña, como si alguien la hubiera mordisqueado. Es altamente picante.
+#-------------------------------
+[WIKIBERRY]
+Size = 11.5
+Firmness = Hard
+Flavor = 0,15,0,0,0
+Smoothness = 25
+Color = Blue
+Description = Se dice que esta Baya desarrolló grumos para que fuera agarrada con mayor sencillez por Pokémon y personas, facilitando su propagación.
+#-------------------------------
+[MAGOBERRY]
+Size = 12.6
+Firmness = Hard
+Flavor = 0,0,15,0,0
+Smoothness = 25
+Color = Pink
+Description = Su forma se encurva con el paso del tiempo. Cuanto más curvada, más dulce y deliciosa será.
+#-------------------------------
+[AGUAVBERRY]
+Size = 6.4
+Firmness = Super Hard
+Flavor = 0,0,0,15,0
+Smoothness = 25
+Color = Green
+Description = Se vuelve amarga debido a los nutrientes que toma el tallo, pues la flor apenas recolecta luz solar.
+#-------------------------------
+[IAPAPABERRY]
+Size = 22.3
+Firmness = Soft
+Flavor = 0,0,0,0,15
+Smoothness = 25
+Color = Yellow
+Description = Es muy grande y agria. El jugo de la pulpa acentúa aún más lo agria que es.
+#-------------------------------
+[RAZZBERRY]
+Size = 12.0
+Firmness = Very Hard
+Flavor = 10,10,0,0,0
+Smoothness = 20
+Color = Red
+Description = Dentro de sus gránulos rojos se almacenan pequeñas cantidades de picante. Sin embargo, sus puntos centrales tienen sabores secos.
+#-------------------------------
+[BLUKBERRY]
+Size = 10.8
+Firmness = Soft
+Flavor = 0,10,10,0,0
+Smoothness = 20
+Color = Blue
+Description = A pesar de ser una baya bastante pequeña, es considerado uno de los mayores manjares que existen.
+#-------------------------------
+[NANABBERRY]
+Size = 7.7
+Firmness = Very Hard
+Flavor = 0,0,10,10,0
+Smoothness = 20
+Color = Pink
+Description = "Amarga pero con un pequeño toque dulce", así fue cómo la describieron cuando la encontraron hace siglos.
+#-------------------------------
+[WEPEARBERRY]
+Size = 7.4
+Firmness = Super Hard
+Flavor = 0,0,0,10,10
+Smoothness = 20
+Color = Green
+Description = La mezcla entre amargo y agrio facilita la digestión. Su flor es blanca y preciosa.
+#-------------------------------
+[PINAPBERRY]
+Size = 8.0
+Firmness = Hard
+Flavor = 10,0,0,0,10
+Smoothness = 20
+Color = Yellow
+Description = Una vez que se pela, se puede aplastar esta baya y tomar su sustancia picante para hacer medicinas.
+#-------------------------------
+[POMEGBERRY]
+Size = 13.5
+Firmness = Very Hard
+Flavor = 10,0,10,10,0
+Smoothness = 20
+Color = Red
+Description = Cuando se pela, muchos pedacitos salen disparados.
+#-------------------------------
+[KELPSYBERRY]
+Size = 15.0
+Firmness = Hard
+Flavor = 0,10,0,10,10
+Smoothness = 20
+Color = Blue
+Description = Esta fruta se usa como condimento para obtener un jugo que le añade una pizca de sabor a la comida.
+#-------------------------------
+[QUALOTBERRY]
+Size = 11.0
+Firmness = Hard
+Flavor = 10,0,10,0,10
+Smoothness = 20
+Color = Pink
+Description = Incluso criándose en climas de lluvia y humedad, suelen crecer sanas y fuertes.
+#-------------------------------
+[HONDEWBERRY]
+Size = 16.2
+Firmness = Hard
+Flavor = 10,10,0,10,0
+Smoothness = 20
+Color = Green
+Description = Esta extraña baya refleja una imagen de lujos, así que suele regalarse entre nobles el día de su boda.
+#-------------------------------
+[GREPABERRY]
+Size = 14.9
+Firmness = Soft
+Flavor = 0,10,10,0,10
+Smoothness = 20
+Color = Yellow
+Description = Esta baya mezcla un sabor dulce con un ligero toque agrio una vez que se mastica.
+#-------------------------------
+[TAMATOBERRY]
+Size = 20.0
+Firmness = Soft
+Flavor = 20,10,0,0,0
+Smoothness = 30
+Color = Red
+Description = Es grande y picante. Si se come cuando hace frío, calienta el cuerpo por dentro.
+#-------------------------------
+[CORNNBERRY]
+Size = 7.5
+Firmness = Hard
+Flavor = 0,20,10,0,0
+Smoothness = 30
+Color = Blue
+Description = Su sequedad es bastante fuerte. Como resultado, solo saben bien si se comen una o dos.
+#-------------------------------
+[MAGOSTBERRY]
+Size = 14.0
+Firmness = Hard
+Flavor = 0,0,20,10,0
+Smoothness = 30
+Color = Pink
+Description = La dulzura que posee esta baya es tanta que es la baya favorita de casi todos los Pokémon existentes.
+#-------------------------------
+[RABUTABERRY]
+Size = 22.6
+Firmness = Soft
+Flavor = 0,0,0,20,10
+Smoothness = 30
+Color = Green
+Description = Incluso si es amarga, suele comerse con la piel. Los pelitos que tiene la piel limpian el estómago por dentro.
+#-------------------------------
+[NOMELBERRY]
+Size = 28.5
+Firmness = Super Hard
+Flavor = 10,0,0,0,20
+Smoothness = 30
+Color = Yellow
+Description = Por lo general es bastante agrio, pero lo es aún más en la punta.
+#-------------------------------
+[SPELONBERRY]
+Size = 13.3
+Firmness = Soft
+Flavor = 30,10,0,0,0
+Smoothness = 35
+Color = Pink
+Description = Es tan picante que, con tan solo comer una, puede hacer que un humano o un Pokémon que no es de tipo Fuego suelte llamas por la boca. 
+#-------------------------------
+[PAMTREBERRY]
+Size = 24.4
+Firmness = Very Soft
+Flavor = 0,30,10,0,0
+Smoothness = 35
+Color = Blue
+Description = Nativa de Terrarmony, derivó en el mar hasta que llegó a Sinnoh, donde se cultiva profesionalmente. 
+#-------------------------------
+[WATMELBERRY]
+Size = 25.0
+Firmness = Soft
+Flavor = 0,0,30,10,0
+Smoothness = 35
+Color = Green
+Description = Un tesoro natural que es increíblemente dulce. Es enorme, la más grande de la historia midió 50,8 cm.
+#-------------------------------
+[DURINBERRY]
+Size = 28.0
+Firmness = Hard
+Flavor = 0,0,0,30,10
+Smoothness = 35
+Color = Green
+Description = Es INCREÍBLEMENTE amarga. Con un solo mordisco ya basta para detener el hipo.
+#-------------------------------
+[BELUEBERRY]
+Size = 30.0
+Firmness = Very Soft
+Flavor = 10,0,0,0,30
+Smoothness = 35
+Color = Blue
+Description = Esta brillante y colorida baya tiene un sabor dulce. Sin embargo, también es altamente amarga.
+#-------------------------------
+[OCCABERRY]
+Size = 8.9
+Firmness = Super Hard
+Flavor = 15,0,10,0,0
+Smoothness = 30
+Color = Red
+Description = Se dice que creció sin control en una zona trópical hace siglos. Es peligrosamente picante.
+#-------------------------------
+[PASSHOBERRY]
+Size = 3.3
+Firmness = Soft
+Flavor = 0,15,0,10,0
+Smoothness = 30
+Color = Blue
+Description = El fruto tiene pequeñas pompitas que le permiten flotar en el agua.
+#-------------------------------
+[WACANBERRY]
+Size = 25.0
+Firmness = Very Soft
+Flavor = 0,0,15,0,10
+Smoothness = 30
+Color = Yellow
+Description = La energía proveniente de los relámpagos es absorbida por la planta, causando que el fruto crezca rico y sano.
+#-------------------------------
+[RINDOBERRY]
+Size = 15.5
+Firmness = Soft
+Flavor = 10,0,0,15,0
+Smoothness = 30
+Color = Green
+Description = Tiene un desagradable sabor "verde", similar al de las verduras. Es rica en fibra.
+#-------------------------------
+[YACHEBERRY]
+Size = 13.5
+Firmness = Very Hard
+Flavor = 0,10,0,0,15
+Smoothness = 30
+Color = Blue
+Description = Tiene un equilibrio entre ser seca y amarga. Sabe mejor cuando está fría.
+#-------------------------------
+[CHOPLEBERRY]
+Size = 7.7
+Firmness = Soft
+Flavor = 15,0,0,10,0
+Smoothness = 30
+Color = Red
+Description = Contiene una sustancia que genera calor. Puede calentar hasta el más frío de los corazones (menos el de tu ex).
+#-------------------------------
+[KEBIABERRY]
+Size = 8.9
+Firmness = Hard
+Flavor = 0,15,0,0,10
+Smoothness = 30
+Color = Green
+Description = Tiene un brillante verde en el exterior. En el interior, parece que esté podrida.
+#-------------------------------
+[SHUCABERRY]
+Size = 4.2
+Firmness = Soft
+Flavor = 10,0,15,0,0
+Smoothness = 30
+Color = Yellow
+Description = La pulpa es extremadamente dulce, aunque con un toquecito de salado.
+#-------------------------------
+[COBABERRY]
+Size = 27.7
+Firmness = Very Hard
+Flavor = 0,10,0,15,0
+Smoothness = 30
+Color = Blue
+Description = Se dice que esta baya es una mutación genética entre dos bayas ya existentes. Se desconoce qué bayas son.
+#-------------------------------
+[PAYAPABERRY]
+Size = 25.1
+Firmness = Soft
+Flavor = 0,0,10,0,15
+Smoothness = 30
+Color = Red
+Description = Se dice que tiene emociones humanas debido a cómo rueda hacia las personas cuando se le acercan.
+#-------------------------------
+[TANGABERRY]
+Size = 4.3
+Firmness = Very Soft
+Flavor = 20,0,0,0,10
+Smoothness = 35
+Color = Green
+Description = La flor crece en la punta de la baya. Atrae a los Pokémon de tipo Bicho debido a sus coloridos pétalos.
+#-------------------------------
+[CHARTIBERRY]
+Size = 2.8
+Firmness = Very Soft
+Flavor = 10,20,0,0,0
+Smoothness = 35
+Color = Yellow
+Description = Se suele usar como acompañamiento de pepinillos debido a su sabor seco. Se puede comer crudo.
+#-------------------------------
+[KASIBBERRY]
+Size = 14.4
+Firmness = Hard
+Flavor = 0,10,20,0,0
+Smoothness = 35
+Color = Pink
+Description = Se consideraba un artefacto divino en tiempos remotos; solía secarse y utilizarse como amuleto de buena suerte.
+#-------------------------------
+[HABANBERRY]
+Size = 2.3
+Firmness = Very Soft
+Flavor = 0,0,10,20,0
+Smoothness = 35
+Color = Red
+Description = Si es hervida el tiempo suficiente, lo amargo de esta desaparece. Su mermelada es bastante apreciada.
+#-------------------------------
+[COLBURBERRY]
+Size = 3.8
+Firmness = Super Hard
+Flavor = 0,0,0,10,20
+Smoothness = 35
+Color = Pink
+Description = Pequeños ganchos crecen en la piel de la baya. Estas se adhieren a los Pokémon que los toman y así se propagan con mayor facilidad.
+#-------------------------------
+[BABIRIBERRY]
+Size = 26.5
+Firmness = Super Hard
+Flavor = 25,10,0,0,0
+Smoothness = 35
+Color = Green
+Description = Es muy dura y su sabor es muy fuerte. En el pasado, fue utilizada para medicinas.
+#-------------------------------
+[CHILANBERRY]
+Size = 3.3
+Firmness = Very Soft
+Flavor = 0,25,10,0,0
+Smoothness = 35
+Color = Yellow
+Description = Se puede vaciar y secar para hacer salsa. Cuando se atraviesa el agujero, hace un ruido indescriptible.
+#-------------------------------
+[LIECHIBERRY]
+Size = 11.1
+Firmness = Very Hard
+Flavor = 30,10,30,0,0
+Smoothness = 40
+Color = Yellow
+Description = Está rodeada de misterios. Se teoriza que está imbuida con el poder de los mares.
+#-------------------------------
+[GANLONBERRY]
+Size = 3.3
+Firmness = Very Hard
+Flavor = 0,30,10,30,0
+Smoothness = 40
+Color = Blue
+Description = Está rodeada de misterios. Se teoriza que está imbuida con el poder de los páramos.
+#-------------------------------
+[SALACBERRY]
+Size = 9.5
+Firmness = Very Hard
+Flavor = 0,0,30,10,30
+Smoothness = 40
+Color = Green
+Description = Está rodeada de misterios. Se teoriza que está imbuida con el poder de los cielos
+#-------------------------------
+[PETAYABERRY]
+Size = 23.7
+Firmness = Very Hard
+Flavor = 30,0,0,30,10
+Smoothness = 40
+Color = Pink
+Description = Está rodeada de misterios. Se teoriza que está imbuida en el poder de todos los seres vivos.
+#-------------------------------
+[APICOTBERRY]
+Size = 7.5
+Firmness = Very Hard
+Flavor = 10,30,0,0,30
+Smoothness = 40
+Color = Blue
+Description = Es una baya muy muy mística. No se sabe en qué se puede usar, tampoco lo que pasaría si se llegara a usar.
+#-------------------------------
+[LANSATBERRY]
+Size = 9.7
+Firmness = Soft
+Flavor = 30,10,30,10,30
+Smoothness = 50
+Color = Pink
+Description = Se dice que es una baya legendaria. Llevarla equipada llena de felicidad a su portador.
+#-------------------------------
+[STARFBERRY]
+Size = 15.3
+Firmness = Super Hard
+Flavor = 30,10,30,10,30
+Smoothness = 50
+Color = Green
+Description = Es considerada un espejismo. En el pasado, se narraba que esta baya era tan fuerte que ella misma se fue a los confines del mundo.
+#-------------------------------
+[ENIGMABERRY]
+Size = 15.5
+Firmness = Hard 
+Flavor = 40,10,0,0,0
+Smoothness = 60
+Color = Yellow
+Description = Una Baya altamente enigmática. Supuestamente tiene el poder de las estrellas en su interior.
+#-------------------------------
+[MICLEBERRY]
+Size = 4.1
+Firmness = Soft
+Flavor = 0,40,10,0,0
+Smoothness = 60
+Color = Green
+Description = Tiene un sabor muy seco. Si se come otra cosa al mismo tiempo, esta sabrá dulce, esto debido a la sustancia amarga de la baya.
+#-------------------------------
+[CUSTAPBERRY]
+Size = 26.7
+Firmness = Super Hard
+Flavor = 0,0,40,10,0
+Smoothness = 60
+Color = Red
+Description = La fruta bajo la piel de la baya es suave y cremosa.
+#-------------------------------
+[JABOCABERRY]
+Size = 3.3
+Firmness = Soft
+Flavor = 0,0,0,40,10
+Smoothness = 60
+Color = Yellow
+Description = El cúmulo de drupas que conforman la baya estallen rítmicamente si es cocinada como se debe.
+#-------------------------------
+[ROWAPBERRY]
+Size = 5.2
+Firmness = Very Soft
+Flavor = 10,0,0,0,40
+Smoothness = 60
+Color = Blue
+Description = En la antigüedad, la gente usaba la parte superior de estas bayas como juguetes.
+#-------------------------------
+[ROSELIBERRY]
+Size = 3.5
+Firmness = Hard
+Flavor = 0,0,25,10,0
+Smoothness = 35
+Color = Red
+Description = Su sabor es dulce pero con un pequeño toque amargo, lo que la hace ideal para crear inciensos.
+#-------------------------------
+[KEEBERRY]
+Size = 8.9
+Firmness = Hard
+Flavor = 30,30,10,10,10
+Smoothness = 50
+Color = Pink
+Description = Cuando la consumas, primero sentirás como si te quemaras por dentro, pero luego sentirás su amargura.
+#-------------------------------
+[MARANGABERRY]
+Size = 24.1
+Firmness = Hard
+Flavor = 10,10,30,30,10
+Smoothness = 50
+Color = Yellow
+Description = Su exterior es muy amargo, pero su interior sabe como a una bebida dulce.

@@ -1,0 +1,25 @@
+#-------------------------------
+[POKENAV]
+Name = PokéNav
+NamePlural = Unnamed
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = Objeto multiusos que te permite ver donde estás ahora mismo.
+#-------------------------------
+[POKEDEX]
+Name = Pokédex
+NamePlural = Unnamed
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Consumable = false
+Description = Enciclopedia virtual portátil de alta tecnolgía que los entrenadores usan para registrar informacion de todas las especies de pokémon que se vayan encontrando en su camino.
+#-------------------------------
+[POKEDEXF]
+Name = Pokédex
+NamePlural = Unnamed
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = Enciclopedia virtual portátil de alta tecnolgía que los entrenadores usan para registrar informacion de todas las especies de pokémon que se vayan encontrando en su camino.

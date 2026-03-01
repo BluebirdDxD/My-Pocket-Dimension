@@ -1,0 +1,12 @@
+#-------------------------------
+[DRAINFANG]
+Name = Colmillo Drenaje
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = Foe
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Encaja sus colmillos al objetivo absorbiendo la mitad del daño producido.
