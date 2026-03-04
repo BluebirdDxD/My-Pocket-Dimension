@@ -6443,3 +6443,8 @@ BackSprite = 3,-9
 FrontSprite = 0,8
 ShadowSize = 2
 ShadowSprite = 4,0,13
+#-------------------------------
+[POMBON]
+BackSprite = 0,13
+FrontSprite = 0,25
+ShadowSprite = 4,0,-4

@@ -371,10 +371,11 @@ ShadowSize = 2
 ShadowSprite = 0,-7,-3
 #-------------------------------
 [ARBOLIVA]
-BackSprite = 0,-7
-FrontSprite = 0,11
+BackSprite = 0,5
+FrontSprite = -2,20
 ShadowSize = 2
-ShadowSprite = 11,7,5
+ShadowSprite = 7,7,-2
+AnimationSpeed = 3
 #-------------------------------
 [SQUAWKABILLY]
 BackSprite = 0,24

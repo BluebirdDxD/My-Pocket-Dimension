@@ -20,3 +20,25 @@ Shape = Head
 Category = Pollito Haba
 Pokedex = Este enérgico Pokémon corre por todas partes mientras hace la fotosíntesis mediante las hojas de sus cejas. ¡Es muy alegre, aunque puede ser un poco torpe!
 Generation = 10
+#-------------------------------
+[POMBON]
+Name = Pombon
+Types = FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = BLAZE
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.4
+Weight = 6.7
+Color = Red
+Shape = Head
+Category = Perrito
+Pokedex = El calor que producen sus pulmones hace que su pecho emita un brillo característico. Es un Pokémon muy simpático e inocente.
+Generation = 10
