@@ -10,3 +10,13 @@ Target = Foe
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Encaja sus colmillos al objetivo absorbiendo la mitad del daño producido.
+#-------------------------------
+[WINDPRESS]
+Name = Prensa Eólica
+Type = FLYING
+Category = Special
+Power = 95
+Accuracy = 95
+TotalPP = 15
+Target = AllNearFoes
+Description = El usuario lanza aire que se comprime alrededor del objetivo, apresándolo y cortando con pequeñas corrientes de aire.

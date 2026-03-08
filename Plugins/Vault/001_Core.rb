@@ -1,16 +1,52 @@
-#===============================================================================
-# Pokémon Vault – Core Storage System
-#===============================================================================
-# External, cross-save, cross-game Pokémon storage.
-#===============================================================================
+require 'securerandom'
 
 module PokemonVault
   VAULT_FOLDER_NAME = "Pokemon Vault"
   VAULT_FILE        = "vault.dat"
+  TRANSFER_FILE     = "transfer.dat"
   MAX_BOXES         = 400
   BOX_SIZE          = 30
 
   module_function
+
+
+  #===============================================================================
+  # Vault Menu
+  #===============================================================================
+
+  def open_menu
+    loop do
+      choice = pbMessage(
+        _INTL("Pokémon Vault"),
+        [
+          _INTL("Upload Pokémon"),
+          _INTL("Upload Box"),
+          _INTL("Download Pokémon"),
+          _INTL("Download Box"),
+          _INTL("Export Pokémon"),
+          _INTL("Import External Pokémon"),
+          _INTL("Quit")
+        ]
+      )
+
+case choice
+when 0
+  PokemonVault.upload_single_pokemon
+when 1
+  PokemonVault.upload_entire_box
+when 2
+  PokemonVault.download_single_pokemon
+when 3
+  PokemonVault.download_entire_box
+when 4
+  export_pokemon
+      when 5
+        import_external_pokemon
+      else
+        break
+      end
+    end
+  end
 
   #---------------------------------------------------------------------------
   # Vault Data
@@ -25,6 +61,10 @@ end
   def vault_path
     File.join(vault_directory, VAULT_FILE)
   end
+
+def transfer_path
+  File.join(vault_directory, TRANSFER_FILE)
+end
 
   def empty_vault
     Array.new(MAX_BOXES) { Array.new(BOX_SIZE) }
@@ -115,4 +155,99 @@ end
     return false if !pkmn
     return !$PokemonStorage.pbStoreCaught(pkmn).nil?
   end
+
+
+  #---------------------------------------------------------------------------
+  # Transfer System
+  #---------------------------------------------------------------------------
+
+  def transfer_path
+    File.join(vault_directory, TRANSFER_FILE)
+  end
+
+
+  def export_transfer(source_game = "ETERNA_EMOCION")
+    vault = load_vault
+
+    if vault.all? { |box| box.all?(&:nil?) }
+      pbMessage(_INTL("There are no Pokémon in the Vault to export."))
+      return false
+    end
+
+    transfer_id = SecureRandom.hex(16)
+$PokemonGlobal.used_transfer_ids ||= []
+$PokemonGlobal.used_transfer_ids << transfer_id
+
+data = {
+  source_game: source_game,
+  transfer_id: transfer_id,
+  timestamp: Time.now.to_i,
+  used: false,
+  pokemon: vault
+}
+
+    File.binwrite(transfer_path, Marshal.dump(data))
+
+    save_vault(empty_vault)
+
+    pbMessage(_INTL("Transfer file created successfully."))
+    return true
+  end
+
+
+def import_transfer
+  path = transfer_path
+  return false if !File.exist?(path)
+
+  data = Marshal.load(File.binread(path))
+  return false if !data.is_a?(Hash)
+
+  # NUEVO: verificar si el archivo ya fue usado
+  if data[:used]
+    pbMessage(_INTL("Este archivo de transferencia ya fue utilizado."))
+    return false
+  end
+
+  transfer_id = data[:transfer_id]
+  pokemon_boxes = data[:pokemon]
+
+  # asegurar que exista el registro de IDs
+  $PokemonGlobal.used_transfer_ids ||= []
+
+  if $PokemonGlobal.used_transfer_ids.include?(transfer_id)
+    pbMessage(_INTL("Esta transferencia ya fue utilizada en este juego."))
+    return false
+  end
+
+  vault = load_vault
+
+  pokemon_boxes.each do |box|
+    box.each do |pkmn|
+      next if !pkmn
+      pos = first_empty_slot(vault)
+      next if !pos
+      b, s = pos
+      vault[b][s] = pkmn
+    end
+  end
+
+  save_vault(vault)
+
+  # registrar ID usada
+  $PokemonGlobal.used_transfer_ids << transfer_id
+
+  # NUEVO: marcar archivo como usado
+  data[:used] = true
+  File.binwrite(path, Marshal.dump(data))
+
+  # opcional: eliminar archivo después de importar
+  File.delete(path)
+
+  pbMessage(_INTL("Pokémon imported successfully."))
+  return true
+end
+end
+
+class PokemonGlobalMetadata
+  attr_accessor :used_transfer_ids
 end

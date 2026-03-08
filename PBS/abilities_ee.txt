@@ -1,7 +1,7 @@
 #-------------------------------
-[MIGRANTSONG]
-Name = Canto Migrante
-Description = Al entrar en combate, aumenta la Velocidad y Ataque Especial.
+[MIGRANTSINGER]
+Name = Cantante Viajero
+Description = Al sentirse halagado con sus grandes habilidades empleando movimientos de sonido. Aumenta su ataque especial.
 #-------------------------------
 [ADORABLE]
 Name = Adorabilidad

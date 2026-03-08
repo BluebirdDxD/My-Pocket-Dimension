@@ -45,6 +45,28 @@ Category = Perrito
 Pokedex = Son impresionantes gracias a su pelaje grueso y afelpado, solian habitar regiones frias como tundras.
 Generation = 10
 #-------------------------------
+[MUSCIBEAT]
+Name = Muscibeat
+Types = NORMAL,FLYING
+BaseStats = 45,30,30,65,55,40
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 53
+EVs = SPEED,1
+CatchRate = 255
+Happiness = 70
+Abilities = MIGRANTSINGER
+Moves = 1,GROWL,3,PECK,7,ECHOEDVOICE,12,DISARMINGVOICE,15,SING,17,FEATHERDANCE,21,AIRCUTTER,25,UPROAR,29,SCREECH,34,ALLURINGVOICE,39,AIRSLASH,43,WINDPRESS,47,PERISHSONG
+HatchSteps = 4096
+Height = 0.3
+Weight = 1
+Color = Brown
+Shape = Winged
+Habitat = Forest
+Category = Tarabilla
+Pokedex = Originario de un archipiélago al sur de Paldea. Es reconocido por su hermoso canto. Se dice que tuvo que migrar a otras regiones gracias a la alteración y el control de territorios de su hábitat.
+Generation = 10
+#-------------------------------
 [TROPICALLY]
 Name = Tropically
 Types = GRASS,FLYING
