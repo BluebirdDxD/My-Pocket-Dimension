@@ -12,7 +12,7 @@ class PokemonStorageScreen
       selected = @scene.pbSelectBox(@storage.party)
 
       if selected && selected[0] == -3
-        break if pbConfirmMessage(_INTL("Exit the PC?"))
+        break if pbConfirmMessage(_INTL("¿Salir del PC?"))
         next
       end
 
@@ -23,22 +23,22 @@ class PokemonStorageScreen
       next if !pkmn
 
       if eligibility_proc && !eligibility_proc.call(pkmn)
-        pbMessage(_INTL("That Pokémon can’t be stored in the Vault."))
+        pbMessage(_INTL("Ese Pokémon no puede almacenarse en la Bóveda Virtual."))
         next
       end
 
       if box < 0
-        pbMessage(_INTL("You can only select Pokémon from PC Boxes."))
+        pbMessage(_INTL("Solo puedes seleccionar Pokémon de las cajas."))
         next
       end
 
       commands = [
-        _INTL("Select"),
-        _INTL("Summary"),
-        _INTL("Cancel")
+        _INTL("Seleccionar"),
+        _INTL("Datos"),
+        _INTL("Cancelar")
       ]
 
-      command = pbShowCommands(helptext || _INTL("{1} is selected.", pkmn.name), commands)
+      command = pbShowCommands(helptext || _INTL("{1} seleccionado.", pkmn.name), commands)
 
       case command
       when 0
@@ -66,15 +66,15 @@ module PokemonVault
   def open_menu
     loop do
       choice = pbMessage(
-        _INTL("Pokémon Vault"),
+        _INTL("Bóveda Virtual"),
         [
-          _INTL("Upload Pokémon"),
-          _INTL("Upload Box"),
-          _INTL("Download Pokémon"),
-          _INTL("Download Box"),
-          _INTL("Export Pokémon"),
-          _INTL("Import External Pokémon"),
-          _INTL("Quit")
+          _INTL("Depositar Pokémon"),
+          _INTL("Depositar Caja"),
+          _INTL("Retirar Pokémon"),
+          _INTL("Retirar Caja"),
+          _INTL("Exportar Pokémon"),
+          _INTL("Importar Pokémon Externos"),
+          _INTL("Cancelar")
         ]
       )
 
@@ -103,8 +103,8 @@ when 4
 
 def upload_entire_box
     box = pbMessage(
-      _INTL("Which box do you want to upload?"),
-      (1..Settings::NUM_STORAGE_BOXES).map { |i| _INTL("Box {1}", i) }
+      _INTL("¿Qué caja deseas depositar?"),
+      (1..Settings::NUM_STORAGE_BOXES).map { |i| _INTL("Caja {1}", i) }
     )
     return if box < 0
 
@@ -127,7 +127,7 @@ def upload_entire_box
 
     pbMessage(
       _INTL(
-        "Uploaded {1} Pokémon.\nSkipped {2}.",
+        "Se han depositado {1} Pokémon.\nOmitidos {2}.",
         uploaded,
         skipped
       )
@@ -152,7 +152,7 @@ end
 def upload_single_pokemon
   chosen = choose_pokemon_from_pc(
     proc { |pkmn| storable_pokemon?(pkmn) },
-    _INTL("Choose a Pokémon to upload.")
+    _INTL("Elige un pokémon para depositar.")
   )
 
   return if !chosen
@@ -160,17 +160,17 @@ def upload_single_pokemon
   pkmn, box, slot = chosen
 
   return if !pbConfirmMessage(
-    _INTL("Upload {1} to the Pokémon Vault?", pkmn.name)
+    _INTL("¿Deseas depositar a {1} Pokémon en la Bóveda Virtual?", pkmn.name)
   )
 
   removed = remove_from_pc(box, slot)
 
   if add_pokemon(removed)
-    pbMessage(_INTL("{1} was uploaded to the Vault.", removed.name))
+    pbMessage(_INTL("{1} ha sido depositado en la Bóveda Virtual.", removed.name))
     Game.save
     pbMEPlay("GUI save game")
   else
-    pbMessage(_INTL("The Vault is full."))
+    pbMessage(_INTL("La Bóveda Virtual está llena."))
     add_to_pc(removed)
   end
 end
@@ -186,18 +186,18 @@ def download_single_pokemon
   pkmn, box, slot = chosen
 
   return if !pbConfirmMessage(
-    _INTL("Download {1} from the Pokémon Vault?", pkmn.name)
+    _INTL("¿Deseas retirar a {1} Pokémon de la Bóveda Virtual?", pkmn.name)
   )
 
   removed = remove_pokemon(box, slot)
   return if !removed
 
   if add_to_pc(removed)
-    pbMessage(_INTL("{1} was downloaded to your PC.", removed.name))
+    pbMessage(_INTL("{1} fue enviado a las cajas del PC.", removed.name))
     Game.save
     pbMEPlay("GUI save game")
   else
-    pbMessage(_INTL("Your PC Boxes are full."))
+    pbMessage(_INTL("Tus cajas de almacenamiento están llenas."))
     add_pokemon(removed)
   end
 end
@@ -219,16 +219,16 @@ end
   end
 
   if box_choices.empty?
-    pbMessage(_INTL("The Pokémon Vault is empty."))
+    pbMessage(_INTL("La Bóveda Virtual está vacía."))
     return
   end
 
   commands = box_choices.map do |(b, count)|
-    _INTL("Vault Box {1} ({2} Pokémon)", b + 1, count)
+    _INTL("Caja de Bóveda {1} ({2} Pokémon)", b + 1, count)
   end
-  commands << _INTL("Cancel")
+  commands << _INTL("Cancelar")
 
-  choice = pbMessage(_INTL("Choose a Vault box to download."), commands)
+  choice = pbMessage(_INTL("Elige una caja de la Bóveda para retirar."), commands)
   return if choice < 0 || choice >= box_choices.length
 
   box_index, _ = box_choices[choice]
@@ -251,7 +251,7 @@ end
   save_vault(vault)
 
   pbMessage(
-    _INTL("Downloaded {1} Pokémon.\nSkipped {2}.",
+    _INTL("Se retiraron {1} Pokémon.\nOmitidos {2}.",
       downloaded,
       skipped
     )
@@ -278,12 +278,12 @@ def choose_pokemon_from_vault
   end
 
   if entries.empty?
-    pbMessage(_INTL("The Pokémon Vault is empty."))
+    pbMessage(_INTL("La Bóveda Pokémon está vacía."))
     return nil
   end
 
   commands = entries.map.with_index do |(pkmn, b, s), i|
-    _INTL("{1}. {2} (Box {3}, Slot {4})",
+    _INTL("{1}. {2} (Caja {3}, Espacio {4})",
       i + 1,
       pkmn.name,
       b + 1,
@@ -291,10 +291,10 @@ def choose_pokemon_from_vault
     )
   end
 
-  commands << _INTL("Cancel")
+  commands << _INTL("Cancelar")
 
   choice = pbMessage(
-    _INTL("Choose a Pokémon to download."),
+    _INTL("Elige un Pokémon para retirar."),
     commands
   )
 
@@ -319,10 +319,10 @@ def export_pokemon
   end
 
   pbMessage(_INTL(
-    "ATENCIÓN\n\nAl exportar tus Pokémon, se guardarán en un archivo llamado transfer.dat dentro de la carpeta Pokemon Vault.\n\nPara transferirlos a otro juego, debes copiar ese archivo a la carpeta Pokemon Vault del juego destino."
+    "ATENCIÓN\n Al exportar tus Pokémon, se guardarán en un archivo llamado transfer.dat dentro de la carpeta Pokemon Vault. Para transferirlos a otro juego, debes copiar ese archivo a la carpeta Pokemon Vault del juego destino."
   ))
 
-  return if !pbConfirmMessage(_INTL("¿Quieres exportar los Pokémon almacenados en el Vault?"))
+  return if !pbConfirmMessage(_INTL("¿Quieres exportar los Pokémon almacenados a la Bóveda Virtual?"))
 
   if PokemonVault.export_transfer
     Game.save
@@ -350,7 +350,7 @@ def import_external_pokemon
 
   if !File.exist?(path)
     pbMessage(_INTL(
-      "No se han detectado Pokémon para transferir.\n\nSi deseas importar Pokémon desde otro juego, asegúrate de haber exportado Pokémon en ese juego y de haber colocado el archivo transfer.dat dentro de la carpeta Pokemon Vault de este juego."
+      "No se han detectado Pokémon para transferir. Si deseas importar Pokémon desde otro juego, asegúrate de haber exportado Pokémon en ese juego y de haber colocado el archivo transfer.dat dentro de la carpeta Pokemon Vault de este juego."
     ))
     return
   end
@@ -375,12 +375,12 @@ def show_exported_pokemon(vault)
   vault.each_with_index do |box, b|
     box.each_with_index do |pkmn, s|
       next if !pkmn
-      text += _INTL("{1} (Box {2}, Slot {3})\n", pkmn.name, b + 1, s + 1)
+      text += _INTL("{1} (Caja {2}, Espacio {3})\n", pkmn.name, b + 1, s + 1)
     end
   end
 
   if text == ""
-    pbMessage(_INTL("Los Pokémon fueron exportados desde el Vault."))
+    pbMessage(_INTL("Los Pokémon fueron exportados desde la Bóveda."))
   else
     pbMessage(_INTL("Pokémon exportados:\n\n{1}", text))
   end

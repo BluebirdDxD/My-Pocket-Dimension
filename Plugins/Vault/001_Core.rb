@@ -6,6 +6,7 @@ module PokemonVault
   TRANSFER_FILE     = "transfer.dat"
   MAX_BOXES         = 400
   BOX_SIZE          = 30
+  GAME_ID = "MPD"
 
   module_function
 
@@ -17,15 +18,15 @@ module PokemonVault
   def open_menu
     loop do
       choice = pbMessage(
-        _INTL("Pokémon Vault"),
+        _INTL("Bóveda Virtual"),
         [
-          _INTL("Upload Pokémon"),
-          _INTL("Upload Box"),
-          _INTL("Download Pokémon"),
-          _INTL("Download Box"),
-          _INTL("Export Pokémon"),
-          _INTL("Import External Pokémon"),
-          _INTL("Quit")
+          _INTL("Depositar Pokémon"),
+          _INTL("Depositar Caja"),
+          _INTL("Retirar Pokémon"),
+          _INTL("Retirar Caja"),
+          _INTL("Exportar Pokémon"),
+          _INTL("Importar Pokémon Externos"),
+          _INTL("Cancelar")
         ]
       )
 
@@ -76,18 +77,29 @@ end
     vault.all? { |box| box.is_a?(Array) && box.length == BOX_SIZE }
   end
 
-  def load_vault
-    path = vault_path
-    return empty_vault if !File.exist?(path)
-    data = Marshal.load(File.binread(path))
-    return valid_vault?(data) ? data : empty_vault
-  rescue
-    return empty_vault
-  end
+def load_vault
+  path = vault_path
+  return empty_vault if !File.exist?(path)
 
-  def save_vault(vault)
-    File.binwrite(vault_path, Marshal.dump(vault))
-  end
+  data = Marshal.load(File.binread(path))
+
+  return empty_vault if !data.is_a?(Hash)
+  return empty_vault if data[:game_id] != GAME_ID
+
+  vault = data[:boxes]
+
+  return valid_vault?(vault) ? vault : empty_vault
+rescue
+  return empty_vault
+end
+
+def save_vault(vault)
+  data = {
+    game_id: GAME_ID,
+    boxes: vault
+  }
+  File.binwrite(vault_path, Marshal.dump(data))
+end
 
   #---------------------------------------------------------------------------
   # Eligibility Rules
@@ -166,11 +178,11 @@ end
   end
 
 
-  def export_transfer(source_game = "ETERNA_EMOCION")
+  def export_transfer(source_game = GAME_ID)
     vault = load_vault
 
     if vault.all? { |box| box.all?(&:nil?) }
-      pbMessage(_INTL("There are no Pokémon in the Vault to export."))
+      pbMessage(_INTL("No hay Pokémon en la Bóveda Virtual para exportar."))
       return false
     end
 
@@ -180,6 +192,7 @@ $PokemonGlobal.used_transfer_ids << transfer_id
 
 data = {
   source_game: source_game,
+  target_game: "ANY",
   transfer_id: transfer_id,
   timestamp: Time.now.to_i,
   used: false,
@@ -190,7 +203,7 @@ data = {
 
     save_vault(empty_vault)
 
-    pbMessage(_INTL("Transfer file created successfully."))
+    pbMessage(_INTL("El archivo transfer.dat se ha creado correctamente."))
     return true
   end
 
@@ -200,6 +213,13 @@ def import_transfer
   return false if !File.exist?(path)
 
   data = Marshal.load(File.binread(path))
+
+# verificar destino del archivo
+if data[:target_game] != "ANY" && data[:target_game] != GAME_ID
+  pbMessage(_INTL("Este archivo de transferencia no es compatible con este juego."))
+  return false
+end
+
   return false if !data.is_a?(Hash)
 
   # NUEVO: verificar si el archivo ya fue usado
@@ -243,7 +263,7 @@ def import_transfer
   # opcional: eliminar archivo después de importar
   File.delete(path)
 
-  pbMessage(_INTL("Pokémon imported successfully."))
+  pbMessage(_INTL("Los Pokémon se han importado correctamente."))
   return true
 end
 end
