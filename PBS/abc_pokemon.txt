@@ -17,7 +17,23 @@ ShadowSprite_B = 3,-5,-6
 #-------------------------------
 [ZIGZAGOON]
 Variants = A,B
-Probabilities = 33,33
+Probabilities = 100,0
+BackSprite_A = 0,7
+FrontSprite_A = 0,23
+FrontSpriteAltitude_A = 0
+ShadowX_A = -4
+ShadowSize_A = 3
+ShadowSprite_A = 3,-5,-5
+BackSprite_B = 0,0
+FrontSprite_B = 0,28
+FrontSpriteAltitude_B = 0
+ShadowX_B = 0
+ShadowSize_B = 2
+ShadowSprite_B = 3,-5,-6
+#-------------------------------
+[LINOONE]
+Variants = A,B
+Probabilities = 100,0
 BackSprite_A = 0,7
 FrontSprite_A = 0,23
 FrontSpriteAltitude_A = 0
