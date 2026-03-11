@@ -4,7 +4,7 @@ module PokemonVault
   VAULT_FOLDER_NAME = "Pokemon Vault"
   VAULT_FILE        = "vault.dat"
   TRANSFER_FILE     = "transfer.dat"
-  MAX_BOXES         = 400
+  MAX_BOXES         = 1
   BOX_SIZE          = 30
   GAME_ID = "MPD"
 
@@ -203,7 +203,6 @@ data = {
 
     save_vault(empty_vault)
 
-    pbMessage(_INTL("El archivo transfer.dat se ha creado correctamente."))
     return true
   end
 

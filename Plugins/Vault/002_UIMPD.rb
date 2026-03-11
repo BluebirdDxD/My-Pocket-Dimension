@@ -355,6 +355,27 @@ def import_external_pokemon
     return
   end
 
+  # ⭐ NUEVO — leer origen del transfer
+  data = Marshal.load(File.binread(path))
+  source = data[:source_game]
+
+  game_name =
+    case source
+    when "ETERNA_EMOCION"
+      "Pokémon Eterna Emoción"
+    when "REFULGENTE"
+      "Pokémon Refulgente"
+    when "SV"
+      "Proyecto Paldea"
+    else
+      source
+    end
+
+  pbMessage(_INTL(
+    "Se detectó un archivo de transferencia de {1}.",
+    game_name
+  ))
+
   pbMessage(_INTL("Importando Pokémon..."))
 
   if PokemonVault.import_transfer
