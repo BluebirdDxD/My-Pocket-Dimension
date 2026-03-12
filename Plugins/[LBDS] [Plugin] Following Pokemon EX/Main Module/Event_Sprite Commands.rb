@@ -73,30 +73,24 @@ module FollowingPkmn
   #-----------------------------------------------------------------------------
   # Script Command for checking whether the current follower is waterborne
   #-----------------------------------------------------------------------------
-  def self.waterborne_follower?
-    return false if !FollowingPkmn.can_check?
-    pkmn = FollowingPkmn.get_pokemon
-    return false if !pkmn
-    
-    # Check exceptions list before checking airborne
-    return false if FollowingPkmn::SURFING_FOLLOWERS_EXCEPTIONS.any? do |s|
-      s == pkmn.species || s.to_s == pkmn.species_data.id
-    end
-    
-    # Always follow if Pokemon is water type
-    return true if pkmn.hasType?(:WATER)
-    
-    # # Always follow if the Pokemon has a swimming or levitate sprite available
-    # # This takes priority over the exceptions list
-    # El pokemon debe seguirte en el agua solo si es tipo agua y no está excluido
-    # Esta logica deberia ser solo para si debe usar un sprite especial o no
-    # return true if FollowingPkmn.has_swimming_sprite?
-    
-    # Follow if the Pokemon flies or levitates (and not in exceptions)
-    return true if FollowingPkmn.airborne_follower?
-    
-    return false
+def self.waterborne_follower?
+  return false if !FollowingPkmn.can_check?
+  pkmn = FollowingPkmn.get_pokemon
+  return false if !pkmn
+  
+  # excepciones siguen funcionando
+  return false if FollowingPkmn::SURFING_FOLLOWERS_EXCEPTIONS.any? do |s|
+    s == pkmn.species || s.to_s == pkmn.species_data.id
   end
+  
+  # ⭐ SOLO seguir si existe sprite de nado
+  return true if FollowingPkmn.has_swimming_sprite?
+  
+  # opcional: permitir voladores si quieres
+  return true if FollowingPkmn.airborne_follower?
+  
+  return false
+end
   #-----------------------------------------------------------------------------
   # Script Command for checking whether the current follower should use swimming sprites
   #-----------------------------------------------------------------------------
