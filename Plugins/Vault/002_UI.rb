@@ -338,14 +338,26 @@ module PokemonVault
 
     pbMessage(_INTL("Se detectó un archivo de transferencia proveniente de {1}.", name))
 
-    pbMessage(_INTL("Importando Pokémon..."))
+result = import_transfer
 
-    if import_transfer
-      Game.save
-      pbMEPlay("GUI save game")
-      pbMessage(_INTL("Los Pokémon se han importado correctamente."))
-    end
+if result == :overflow
+  if !pbConfirmMessage(_INTL(
+    "Hay más Pokémon de los que caben en la Bóveda.\n" \
+    "Los Pokémon actuales serán enviados a las cajas del PC.\n" \
+    "¿Deseas continuar?"
+  ))
+    return
   end
+
+  result = import_transfer(true)
+end
+
+if result
+  Game.save
+  pbMEPlay("GUI save game")
+  pbMessage(_INTL("Los Pokémon se han importado correctamente."))
+end
+end
 
 
   #---------------------------------------------------------------------------

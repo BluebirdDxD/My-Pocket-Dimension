@@ -172,6 +172,41 @@ module PokemonVault
   # Transfer System
   #===============================================================================
 
+def import_will_overflow?
+  vault = load_vault
+  current = vault.flatten.compact.length
+
+  path = transfer_path
+  return false if !File.exist?(path)
+
+  data = Marshal.load(File.binread(path))
+  transfer = data[:pokemon].flatten.compact.length
+
+  capacity =
+    PokemonVaultConfig::VAULT_MAX_BOXES *
+    PokemonVaultConfig::VAULT_BOX_SIZE
+
+  return (current + transfer) > capacity
+end
+
+def clear_vault_to_pc
+  vault = load_vault
+
+  vault.each do |box|
+    box.each do |pkmn|
+      next if !pkmn
+      return false if !add_to_pc(pkmn)
+    end
+  end
+
+save_vault(empty_vault)
+
+Game.save
+pbMEPlay("GUI save game")
+
+return true
+end
+
   def export_transfer(source_game = PokemonVaultConfig::GAME_ID)
     vault = load_vault
 
@@ -202,7 +237,7 @@ module PokemonVault
   end
 
 
-  def import_transfer
+  def import_transfer(force_clear = false)
     path = transfer_path
     return false if !File.exist?(path)
 
@@ -220,15 +255,20 @@ module PokemonVault
       return false
     end
 
-    transfer_id = data[:transfer_id]
-    pokemon_boxes = data[:pokemon]
+if import_will_overflow?
+  return :overflow if !force_clear
+  return false if !clear_vault_to_pc
+end
 
-    $PokemonGlobal.used_transfer_ids ||= []
+transfer_id = data[:transfer_id]
+pokemon_boxes = data[:pokemon]
 
-    if $PokemonGlobal.used_transfer_ids.include?(transfer_id)
-      pbMessage(_INTL("Esta transferencia ya fue utilizada en este juego."))
-      return false
-    end
+$PokemonGlobal.used_transfer_ids ||= []
+
+if $PokemonGlobal.used_transfer_ids.include?(transfer_id)
+  pbMessage(_INTL("Esta transferencia ya fue utilizada en este juego."))
+  return false
+end
 
     vault = load_vault
 
@@ -251,7 +291,6 @@ module PokemonVault
 
     File.delete(path)
 
-    pbMessage(_INTL("Los Pokémon se han importado correctamente."))
     return true
   end
 
