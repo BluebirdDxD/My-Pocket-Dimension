@@ -294,9 +294,15 @@ module PokemonVault
       return
     end
 
-    pbMessage(_INTL(
-      "ATENCIÓN\nAl exportar tus Pokémon se creará un archivo transfer.dat en la carpeta Pokemon Vault."
-    ))
+pbMessage(_INTL(
+  "ATENCIÓN\nAl exportar tus Pokémon se creará un archivo transfer.dat en la carpeta Pokemon Vault. Para completar la transferencia debes copiar este archivo a la carpeta Pokemon Vault de My Pocket Dimension."
+))
+
+pbMessage(_INTL(
+  "Ten en cuenta que los Pokémon transferidos no podrán regresar a {1} " \
+  "hasta que los deposites en My Pocket Dimension y los exportes nuevamente.",
+  PokemonVaultConfig::GAME_NAME
+))
 
     return if !pbConfirmMessage(_INTL("¿Deseas continuar?"))
 
@@ -333,6 +339,7 @@ module PokemonVault
       when "ETERNA_EMOCION" then "Pokémon Eterna Emoción"
       when "REFULGENTE"     then "Pokémon Refulgente"
       when "SV"             then "Proyecto Paldea"
+      when "MPD"            then "My Pocket Dimension"
       else source
       end
 

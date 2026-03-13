@@ -67,6 +67,27 @@ Category = Tarabilla
 Pokedex = Originario de un archipiélago al sur de Paldea. Es reconocido por su hermoso canto. Se dice que tuvo que migrar a otras regiones gracias a la alteración y el control de territorios de su hábitat.
 Generation = 10
 #-------------------------------
+[FLYGER]
+Name = Flyger
+Types = BUG
+BaseStats = 40,50,25,35,25,40
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 60
+EVs = ATTACK,1
+CatchRate = 190
+Happiness = 70
+Abilities = SWIFTSWIM,SWARM
+Moves = 1,LEER,1,POUND,3,POISONSTING,7,BUGBITE,11,BITE,16,POISONFANG,21,HORNATTACK,25,FLAIL,31,LEECHLIFE,36,DRAINFANG
+EggGroups = Bug
+HatchSteps = 5355
+Height = 0.2
+Weight = 0.5
+Color = Yellow
+Shape = Serpentine
+Pokedex = Suele verse más en manglares y zonas húmedas, Su especie mantiene disputas de territorio con los Surskit y Masquerain.
+Generation = 10
+#-------------------------------
 [TROPICALLY]
 Name = Tropically
 Types = GRASS,FLYING

@@ -1,6 +1,6 @@
 ﻿[MAREEP]
 Variants = A,B
-Probabilities = 33,33
+Probabilities = 100,0
 BackSprite_A = 0,-6
 FrontSprite_A = 0,21
 FrontSpriteAltitude_A = 2
@@ -15,66 +15,52 @@ ShadowSize_B = 1
 ShadowSprite_B = 1,-5,-7
 
 [ZIGZAGOON]
-Variants = A,B
-Probabilities = 100,0
+Variants = A
+Probabilities = 100
 BackSprite_A = 0,-12
 FrontSprite_A = 0,30
 FrontSpriteAltitude_A = 2
 ShadowX_A = -4
 ShadowSize_A = 3
 ShadowSprite_A = 3,-5,-10
-BackSprite_B = 0,-12
-FrontSprite_B = 0,28
-FrontSpriteAltitude_B = 0
-ShadowX_B = 0
-ShadowSize_B = 2
-ShadowSprite_B = 3,-5,-6
 
 [LINOONE]
-Variants = A,B
-Probabilities = 100,0
+Variants = A
+Probabilities = 100
 BackSprite_A = 0,0
 FrontSprite_A = -3,24
 FrontSpriteAltitude_A = 2
 ShadowX_A = -4
 ShadowSize_A = 0
 ShadowSprite_A = 0,-6,-2
-BackSprite_B = 0,0
-FrontSprite_B = 3,26
-FrontSpriteAltitude_B = 0
-ShadowX_B = 0
-ShadowSize_B = 2
-ShadowSprite_B = 3,-5,-9
 
 [SPRIGATITO]
-Variants = A,B
-Probabilities = 100,0
+Variants = A
+Probabilities = 100
 BackSprite_A = -2,-9
 FrontSprite_A = -2,30
 FrontSpriteAltitude_A = 2
 ShadowX_A = -4
 ShadowSize_A = 1
 ShadowSprite_A = 1,2,-8
-BackSprite_B = 0,16
-FrontSprite_B = -1,29
-FrontSpriteAltitude_B = 0
-ShadowX_B = 0
-ShadowSize_B = 2
-ShadowSprite_B = 3,-5,-8
 
 [FUECOCO]
-Variants = A,B
-Probabilities = 100,0
-BackSprite_A = -2,-9
-FrontSprite_A = -2,30
+Variants = A
+Probabilities = 100
+BackSprite_A = -2,-7
+FrontSprite_A = -4,27
 FrontSpriteAltitude_A = 2
 ShadowX_A = -4
 ShadowSize_A = 1
-ShadowSprite_A = 1,2,-8
-BackSprite_B = 0,16
-FrontSprite_B = -1,29
-FrontSpriteAltitude_B = 0
-ShadowX_B = 0
-ShadowSize_B = 2
-ShadowSprite_B = 3,-5,-8
+ShadowSprite_A = 8,2,-6
+
+[QUAXLY]
+Variants = A
+Probabilities = 100
+BackSprite_A = -2,16
+FrontSprite_A = -2,24
+FrontSpriteAltitude_A = 2
+ShadowX_A = -4
+ShadowSize_A = 1
+ShadowSprite_A = 6,2,-4
 

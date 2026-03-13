@@ -7,7 +7,7 @@ module PokemonVaultConfig
   VAULT_FILE        = "vault.dat"
   TRANSFER_FILE     = "transfer.dat"
 
-  VAULT_MAX_BOXES = 999  
+  VAULT_MAX_BOXES = 1
   VAULT_BOX_SIZE  = 30
 
   EXPORT_TARGET = "ANY"

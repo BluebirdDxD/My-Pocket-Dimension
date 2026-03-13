@@ -244,7 +244,7 @@ end
     data = Marshal.load(File.binread(path))
 
     if data[:target_game] != "ANY" && data[:target_game] != PokemonVaultConfig::GAME_ID
-      pbMessage(_INTL("Este archivo de transferencia no es compatible con este juego."))
+      pbMessage(_INTL("Este archivo solo es compatible con My Pocket Dimension."))
       return false
     end
 
