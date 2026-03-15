@@ -1,0 +1,1631 @@
+
+#-------------------------------
+[SPOLE]
+Name = Spole
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[MUSKOTTON]
+Name = Muskotton
+Types = GRASS,GROUND
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[BOLAVA]
+Name = Bolava
+Types = FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[VOLCRATER]
+Name = Volcrater
+Types = FIRE,PSYCHIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[STARQUA]
+Name = Starqua
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[SNAILOR]
+Name = Snailor
+Types = WATER,ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[SABOLANE]
+Name = Sabolane
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[PANGOLAND]
+Name = Pangoland
+Types = NORMAL,GROUND
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ZAPCHIK]
+Name = Zapchik
+Types = ELECTRIC,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[THUNDERITH]
+Name = Thunderith
+Types = ELECTRIC,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[VOLTALARI]
+Name = Voltalari
+Types = ELECTRIC,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[RELIKEVER]
+Name = Relikever
+Types = BUG
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[SARCHOLEO]
+Name = Sarcholeo
+Types = BUG
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[PHACEROURO]
+Name = Phacerouro
+Types = BUG,GHOST
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[OHOS]
+Name = Ohos
+Types = PSYCHIC,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[SYRIPHONE]
+Name = Syriphone
+Types = PSYCHIC,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ARCHELESEEN]
+Name = Archeleseen
+Types = PSYCHIC,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[CRUSCHTER]
+Name = Cruschter
+Types = POISON,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[REEXALEON]
+Name = Reexaleon
+Types = POISON,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[STOXINE]
+Name = Stoxine
+Types = POISON,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[GRAFARTIST]
+Name = Grafartist 
+Types = POISON,PSYCHIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+
+#-------------------------------
+[KIDDLECH]
+Name = Kiddlech
+Types = NORMAL,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[MOUNTIBEX]
+Name = Mountibex
+Types = NORMAL,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[KUDUNOBORU]
+Name = Kudunoboru
+Types = NORMAL,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[CRISSALIDRA]
+Name = Crissalidra
+Types = BUG,DRAGON
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[PROPTERFREE]
+Name = Propterfree
+Types = BUG,DRAGON
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[PICUTTIE]
+Name = Picuttie
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[OPEROOST]
+Name = Operoost
+Types = NORMAL,DARK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[HENGALINA]
+Name = Hengalina
+Types = NORMAL,FAIRY
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[TAKOHACHI]
+Name = Takohachi
+Types = WATER,FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[OCTAKOYA]
+Name = Octakoya
+Types = WATER,FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[PERISOL]
+Name = Perisol
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[CARROOKIE]
+Name = Carrookie
+Types = GROUND,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[PLANEXVIT]
+Name = Planexvit
+Types = GROUND,FLYING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[FLAMBEAR]
+Name = Flambear
+Types = FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[VOLBEAR]
+Name = Volbear
+Types = FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[DYNABEAR]
+Name = Dynabear
+Types = FIRE
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[SPIKUMUKU]
+Name = Spikumuku
+Types = BUG
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[TIGRETTE]
+Name = Tigrette
+Types = ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ELECTIGER]
+Name = Electiger
+Types = ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ROARIGER]
+Name = Roariger
+Types = ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[PACHONCHIRISU]
+Name = Pachonchirisu
+Types = ELECTRIC,FAIRY
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[XHINGDENG]
+Name = Xhingdeng
+Types = PSYCHIC,DARK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[GRAPPIM]
+Name = Grappim
+Types = POISON,GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ROUSWILE]
+Name = Rouswile
+Types = GRASS,POISON
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[STONJORII]
+Name = Stonjorii
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ONSENBARA]
+Name = Onsenbara
+Types = NORMAL,WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[AUTOMINEUR]
+Name = Automineur
+Types = STEEL,ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[RAINTEBOW]
+Name = Raintebow
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[BOWBORASH]
+Name = Bowborash
+Types = WATER,DRAGON
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[SKIMMICE]
+Name = Skimmice
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[KINALAITTE]
+Name = Kinalaitte
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[DEINU]
+Name = Deinu
+Types = DARK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ZWEIBEROUS]
+Name = Zweiberous
+Types = DARK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+#-------------------------------
+[EXSEEDUTE]
+Name = Exseedute
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[EXSEEDUTOR]
+Name = Exseedutor
+Types = NORMAL,FIGHTING
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[MAGICHRIST]
+Name = Magichrist
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[TANGEL]
+Name = Tangel
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[GELANLA]
+Name = Gelanla
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[LICKIYROUND]
+Name = Lickiyround
+Types = NORMAL
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[MISSPIDY]
+Name = Misspidy
+Types = BUG
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[ARBORICHLES]
+Name = Arborichles
+Types = GRASS
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[FUTALE]
+Name = FUTALE
+Types = WATER,ROCK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[GASTRAMONITE]
+Name = Gastramonite
+Types = WATER,GROUND
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[AEROTHAVIS]
+Name = Aerothavis
+Types = ROCK,DARK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[AEROTHAX]
+Name = Aerothax
+Types = ROCK,DARK
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[QUETZEUTLAKO]
+Name = Quetzeutlako
+Types = ROCK,DRAGON
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10
+
+
+#-------------------------------
+[AMULLAPTOR]
+Name = Amullaptor
+Types = ROCK,ELECTRIC
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = OVERGROW
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.3
+Weight = 3.5
+Color = Green
+Shape = Head
+Category = Estrellato
+Pokedex = No se xd
+Generation = 10

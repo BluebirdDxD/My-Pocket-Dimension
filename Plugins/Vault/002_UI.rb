@@ -340,6 +340,7 @@ pbMessage(_INTL(
       when "REFULGENTE"     then "Pokémon Refulgente"
       when "SV"             then "Proyecto Paldea"
       when "MPD"            then "My Pocket Dimension"
+      when "SHOWDOWN" then "Pokémon Showdown"
       else source
       end
 
