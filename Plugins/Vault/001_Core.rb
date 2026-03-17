@@ -275,6 +275,34 @@ end
     pokemon_boxes.each do |box|
       box.each do |pkmn|
         next if !pkmn
+
+# --- Forzar origen universal ---
+universal_origins = [
+  "Región de Ameuro",
+  "Región de Paldea",
+  "Dimensión Santuario",
+  "Un Lugar Lejano...",
+  "Región de Kojumi",
+  "Región de Alola"
+]
+
+if !universal_origins.include?(pkmn.obtain_text)
+  case data[:source_game]
+  when "ETERNA_EMOCION"
+    pkmn.obtain_text = "Región de Ameuro"
+  when "REFULGENTE"
+    pkmn.obtain_text = "Región de Alola"
+  when "SV"
+    pkmn.obtain_text = "Región de Paldea"
+  when "MPD"
+    pkmn.obtain_text = "Dimensión Santuario"
+  when "SHOWDOWN"
+  pkmn.obtain_text = "Un Lugar Lejano..."
+  when "ESTRELLATO"
+  pkmn.obtain_text = "Región de Kojumi"
+  end
+end
+
         pos = first_empty_slot(vault)
         next if !pos
         b, s = pos
