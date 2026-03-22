@@ -71,7 +71,10 @@ class Battle::Scene::AbilitySplashBar < Sprite
       @iconSprite.y = self.y + 15
     else
 
-      @iconSprite.x = self.x + self.bitmap.width - 86
+      icon_w = @iconSprite.bitmap ? @iconSprite.bitmap.width : 32
+
+@iconSprite.x = self.x + self.bitmap.width - icon_w - 10
+@iconSprite.y = self.y + 15
       @iconSprite.y = self.y + 15
     end
   end
@@ -89,14 +92,35 @@ class Battle::Scene::AbilitySplashBar < Sprite
     end
     
     textPos = []
-    textX = (@side == 0) ? 10 : self.bitmap.width - 8
+    if @side == 0
+  textX = 24
+else
+  icon_w = @iconSprite.bitmap ? @iconSprite.bitmap.width : 32
+  textX = self.bitmap.width - icon_w - 18
+end
     align = (@side == 0) ? :left : :right
 
-    textPos.push([@battler.abilityName, textX, 8, align,
-                  TEXT_BASE_COLOR, TEXT_SHADOW_COLOR, :outline])
+if @side == 0
+  # Jugador (normal)
+  textPos.push([@battler.abilityName, textX, 8, align,
+                TEXT_BASE_COLOR, TEXT_SHADOW_COLOR, :outline])
+  textPos.push([_INTL("de"), textX, 38, align,
+                TEXT_BASE_COLOR, TEXT_SHADOW_COLOR, :outline])
+else
+  # Enemigo (invertido)
+  textPos.push([_INTL("de"), textX, 38, align,
+                TEXT_BASE_COLOR, TEXT_SHADOW_COLOR, :outline])
+abilityAlign = :left   # <- siempre izquierda
 
-    textPos.push([_INTL("de"), textX, 38, align,
-                  TEXT_BASE_COLOR, TEXT_SHADOW_COLOR, :outline])
+abilityX = if @side == 0
+  textX + 6
+else
+  textX - 120   # ajusta este número a gusto
+end
+
+textPos.push([@battler.abilityName, abilityX, 8, abilityAlign,
+              TEXT_BASE_COLOR, TEXT_SHADOW_COLOR, :outline])
+end
     pbDrawTextPositions(self.bitmap, textPos)
   end
   def update
