@@ -79,6 +79,8 @@ module PokemonVault
 
     data = Marshal.load(File.binread(path))
 
+
+
     return empty_vault if !data.is_a?(Hash)
     return empty_vault if data[:game_id] != PokemonVaultConfig::GAME_ID
 
@@ -96,7 +98,6 @@ module PokemonVault
     }
     File.binwrite(vault_path, Marshal.dump(data))
   end
-
 
   #===============================================================================
   # Eligibility Rules
@@ -179,8 +180,12 @@ def import_will_overflow?
   path = transfer_path
   return false if !File.exist?(path)
 
-  data = Marshal.load(File.binread(path))
-  transfer = data[:pokemon].flatten.compact.length
+data = Marshal.load(File.binread(path))
+
+# ⭐ si es formato showdown no calcular overflow
+return false if data[:format] == "SHOWDOWN"
+
+transfer = data[:pokemon].flatten.compact.length
 
   capacity =
     PokemonVaultConfig::VAULT_MAX_BOXES *
@@ -242,6 +247,50 @@ end
     return false if !File.exist?(path)
 
     data = Marshal.load(File.binread(path))
+
+# ⭐ Transfer SHOWDOWN directo (Estrellato)
+if data[:format] == "SHOWDOWN"
+
+transfer_id = data[:transfer_id]
+
+$PokemonGlobal.used_transfer_ids ||= []
+
+if transfer_id && $PokemonGlobal.used_transfer_ids.include?(transfer_id)
+  pbMessage(_INTL("Esta transferencia ya fue utilizada en este juego."))
+  return false
+end
+
+ # pbMessage(_INTL("Importando Pokémon de Estrellato..."))
+
+  sets_text = data[:showdown_sets]
+
+  sets = sets_text.split(/\n{2,}/)
+
+  pokemon_list = []
+
+  sets.each do |set|
+    pkmn = MPDTransfer.parse_set(set)
+    next if !pkmn
+    pokemon_list << pkmn
+  end
+
+  vault = load_vault
+
+  pokemon_list.each do |pkmn|
+    pos = first_empty_slot(vault)
+    break if !pos
+    b, s = pos
+    vault[b][s] = pkmn
+  end
+
+  save_vault(vault)
+
+$PokemonGlobal.used_transfer_ids << transfer_id if transfer_id
+
+  File.delete(path)
+
+  return true
+end
 
     if data[:target_game] != "ANY" && data[:target_game] != PokemonVaultConfig::GAME_ID
       pbMessage(_INTL("Este archivo solo es compatible con My Pocket Dimension."))

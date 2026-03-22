@@ -6,13 +6,26 @@ module MPDTransfer
   def import_if_present
     return false unless File.exist?(FILE)
 
-    text = File.read(FILE)
-    sets = text.split(/\n{2,}/)
+text = File.read(FILE)
 
-    team = []
+# ===== detectar header GAME =====
+mode_limit = 6
+source_game = "SHOWDOWN"
 
-    sets.each do |set|
-      break if team.length >= 6
+if text.upcase.include?("#GAME: ESTRELLATO")
+  mode_limit = 30
+  source_game = "ESTRELLATO"
+end
+
+# ===== eliminar header antes de parsear =====
+text = text.gsub(/^#GAME:.*$/i, "")
+
+sets = text.split(/\n{2,}/)
+
+team = []
+
+sets.each do |set|
+  break if team.length >= mode_limit
       pkmn = parse_set(set)
       next if !pkmn
 
@@ -38,7 +51,7 @@ module MPDTransfer
     end
 
     data = {
-      source_game: "SHOWDOWN",
+      source_game: source_game,
       target_game: "ANY",
       transfer_id: SecureRandom.hex(16),
       timestamp: Time.now.to_i,

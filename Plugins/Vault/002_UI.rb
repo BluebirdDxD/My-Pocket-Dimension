@@ -340,11 +340,16 @@ pbMessage(_INTL(
       when "REFULGENTE"     then "Pokémon Refulgente"
       when "SV"             then "Proyecto Paldea"
       when "MPD"            then "My Pocket Dimension"
-      when "SHOWDOWN" then "Pokémon Showdown"
+      when "SHOWDOWN"       then "Pokémon Showdown"
+      when "ESTRELLATO"     then "Pokémon Estrellato"
       else source
       end
 
     pbMessage(_INTL("Se detectó un archivo de transferencia proveniente de {1}.", name))
+
+if source == "ESTRELLATO"
+  pbMessage(_INTL("Importando Pokémon de Estrellato..."))
+end
 
 result = import_transfer
 

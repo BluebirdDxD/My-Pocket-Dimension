@@ -1,0 +1,19 @@
+#-------------------------------
+[HIKER]
+Name = Senderista
+Description = Aumenta la velocidad y evita el daño al recibir un ataque de tipo roca.
+
+#-------------------------------
+[THUNDERPICKUP]
+Name = Electrorecogida
+Description = El Pokémon puede recoger Thunder Balls que el rival haya usado, o bien ocultas en el mapa del mundo.
+
+#-------------------------------
+[DISCIPLINEDTENOR]
+Name = Experto Tenor
+Description = Hace que todos los movimientos del Pokémon basados en sonido pasen a ser de tipo Siniestro.
+
+#-------------------------------
+[SIDEREALGRAVITY]
+Name = Manto Estelar
+Description = Evita que el enemigo huya o sea cambiado por otro debido al campo gravitacional que emite la energía estelar.

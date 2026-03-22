@@ -1,0 +1,238 @@
+#-------------------------------
+[WARMUP]
+Name = Calentamiento
+Type = FIGHTING
+Category = Status
+TotalPP = 10
+Target = User
+Description = El usuario prepara sus músculos con ejercicios para aumentar su defensa y velocidad.
+#-------------------------------
+[FLORALFLORET]
+Name = Florete Floral
+Type = GRASS
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = Foe
+EffectChance = 100
+Description = Un afilado florete ataca al objetivo. también puede hacer disminuir su defensa.
+#-------------------------------
+[PSYCHOERUPTION]
+Name = Psicoerupción
+Type = FIRE
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+EffectChance = 100
+Description = El usuario expulsa lava que puede disminuir la defensa especial del objetivo.
+#-------------------------------
+[ELECTROBUBBLES]
+Name = Electroburbujas
+Type = WATER
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+EffectChance = 100
+Description = El usuario lanza burbujas con propiedades eléctricas que pueden llegar a paralizar al objetivo.
+#-------------------------------
+[SHOCKONTACT]
+Name = Chocontacto
+Type = ELECTRIC
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 30
+Description = Al tener contacto con la corriente del usuario, esta fluirá por el cuerpo del objetivo causando daño.
+#-------------------------------
+[NORMALPULSE]
+Name = Pulso Normal
+Type = NORMAL
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 35
+Target = Foe
+Description = El usuario utiliza su energía para convertirla en un pulso y atacar al enemigo.
+#-------------------------------
+[METAMORPHOSIS]
+Name = Metamorfosis
+Type = BUG
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = User
+Description = El usuario se envuelve en una fina capa de seda que aumenta su defensa y defensa especial.
+#-------------------------------
+[ROCKPICK]
+Name = Picarrocas
+Type = ROCK
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = Foe
+Description = El usuario golpea con sus extremidades al estilo de un pico. Suele golpear super efectivo a usuarios de tipo roca.
+#-------------------------------
+[FLAREMETEOR]
+Name = Cometa Ígneo
+Type = FIRE
+Category = Special
+Power = 65
+Accuracy = 90
+TotalPP = 15
+Description = Ataca al punto débil del rival con un meteoro que impacta sobre el enemigo, que deja fragmentos que dañan al objetivo varias veces.
+
+#-------------------------------
+[FAERIENSLAUGHT]
+Name = Embestida Feerica
+Type = FAIRY
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Description = El usuario se envuelve en energía feérica y embiste al objetivo. Puede hacerlo retroceder.
+
+#-------------------------------
+[DRACOCHOMP]
+Name = Dracobocado
+Type = DRAGON
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 25
+Description = Un potente mordisco que puede hacer retroceder al objetivo.
+
+#-------------------------------
+[DEBRISATTACK]
+Name = Escombros
+Type = GROUND
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Description = El usuario le lanza escombros de tierra al oponente para atacarlo.
+
+#-------------------------------
+[ASPFANG]
+Name = Mordida De Áspid
+Type = GROUND
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Description = El usuario encaja unos colmillos que pueden envenenar gravemente al objetivo.
+
+#-------------------------------
+[KIDBANDING]
+Name = Vendasecuestro
+Type = GHOST
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 15
+Description = El usuario atrapa con sus vendas al objetivo, impidiéndole escapar por cinco turnos mientras le resta vida.
+
+#-------------------------------
+[DIVINEDESTRUCTION]
+Name = Tragedia Divina
+Type = NORMAL
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 10
+Description = Los pecados de aquellas entidades que desobedecieron al creador se materializan en energía arrasando al bando enemigo.
+
+#-------------------------------
+[OCTOCOOKING]
+Name = Octococina
+Type = WATER
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 8
+Description = Cocina una de sus extremidades a fuego alto durante el primer turno para después lanzarla al enemigo. Quema al rival si recibe un ataque físico durante la carga.
+
+#-------------------------------
+[CALCINATINGROAR]
+Name = Rugido Calcinante
+Type = FIRE
+Category = Special
+Power = 95
+Accuracy = 100
+TotalPP = 30
+Description = Intimida al objetivo con un rugido que hace daño y puede bajar la Defensa.
+
+#-------------------------------
+[MASTERFULREPLICA]
+Name = Réplica Magistral
+Type = PSYCHIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Description = El usuario realiza una fuerza psicodélica la cual le permite copiar magistralmente los cambios de estadísticas del rival.
+
+#-------------------------------
+[MORNINGCACKLE]
+Name = Canto Mañanero
+Type = NORMAL
+Category = Status
+Power = 0
+Accuracy = 100
+TotalPP = 10
+Description = El usuario canta otorgándose ánimos para comenzar el día y subir su velocidad. Puede despertar a un Pokémon dormido.
+
+#-------------------------------
+[MOTHERINSTINCT]
+Name = Instinto Maternal
+Type = NORMAL
+Category = Status
+Power = 0
+Accuracy = 0
+TotalPP = 20
+Description = Para proteger al aliado, llama la atención para concentrar todos los ataques del equipo rival hacia sí mismo.
+
+#-------------------------------
+[METACONDUCIVITY]
+Name = Meta Conducción
+Type = ELECTRIC
+Category = Special
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Description = Movimiento de tipo eléctrico que puede dañar a usuarios de tipo tierra.
+
+#-------------------------------
+[AMETHYSTPOWER]
+Name = Poder Amatista
+Type = POISON
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 5
+Description = El usuario libera una energía venenosa antigua, proyectando cristales amatistas hacia el rival. Al hacerlo puede potenciar su propio ataque.
+
+#-------------------------------
+[HEAVENLYMELODY]
+Name = Melodía Celestial
+Type = FLYING
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Description = Canta una melodía que desorienta al rival y puede confundirlo.
+
+#-------------------------------
+[SPITTLE]
+Name = Escupitajo
+Type = WATER
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Description = El usuario almacena saliva y la escupe. Puede paralizar al objetivo.

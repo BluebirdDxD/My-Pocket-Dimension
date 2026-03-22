@@ -1,409 +1,341 @@
-
 #-------------------------------
 [SPOLE]
 Name = Spole
 Types = GRASS
-BaseStats = 60,60,60,60,60,60
+BaseStats = 50,65,50,60,40,45
 GenderRatio = FemaleOneEighth
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseExp = 30
+EVs = ATTACK,1
+CatchRate = 45
 Happiness = 50
 Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+HiddenAbility = BEASTBOOST
+Moves = 1,GROWL,1,SCRATCH,1,LEAFAGE,7,SANDATTACK,10,MUDSHOT,13,MEGADRAIN,18,BULLDOZE,22,SEEDBOMB,27,SLASH,32,GIGADRAIN,36,DRILLRUN
+EggGroups = Grass,Field
+HatchSteps = 2560
+Height = 0.8
+Weight = 5
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Estrella
+Pokedex = Es un pokémon recientemente descubierto. Se oculta de los depredadores escondiéndose en los arbustos dejando su cara al aire para ser confundido con una flor.
 Generation = 10
-
+Evolutions = MUSKOTTON,Level,28
 
 #-------------------------------
 [MUSKOTTON]
 Name = Muskotton
-Types = GRASS,GROUND
-BaseStats = 60,60,60,60,60,60
+Types = GRASS,FIGHTING
+BaseStats = 95,111,86,99,62,83
 GenderRatio = FemaleOneEighth
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
+BaseExp = 236
+EVs = ATTACK,2
+CatchRate = 190
+Happiness = 70
 Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+HiddenAbility = BEASTBOOST
+Moves = 1,GROWL,1,SCRATCH,1,LEAFAGE,1,METALCLAW,1,FLORALFLORET,7,SANDATTACK,10,MUDSHOT,13,MEGADRAIN,18,BULLDOZE,22,SEEDBOMB,27,SLASH,32,SACREDSWORD,36,DRILLRUN,44,SOLARBLADE,58,METEORASSAULT,65,GUILLOTINE
+EggGroups = Field,Grass
+HatchSteps = 5355
+Height = 1.4
+Weight = 30
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Mosquetero
+Pokedex = Es muy leal con sus seres queridos. Se encargan de escoltar a los más débiles de sus grupos para defenderlos
 Generation = 10
-
 
 #-------------------------------
 [BOLAVA]
 Name = Bolava
 Types = FIRE
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 55,45,53,40,55,62
+GenderRatio = Genderless
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseExp = 30
+EVs = SPEED,1
+CatchRate = 45
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = BLAZE
+HiddenAbility = BEASTBOOST
+Moves = 1,LEER,1,EMBER,1,NORMALPULSE,7,ROLLOUT,12,CONFUSION,17,FLAREMETEOR,21,ROCKPOLISH,26,GYROBALL,32,COSMICPOWER,36,LAVAPLUME
+EggGroups = Mineral
+HatchSteps = 2560
+Height = 0.4
+Weight = 35
+Color = Gray
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Estrella
+Pokedex = Poco a poco se rompe la capa de roca que contiene su poder, nunca se ha avistado un ejemplar con la capa completamente desprendida.
 Generation = 10
-
+Evolutions = VOLCRATER,Level,28
 
 #-------------------------------
 [VOLCRATER]
 Name = Volcrater
 Types = FIRE,PSYCHIC
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 90,60,90,65,107,123
+GenderRatio = Genderless
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseExp = 236
+EVs = SPEED,2
+CatchRate = 190
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = BLAZE
+HiddenAbility = BEASTBOOST
+Moves = 1,LEER,1,EMBER,1,NORMALPULSE,1,PSYCHOERUPTION,7,ROLLOUT,12,CONFUSION,17,FLAREMETEOR,21,ROCKPOLISH,26,GYROBALL,32,COSMICPOWER,36,LAVAPLUME,44,PSYCHIC,58,OVERHEAT,65,ERUPTION
+EggGroups = Mineral
+HatchSteps = 5355
+Height = 1.3
+Weight = 300
+Color = Gray
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Cráter
+Pokedex = Se alimenta del calor del entorno para manipular a la lava que produce. Su lava no quema, pero tiene temperaturas considerables.
 Generation = 10
-
 
 #-------------------------------
 [STARQUA]
 Name = Starqua
 Types = WATER
-BaseStats = 60,60,60,60,60,60
+BaseStats = 60,40,57,23,60,70
 GenderRatio = FemaleOneEighth
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseExp = 30
+EVs = SPEED,1
+CatchRate = 45
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = TORRENT
+HiddenAbility = BEASTBOOST
+Moves = 1,WITHDRAW,1,BUBBLE,1,TACKLE,7,STRUGGLEBUG,12,BUBBLEBEAM,17,SPARK,21,HEADBUTT,26,GYROBALL,32,SHELLSMASH,36,SCALD
+EggGroups = Water1,Bug
+HatchSteps = 2560
+Height = 0.5
+Weight = 7
+Color = Blue
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Estrella
+Pokedex = Es muy tímido y normalmente es asustadizo. Cuando se encuentra amenazado se esconde en su caparazón tomando una forma parecida a la de una Poké Ball.
 Generation = 10
-
+Evolutions = SNAILOR,Level,28
 
 #-------------------------------
 [SNAILOR]
 Name = Snailor
 Types = WATER,ELECTRIC
-BaseStats = 60,60,60,60,60,60
+BaseStats = 93,70,97,65,110,100
 GenderRatio = FemaleOneEighth
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 236
+EVs = SPECIAL_DEFENSE,1,SPEED,1
+CatchRate = 190
+Happiness = 70
+Abilities = TORRENT
+HiddenAbility = BEASTBOOST
+Moves = 1,WITHDRAW,1,BUBBLE,1,TACKLE,1,ELECTROBUBBLES,7,STRUGGLEBUG,12,BUBBLEBEAM,17,SPARK,21,HEADBUTT,26,GYROBALL,32,SHELLSMASH,36,SCALD,40,THUNDERBOLT,47,SIGNALBEAM,58,MUDDYWATER,65,WATERSPOUT
+EggGroups = Water1
+HatchSteps = 5355
+Height = 1.6
+Weight = 25.5
+Color = Blue
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Caracol
+Pokedex = Es un Pokémon de naturaleza mansa. Cuando se trata de proteger a los suyos, lanza un chorro de agua que contiene descargas eléctricas para electrocutar al enemigo.
 Generation = 10
-
 
 #-------------------------------
 [SABOLANE]
 Name = Sabolane
 Types = NORMAL
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
+BaseStats = 64,42,54,31,25,44
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 55
+EVs = HP,1
 CatchRate = 255
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
+Abilities = PICKUP,SHELLARMOR
+Moves = 1,DEFENSECURL,1,TACKLE,5,DEBRISATTACK,8,SANDATTACK,12,FURYSWIPES,15,MUDSHOT,17,HEADBUTT,21,DIG,25,TAKEDOWN,31,SCORCHINGSANDS,34,GYROBALL,39,EARTHQUAKE
+EggGroups = Field
+HatchSteps = 1920
 Height = 0.3
-Weight = 3.5
-Color = Green
+Weight = 8
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Armadillo
+Pokedex = Puede usar su cola como un taladro para cavar sus madrigueras rodando bajo tierra mientras su cola se encarga de quitar toda la tierra.
 Generation = 10
-
+Evolutions = PANGOLAND,Level,22
 
 #-------------------------------
 [PANGOLAND]
 Name = Pangoland
 Types = NORMAL,GROUND
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseStats = 100,90,102,55,70,72
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 172
+EVs = DEFENSE,2
+CatchRate = 100
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = SANDSPIT,SANDVEIL
+Moves = 1,DEFENSECURL,1,TACKLE,1,SCORCHINGSANDS,5,DEBRISATTACK,8,SANDATTACK,12,FURYSWIPES,15,MUDSHOT,17,HEADBUTT,21,DIG,25,TAKEDOWN,31,SCORCHINGSANDS,34,LASTRESORT,39,EARTHQUAKE
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.0
+Weight = 25
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Pangolarena
+Pokedex = Tiene una habilidad excepcional para poder apilar una montaña de arena en su espalda que usa para intimidar a sus enemigos y evitar que esta se caiga.
 Generation = 10
-
-
-#-------------------------------
-[ZAPCHIK]
-Name = Zapchik
-Types = ELECTRIC,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
-Shape = Head
-Category = Estrellato
-Pokedex = No se xd
-Generation = 10
-
-
-#-------------------------------
-[THUNDERITH]
-Name = Thunderith
-Types = ELECTRIC,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
-Shape = Head
-Category = Estrellato
-Pokedex = No se xd
-Generation = 10
-
-
-#-------------------------------
-[VOLTALARI]
-Name = Voltalari
-Types = ELECTRIC,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
-Shape = Head
-Category = Estrellato
-Pokedex = No se xd
-Generation = 10
-
 
 #-------------------------------
 [RELIKEVER]
 Name = Relikever
 Types = BUG
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
+BaseStats = 49,40,30,27,32,32
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 60
+EVs = HP,1
 CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Happiness = 70
+Abilities = ROCKHEAD,SWARM
+Moves = 1,STRINGSHOT,1,ASTONISH,1,TACKLE,5,STRUGGLEBUG,8,DEFENSECURL,12,DEBRISATTACK,15,TWINEEDLE,19,HORNATTACK,24,DIG,29,TAKEDOWN
+EggGroups = Bug
+HatchSteps = 5355
+Height = 0.2
+Weight = 1
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Escarabajo
+Pokedex = Hace miles de años, eran venerados como una deidad que se encargaría de traer el amanecer al mundo.
 Generation = 10
-
+Evolutions = SARCHOLEO,Level,14
 
 #-------------------------------
 [SARCHOLEO]
 Name = Sarcholeo
 Types = BUG
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
+BaseStats = 80,75,80,25,50,70
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 145
+EVs = DEFENSE,2
 CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Happiness = 70
+Abilities = MUMMY
+Moves = 1,STRINGSHOT,1,ASTONISH,1,TACKLE,5,STRUGGLEBUG,8,DEFENSECURL,12,DEBRISATTACK,15,TWINEEDLE,19,HORNATTACK,24,TAKEDOWN,29,SHADOWCLAW,32,KIDBANDING,35,MEGAHORN,42,MAKEITRAIN
+EggGroups = Bug
+HatchSteps = 5355
+Height = 1.5
+Weight = 270
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Sarcófago
+Pokedex = Suele ocultarse en lugares oscuros bajo tierra. Atrapa a sus presas envolviéndolas con vendas que salen de su cuerpo, las cuales en realidad son sus órganos externos.
 Generation = 10
-
+Evolutions = PHACEROURO,Level,34
 
 #-------------------------------
 [PHACEROURO]
 Name = Phacerouro
 Types = BUG,GHOST
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
+BaseStats = 90,100,100,60,60,90
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 250
+EVs = ATTACK,1,DEFENSE,2
 CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Happiness = 70
+Abilities = MUMMY,SWARM
+Moves = 1,STRINGSHOT,1,ASTONISH,1,TACKLE,1,KIDBANDING,5,STRUGGLEBUG,8,DEFENSECURL,12,DEBRISATTACK,15,TWINEEDLE,19,HORNATTACK,24,DIG,29,TAKEDOWN,32,SHADOWCLAW,35,KIDBANDING,37,EARTHQUAKE,42,MEGAHORN,48,MAKEITRAIN
+EggGroups = Bug
+HatchSteps = 5355
+Height = 1.5
+Weight = 24
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Sarcófago
+Pokedex = Pasaron de ser sagrados a ser cazados por el oro de su espalda. Se dice que volvieron a la vida por el tormento de no ser tratados como antes.
 Generation = 10
-
 
 #-------------------------------
 [OHOS]
 Name = Ohos
 Types = PSYCHIC,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
+BaseStats = 30,15,30,60,50,35
+GenderRatio = Genderless
+GrowthRate = Slow
+BaseExp = 40
+EVs = SPECIAL_ATTACK,1
+CatchRate = 235
+Happiness = 70
+Abilities = COMPOUNDEYES,KEENEYE
+HiddenAbility = MINDSEYE
+Moves = 1,MIRACLEEYE,1,NORMALPULSE,4,GUST,4,CONFUSION,7,DEFOG,11,SUPERSONIC,15,PSYWAVE,19,SNARL,23,AIRCUTTER,27,TWINBEAM,31,LIGHTSCREEN,31,REFLECT,36,WINDPRESS,39,PSYCHIC,49,DIVINEDESTRUCTION
 EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+HatchSteps = 5355
+Height = 0.2
+Weight = 0.3
+Color = White
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Desconocido
+Pokedex = Estas criaturas misteriosas suelen emitir sonidos que asemejan cánticos. También se les ha visto alimentarse sin necesidad de tener una boca visible.
 Generation = 10
-
+Evolutions = SYRIPHONE,Level,19
 
 #-------------------------------
 [SYRIPHONE]
 Name = Syriphone
 Types = PSYCHIC,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
+BaseStats = 70,45,50,70,60,55
+GenderRatio = Genderless
+GrowthRate = Slow
+BaseExp = 75
+EVs = SPECIAL_ATTACK,1
+CatchRate = 235
+Happiness = 70
+Abilities = COMPOUNDEYES,KEENEYE
+HiddenAbility = MINDSEYE
+Moves = 1,MIRACLEEYE,1,NORMALPULSE,4,GUST,4,CONFUSION,7,DEFOG,11,SUPERSONIC,15,PSYWAVE,19,SNARL,23,AIRCUTTER,27,TWINBEAM,31,LIGHTSCREEN,31,REFLECT,36,WINDPRESS,39,PSYCHIC,49,DIVINEDESTRUCTION
 EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+HatchSteps = 5355
+Height = 1.2
+Weight = 10
+Color = White
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Serafín
+Pokedex = Suelen ser vistos sobrevolando los cielos del otro mundo. Se cree que, junto a su preevolución, le sirven a un ser superior.
 Generation = 10
+Evolutions = ARCHELESEEN,Level,39
 
 
 #-------------------------------
 [ARCHELESEEN]
 Name = Archeleseen
 Types = PSYCHIC,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
+BaseStats = 90,55,60,90,100,95
+GenderRatio = AlwaysFemale
+GrowthRate = Slow
+BaseExp = 245
+EVs = SPECIAL_ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = COMPOUNDEYES,KEENEYE
+HiddenAbility = MINDSEYE
+Moves = 1,MIRACLEEYE,1,NORMALPULSE,1,DIVINEDESTRUCTION,4,GUST,4,CONFUSION,7,DEFOG,11,SUPERSONIC,15,PSYWAVE,19,SNARL,23,AIRCUTTER,27,TWINBEAM,31,LIGHTSCREEN,31,REFLECT,36,WINDPRESS,39,PSYCHIC,49,DIVINEDESTRUCTION
 EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+HatchSteps = 5355
+Height = 1.2
+Weight = 10
+Color = White
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Arcángel
+Pokedex = Sólo los Syriphone de más alto rango pueden evolucionar en Archeleseen. Se cree que Arceus es quien elige cuál Syriphone evoluciona y cuál no.
 Generation = 10
 
 
@@ -411,1221 +343,1262 @@ Generation = 10
 [CRUSCHTER]
 Name = Cruschter
 Types = POISON,ROCK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 53,77,45,22,37,50
+GenderRatio = Female50Percent
+GrowthRate = Erratic
+BaseExp = 69
+EVs = ATTACK,1
+CatchRate = 190
+Happiness = 70
+Abilities = SHELLARMOR,STRONGJAW
+Moves = 1,WITHDRAW,1,POISONSTING,5,BITE,9,ROCKBLAST,13,RAZORSHELL,17,ACIDARMOR,21,STEALTHROCK,25,POISONFANG,29,HYPERFANG,33,TOXICSPIKES,37,POWERGEM,41,SHELLSMASH
+EggGroups = Water1
+HatchSteps = 5355
+Height = 0.2
+Weight = 5
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Devoranzuelos
+Pokedex = Se han reportado casos de intoxicación hacia entrenadores o pescadores novatos por parte de este Pokémon. Se recomienda tener precaución al momento de pescar en las playas.
 Generation = 10
-
+Evolutions = REEXALEON,Level,28
 
 #-------------------------------
 [REEXALEON]
 Name = Reexaleon
 Types = POISON,ROCK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 93,107,75,72,57,60
+GenderRatio = Female50Percent
+GrowthRate = Erratic
+BaseExp = 69
+EVs = ATTACK,1
+CatchRate = 75
+Happiness = 70
+Abilities = POISONPOINT
+HiddenAbility = MERCILESS
+Moves = 1,ACIDARMOR,1,WITHDRAW,1,STEALTHROCK,1,POISONSTING,1,ROCKBLAST,1,POISONFANG,1,BITE,1,RAZORSHELL,1,WAVECRASH,27,BARBBARRAGE,29,HYPERFANG,33,TOXICSPIKES,37,POWERGEM,41,SHELLSMASH
+EggGroups = Water1
+HatchSteps = 5355
+Height = 0.6
+Weight = 7
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Devoranzuelos
+Pokedex = No suelen atacar a humanos. Las espinas de su cuerpo causan un veneno que, en el peor de los casos, puede dejar paralizado al objetivo.
 Generation = 10
-
+Evolutions = STOXINE,Level,48
 
 #-------------------------------
 [STOXINE]
 Name = Stoxine
 Types = POISON,ROCK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 108,117,135,45,40,105
+GenderRatio = Female50Percent
+GrowthRate = Erratic
+BaseExp = 275
+EVs = ATTACK,1
+CatchRate = 25
+Happiness = 70
+Abilities = POISONPOINT
+HiddenAbility = MERCILESS
+Moves = 1,ACIDARMOR,1,WITHDRAW,1,STEALTHROCK,1,POISONSTING,1,ROCKBLAST,1,POISONFANG,1,BITE,1,RAZORSHELL,1,WAVECRASH,27,BARBBARRAGE,29,HYPERFANG,33,TOXICSPIKES,37,POWERGEM,41,SHELLSMASH,47,EARTHQUAKE,51,HEADSMASH
+EggGroups = Water1
+HatchSteps = 5355
+Height = 1.0
+Weight = 73.0
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Pezdroso
+Pokedex = Se esconde parcialmente en el lecho marino esperando a su presa, fingiendo ser una roca. Una vez su presa se acerca lo suficiente, le clava unas púas venenosas.
 Generation = 10
 
 
 #-------------------------------
 [GRAFARTIST]
-Name = Grafartist 
+Name = Grafartist
 Types = POISON,PSYCHIC
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 83,105,82,70,125,82
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseExp = 248
+EVs = SPECIAL_DEFENSE,3
+CatchRate = 90
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
+Abilities = UNBURDEN,POISONTOUCH
+HiddenAbility = PRANKSTER
+Moves = 0,DOODLE,1,FLATTER,1,LEER,1,SWITCHEROO,1,FURYSWIPES,1,SCRATCH,1,ACIDSPRAY,1,POISONFANG,1,SLASH,1,UTURN,1,POISONJAB,1,MASTERFULREPLICA,1,SLUDGEWAVE,37,TAUNT,40,SUBSTITUTE,45,KNOCKOFF,51,GUNKSHOT
+EggGroups = Field
 HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Height = 1.7
+Weight = 67.2
+Color = Gray
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Psico Artista
+Pokedex = Cuando un Grafaiai logra dominar aquel patrón que replicará por el resto de su vida, evoluciona para convertirse en un nuevo mentor para su manada.
 Generation = 10
-
-
 
 #-------------------------------
 [KIDDLECH]
 Name = Kiddlech
 Types = NORMAL,ROCK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 50,60,45,55,25,40
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 55
+EVs = ATTACK,1
+CatchRate = 190
+Happiness = 70
+Abilities = HIKER
+Moves = 1,GROWL,1,TACKLE,5,PINMISSILE,8,ROCKTHROW,13,HORNATTACK,15,ROCKBLAST,19,BULLDOZE,23,LOWSWEEP,29,ROCKSLIDE,33,DRILLRUN,38,JUMPKICK
+EggGroups = Field
+HatchSteps = 5355
+Height = 0.4
+Weight = 18
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Escalador
+Pokedex = Le encanta vivir en zonas montañosas. Cuando se encuentra con un obstáculo, utiliza su cola para lanzarlo y luego sigue escalando.
 Generation = 10
+Evolutions = MOUNTIBEX,Level,17
 
 
 #-------------------------------
 [MOUNTIBEX]
 Name = Mountibex
 Types = NORMAL,ROCK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 60,70,65,65,50,60
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseExp = 130
+EVs = ATTACK,2
+CatchRate = 120
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = HIKER,ROCKHEAD
+Moves = 1,GROWL,1,TACKLE,5,PINMISSILE,8,ROCKTHROW,13,HORNATTACK,15,ROCKBLAST,20,BULLDOZE,24,LOWSWEEP,29,ROCKSLIDE,33,DRILLRUN,38,JUMPKICK,42,MEGAHORN,47,GIGAIMPACT
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.3
+Weight = 41
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Ibexcalador
+Pokedex = Se dice que en alguna región suelen subir a las copas de los árboles para conseguir alimentos. Son excelentes escaladores.
 Generation = 10
-
+Evolutions = KUDUNOBORU,Level,37
 
 #-------------------------------
 [KUDUNOBORU]
 Name = Kudunoboru
 Types = NORMAL,ROCK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 75,120,75,105,50,75
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 255
+EVs = ATTACK,2,SPECIAL_ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = HIKER,ROCKHEAD
+Moves = 1,GROWL,1,TACKLE,1,HORNLEECH,1,EARTHQUAKE,1,MEGAHORN,5,PINMISSILE,8,ROCKTHROW,13,HORNATTACK,15,ROCKBLAST,20,BULLDOZE,24,LOWSWEEP,29,ROCKSLIDE,33,DRILLRUN,38,JUMPKICK,42,MEGAHORN,47,GIGAIMPACT
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.9
+Weight = 150
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Ibexcalador
+Pokedex = Son expertos escaladores. Pueden cruzar hasta los barrancos más peligrosos sin mucha ayuda. Para ahuyentar a sus depredadores, lanzan rocas grandes.
 Generation = 10
-
 
 #-------------------------------
 [CRISSALIDRA]
 Name = Crissalidra
-Types = BUG,DRAGON
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+Types = DRAGON,BUG
+BaseStats = 90,55,75,35,55,75
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 178
+EVs = HP,2
+CatchRate = 45
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+Abilities = INTIMIDATE,SHEDSKIN
+Moves = 1,HARDEN,1,METAMORPHOSIS,1,POWDER,1,ABSORB,12,DRACOCHOMP
+EggGroups = Bug,Dragon
+HatchSteps = 5355
+Height = 1.6
+Weight = 32
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Dracapsula
+Pokedex = Los Caterpie bendecidos evolucionan en una especie mejorada de Metapod. Pueden resistir los ataques de varios Pokémon de tipo Dragón.
 Generation = 10
 
-
+#-------------------------------
 #-------------------------------
 [PROPTERFREE]
 Name = Propterfree
-Types = BUG,DRAGON
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+Types = DRAGON,BUG
+BaseStats = 110,85,90,40,85,90
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 178
+EVs = HP,3
+CatchRate = 45
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+Abilities = INTIMIDATE,SHEDSKIN
+Moves = 1,HARDEN,1,METAMORPHOSIS,1,POWDER,1,ABSORB,12,DRACOCHOMP,17,DRAGONBREATH,21,SKITTERSMACK,25,SIGNALBEAM,32,LEECHLIFE,36,GIGADRAIN,40,DRAGONPULSE,47,BUGBUZZ,53,QUIVERDANCE
+EggGroups = Bug,Dragon
+HatchSteps = 5355
+Height = 2.0
+Weight = 42
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Gusaragon
+Pokedex = La última evolución del Caterpie de Kojumi. Sus genes draconianos ya le permiten ser un oponente formidable para otros Pokémon y defender a los suyos.
 Generation = 10
-
 
 #-------------------------------
 [PICUTTIE]
 Name = Picuttie
 Types = NORMAL
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
+BaseStats = 50,30,40,25,30,40
+GenderRatio = Female50Percent
+GrowthRate = Fast
+BaseExp = 45
+EVs = HP,1
+CatchRate = 170
+Happiness = 140
+Abilities = EMERGENCYEXIT,RATTLED
+HiddenAbility = NORMALIZE
+Moves = 1,PLAYNICE,1,PECK,5,TACKLE,7,FAERIENSLAUGHT,10,FAKETEARS,14,SOFTBOILED
 EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+HatchSteps = 5355
+Height = 0.2
+Weight = 0.1
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Pollito
+Pokedex = Es un Pokémon que, ante el mínimo peligro, sale corriendo. Además, es muy dependiente de otros Pokémon y humanos para conseguir alimento.
 Generation = 10
-
+Evolutions = OPEROOST,LevelMale,23,HENGALINA,LevelFemale,23
 
 #-------------------------------
 [OPEROOST]
 Name = Operoost
 Types = NORMAL,DARK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseStats = 80,70,80,75,90,90
+GenderRatio = AlwaysMale
+GrowthRate = Medium
+BaseExp = 170
+EVs = SPECIAL_DEFENSE,1,SPEED,1
+CatchRate = 100
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = EARLYBIRD,DISCIPLINEDTENOR
+Moves = 1,PLAYNICE,1,PECK,1,DISARMINGVOICE,1,SNARL,1,ROUND,5,TACKLE,7,FAERIENSLAUGHT,10,FAKETEARS,14,SOFTBOILED,23,MORNINGCACKLE,27,SING,33,PARTINGSHOT,37,ALLURINGVOICE,41,DARKPULSE,45,PERISHSONG
+EggGroups = Field,Flying
+HatchSteps = 5355
+Height = 1.3
+Weight = 10
+Color = Black
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Gallautor
+Pokedex = En alguna región no muy lejana de Kojumi, suelen realizar peleas de Operoost en las que el vencedor es aquel cuyo canto hace más sollozar al público.
 Generation = 10
-
 
 #-------------------------------
 [HENGALINA]
 Name = Hengalina
 Types = NORMAL,FAIRY
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseStats = 80,80,90,75,70,90
+GenderRatio = AlwaysFemale
+GrowthRate = Medium
+BaseExp = 170
+EVs = DEFENSE,1,SPEED,1
+CatchRate = 100
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = EARLYBIRD
+Moves = 1,SWEETKISS,1,PLAYNICE,1,ROOST,1,PECK,1,DISARMINGVOICE,1,HEARTSTAMP,5,TACKLE,7,FAERIENSLAUGHT,10,DRAININGKISS,14,SOFTBOILED,23,MORNINGCACKLE,27,SING,33,PARTINGSHOT,37,PLAYROUGH,41,TIDYUP,45,ORDERUP
+EggGroups = Field,Flying
+HatchSteps = 5355
+Height = 1.3
+Weight = 10
+Color = Black
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Gallineca
+Pokedex = c
 Generation = 10
-
 
 #-------------------------------
 [TAKOHACHI]
 Name = Takohachi
 Types = WATER,FIRE
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 50,60,45,50,60,45
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 63
+EVs = ATTACK,1
+CatchRate = 120
+Happiness = 70
+Abilities = FLAMEBODY,TECHNICIAN
+Moves = 1,LEER,1,EMBER,4,BUBBLE,9,CONSTRICT,13,WARMUP,18,INCINERATE,20,OCTAZOOKA,25,UPROAR,30,OCTOCOOKING,35,OCTOLOCK,40,SCALD,45,FIREBLAST
+EggGroups = Water1
+HatchSteps = 5355
+Height = 0.6
+Weight = 0.8
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Pulpuñuelo
+Pokedex = Se dice que comer una de sus patas es todo un manjar. Al igual que Slowpoke, sin embargo, sus extremidades pueden quemar fácilmente el paladar.
 Generation = 10
-
 
 #-------------------------------
 [OCTAKOYA]
 Name = Octakoya
 Types = WATER,FIRE
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 70,100,75,60,100,75
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 168
+EVs = ATTACK,1,SPECIAL_DEFENSE,1
+CatchRate = 45
+Happiness = 70
+Abilities = FLAMEBODY,TECHNICIAN
+Moves = 1,LEER,1,EMBER,4,BUBBLE,9,CONSTRICT,13,WARMUP,18,INCINERATE,20,OCTAZOOKA,25,UPROAR,30,OCTOCOOKING,35,OCTOLOCK,40,SCALD,45,FIREBLAST
+EggGroups = Water1
+HatchSteps = 5355
+Height = 1.3
+Weight = 18
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Pulpu uelo
+Pokedex = Desarrolló un cuerpo que contiene capsaicina muy alta para evitar ser comido.
 Generation = 10
 
+#-------------------------------
+[VOLCAFAVEL]
+Name = Volcafavel
+Types = FIRE,ROCK
+BaseStats = 95,75,80,40,75,80
+GenderRatio = Female50Percent
+GrowthRate = Fast
+BaseExp = 134
+EVs = HP,2
+CatchRate = 255
+Happiness = 50
+Abilities = SIDEREALGRAVITY
+Moves = 1,GROWL,1,EMBER,4,DEBRISATTACK,9,BABYDOLLEYES,12,ROCKTOMB,16,WORKUP,20,INCINERATE,24,BULLDOZE,28,TAKEDOWN,32,SUNNYDAY,36,STOMPINGTANTRUM,40,INFERNO,44,ROCKSLIDE,48,EARTHPOWER,55,PLAYROUGH,60,OVERHEAT
+EggGroups = Mineral
+HatchSteps = 5355
+Height = 1.1
+Weight = 31.0
+Color = Red
+Shape = Head
+Category = Volcancito
+Pokedex = Este Pokémon apareció de la nada en el Volcán Candente. No se sabe nada acerca de su origen, más allá de que reacciona con la energía estelar adquiriendo el poder de la Megaevolución.
+Generation = 10
 
 #-------------------------------
 [PERISOL]
 Name = Perisol
 Types = GRASS
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 45,33,42,35,54,61
+GenderRatio = AlwaysFemale
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
+BaseExp = 56
+EVs = SPEED,1
 CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
+Happiness = 70
+Abilities = NATURALCURE
+HiddenAbility = CHLOROPHYLL
+Moves = 1,CHARM,1,ABSORB,1,TACKLE,4,GROWTH,7,MEGADRAIN,12,FAIRYWIND,15,MAGICALLEAF,19,SWEETKISS,23,RAZORLEAF,27,ENERGYBALL,35,SUNNYDAY
+EggGroups = Grass,Field
+HatchSteps = 5355
 Height = 0.3
-Weight = 3.5
+Weight = 2
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Bulbo
+Pokedex = Pokémon endémico de la Región de Colosia.
 Generation = 10
-
 
 #-------------------------------
 [CARROOKIE]
 Name = Carrookie
 Types = GROUND,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 70,50,55,30,50,55
+GenderRatio = Genderless
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+BaseExp = 70
+EVs = HP,1
+CatchRate = 120
+Happiness = 70
+Abilities = WINDRIDER
+HiddenAbility = SEEDSOWER
+Moves = 1,ABSORB,1,NORMALPULSE,5,LEECHSEED,7,ROCKTOMB,10,DEBRISATTACK,13,GUST,20,TRAILBLAZE,25,BULLDOZE,30,MAGNETRISE,35,TAILWIND,40,ENERGYBALL,45,EARTHPOWER,50,STONEEDGE
+EggGroups = Mineral,Grass
+HatchSteps = 5355
+Height = 0.7
+Weight = 44.0
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Porción Flotante
+Pokedex = Extrañas criaturas que emergen de la tierra. Mientras más alto flotan, más se condensa el agua de sus alrededores, convirtiéndola en nubes y facilitando su paso.
 Generation = 10
-
+Evolutions = PLANEXVIT,HasMove,MAGNETRISE
 
 #-------------------------------
 [PLANEXVIT]
 Name = Planexvit
 Types = GROUND,FLYING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 130,70,95,50,70,95
+GenderRatio = Genderless
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+BaseExp = 210
+EVs = HP,2
+CatchRate = 120
+Happiness = 70
+Abilities = WINDRIDER
+HiddenAbility = SEEDSOWER
+Moves = 1,ABSORB,1,NORMALPULSE,5,LEECHSEED,7,ROCKTOMB,10,DEBRISATTACK,13,GUST,20,TRAILBLAZE,25,BULLDOZE,30,MAGNETRISE,35,TAILWIND,40,ENERGYBALL,45,EARTHPOWER,50,STONEEDGE,55,EARTHQUAKE,60,HURRICANE,60,LEAFSTORM
+EggGroups = Mineral,Grass
+HatchSteps = 5355
+Height = 2.5
+Weight = 480
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Flotante
+Pokedex = Al haber dominado el volar por los cielos, se dedica a diseminar otras zonas como forma de reproducción.
 Generation = 10
-
 
 #-------------------------------
 [FLAMBEAR]
 Name = Flambear
 Types = FIRE
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 50,60,40,40,50,50
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 64
+EVs = ATTACK,1
+CatchRate = 190
+Happiness = 70
+Abilities = BLAZE
+Moves = 1,SCRATCH,5,LEER,9,EMBER,12,ROAR,15,FLAMEWHEEL,19,BITE,25,REST,31,CALCINATINGROAR,35,SCARYFACE,42,THRASH,45,RAGINGFURY,55,BLASTBURN
+EggGroups = Field
+HatchSteps = 5355
+Height = 0.5
+Weight = 7.9
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Cachorro
+Pokedex = El calor de su cuerpo hace que sea agradable abrazarlo cuando hace frío. En verano se pone triste por la falta de mimos.
 Generation = 10
-
+Evolutions = VOLBEAR,Level,18
 
 #-------------------------------
 [VOLBEAR]
 Name = Volbear
 Types = FIRE
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 70,80,60,60,70,50
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 143
+EVs = ATTACK,2
+CatchRate = 45
+Happiness = 70
+Abilities = BLAZE
+HiddenAbility = FLASHFIRE
+Moves = 1,SCRATCH,5,LEER,9,EMBER,12,ROAR,15,FLAMEWHEEL,19,BITE,25,REST,31,CALCINATINGROAR,35,SCARYFACE,42,THRASH,45,RAGINGFURY,55,BLASTBURN
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.06
+Weight = 32
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Oso
+Pokedex = Cuando se ve gravemente amenazado, en lugar de luchar con sus garras, se da la vuelta y provoca una ola de calor.
 Generation = 10
-
+Evolutions = DYNABEAR,Level,32
 
 #-------------------------------
 [DYNABEAR]
 Name = Dynabear
 Types = FIRE
-BaseStats = 60,60,60,60,60,60
+BaseStats = 78,105,78,100,98,75
 GenderRatio = FemaleOneEighth
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 240
+EVs = ATTACK,3
+CatchRate = 45
+Happiness = 70
+Abilities = BLAZE
+HiddenAbility = FLASHFIRE
+Moves = 1,SCRATCH,5,LEER,9,EMBER,12,ROAR,15,FLAMEWHEEL,19,BITE,25,REST,31,CALCINATINGROAR,35,SCARYFACE,42,THRASH,45,RAGINGFURY,55,BLASTBURN,58,EXPLOSION
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.8
+Weight = 98
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Osoide
+Pokedex = Las fibras de su melena están impregnadas de material explosivo. A voluntad puede detonar toda su melena.
 Generation = 10
-
 
 #-------------------------------
 [SPIKUMUKU]
 Name = Spikumuku
 Types = BUG
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+BaseStats = 55,130,60,5,30,130
+GenderRatio = Female50Percent
+GrowthRate = Fast
+BaseExp = 144
+EVs = ATTACK,1,SPEED,1
+CatchRate = 60
+Happiness = 70
+Abilities = ADORABLE,AFTERMATH
+Moves = 1,STRINGSHOT,1,SPIDERWEB,1,PECK,5,SPIKES,10,BUGBITE,15,INFESTATION,18,DRAINFANG,20,GLARE,25,STEAMROLLER,30,HEADBUTT,35,LEECHLIFE,40,SUPERFANG,40,HYPERFANG,50,SKITTERSMACK,55,STICKYWEB,60,XSCISSOR
+EggGroups = Bug
+HatchSteps = 5355
+Height = 0.2
+Weight = 0.3
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Picaraña
+Pokedex = Su apariencia inofensiva hace que los Pokémon lo subestimen. Sin embargo, las picaduras de los cuernos de su cuerpo pueden causar heridas muy dolorosas.
 Generation = 10
-
 
 #-------------------------------
 [TIGRETTE]
 Name = Tigrette
 Types = ELECTRIC
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 55,50,45,50,50,50
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 60
+EVs = HP,1
+CatchRate = 170
+Happiness = 90
+Abilities = STATIC,CHEEKPOUCH
+HiddenAbility = MOTORDRIVE
+Moves = 1,THUNDERWAVE,1,ROLLOUT,3,SHOCKONTACT,7,GROWL,11,CHARGE,13,BITE,16,CHARGEBEAM,19,SHOCKWAVE,23,ROAR,27,HEADBUTT,32,THUNDERFANG,37,CRUNCH,43,WILDCHARGE,47,VOLTTACKLE
+EggGroups = Field
+HatchSteps = 5355
+Height = 0.7
+Weight = 21
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Rotundo
+Pokedex = Cuando se carga, su pelaje crepita como un rayo. Si su cola está erizada, está a punto de atacar.
 Generation = 10
-
+Evolutions = ELECTIGER,Level,24
 
 #-------------------------------
 [ELECTIGER]
 Name = Electiger
 Types = ELECTRIC
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 80,70,55,80,70,70
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 120
+EVs = HP,1,SPECIAL_ATTACK,1
+CatchRate = 170
+Happiness = 90
+Abilities = STATIC,CHEEKPOUCH
+HiddenAbility = MOTORDRIVE
+Moves = 1,THUNDERWAVE,1,ROLLOUT,3,SHOCKONTACT,7,GROWL,11,CHARGE,13,BITE,16,CHARGEBEAM,19,SHOCKWAVE,23,ROAR,27,HEADBUTT,32,THUNDERFANG,37,CRUNCH,43,WILDCHARGE,47,VOLTTACKLE
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.2
+Weight = 69
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Saltarín
+Pokedex = Su color dorado y su forma espléndidamente rotunda lo convirtieron en un símbolo de superioridad.
 Generation = 10
-
+Evolutions = ROARIGER,Level,40
 
 #-------------------------------
 [ROARIGER]
 Name = Roariger
 Types = ELECTRIC
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 110,100,75,90,80,80
+GenderRatio = Female50Percent
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 240
+EVs = HP,2,SPECIAL_ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = STATIC,CHEEKPOUCH
+HiddenAbility = MOTORDRIVE
+Moves = 1,THUNDERWAVE,1,ROLLOUT,3,SHOCKONTACT,7,GROWL,11,CHARGE,13,BITE,16,CHARGEBEAM,19,SHOCKWAVE,23,ROAR,27,HEADBUTT,32,THUNDERFANG,37,CRUNCH,43,WILDCHARGE,47,VOLTTACKLE
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.6
+Weight = 89
+Color = Yellow
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Rugiente
+Pokedex = Ruge para ahuyentar a los demás y así evitar peleas innecesarias. Su joroba almacena electricidad estática.
 Generation = 10
-
 
 #-------------------------------
 [PACHONCHIRISU]
 Name = Pachonchirisu
 Types = ELECTRIC,FAIRY
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 90,65,80,55,95,120
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 142
+EVs = SPEED,2
+CatchRate = 45
+Happiness = 100
+Abilities = CHEEKPOUCH,PICKUP
+HiddenAbility = VOLTABSORB
+Moves = 1,ENDURE,1,SWEETKISS,1,CHARM,1,GROWL,1,THUNDERWAVE,1,ELECTROBALL,1,BIDE,1,NUZZLE,1,QUICKATTACK,1,SWIFT,1,SPARK,1,PLAYROUGH,1,THUNDERBOLT,37,SUPERFANG,41,DISCHARGE,45,LASTRESORT,49,HYPERFANG
+EggGroups = Field,Fairy
+HatchSteps = 2805
+Height = 1.4
+Weight = 33.9
+Color = White
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Ardillaleg
+Pokedex = Su cola alargada le protege del frío. Se cree que podría tener una forma Gigamax donde su cola se alarga a niveles decrépitos.
 Generation = 10
-
 
 #-------------------------------
 [XHINGDENG]
 Name = Xhingdeng
-Types = PSYCHIC,DARK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Types = PSYCHIC,GHOST
+BaseStats = 105,70,90,55,105,100
+GenderRatio = Female50Percent
+GrowthRate = Fast
+BaseExp = 263
+EVs = HP,1,SPECIAL_DEFENSE,2
+CatchRate = 25
+Happiness = 70
+Abilities = LEVITATE,PRANKSTER
+Moves = 1,HEALINGWISH,1,GROWL,1,WRAP,1,ASTONISH,1,LICK,1,SHADOWSNEAK,1,CONFUSION,1,UPROAR,1,SYNCHRONOISE,4,GROWL,7,ASTONISH,10,CONFUSION,13,YAWN,16,ASTONISH,19,TAKEDOWN,22,CONFUSION,27,HEALBELL,30,PSYBEAM,35,WILLOWISP,40,HEX,45,EXTRASENSORY,50,CURSE
+EggGroups = Amorphous
+HatchSteps = 6630
+Height = 0.7
+Weight = 1.0
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Campaldita
+Pokedex = Al evolucionar deja de ser un Pokémon tranquilo para convertirse en uno bromista. Suele asustar a la gente haciéndoles creer que es una lámpara de papel, pero en algunos casos sus bromas terminan con desenlaces atroces.
 Generation = 10
-
 
 #-------------------------------
 [GRAPPIM]
 Name = Grappim
 Types = POISON,GRASS
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 68,30,45,35,62,55
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 68
+EVs = HP,1
+CatchRate = 190
+Happiness = 70
+Abilities = EFFECTSPORE,POISONTOUCH
+Moves = 1,ABSORB,1,TACKLE,3,ACIDSPRAY,8,LEECHSEED,13,BABYDOLLEYES,16,FAERIENSLAUGHT,18,STUNSPORE,18,POISONPOWDER,18,SLEEPPOWDER,23,SLUDGE,28,MEGADRAIN,33,SPORE,38,SLUDGEBOMB,43,GIGADRAIN,48,SLUDGEWAVE
+EggGroups = Grass,Fairy
+HatchSteps = 5355
+Height = 0.7
+Weight = 0.8
+Color = Purple
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Bayhongos
+Pokedex = Un hongo benéfico se fusiona con este Pokémon, otorgándole a sus frutos una capa de una sustancia venenosa que le ayuda a evitar a sus depredadores.
 Generation = 10
-
 
 #-------------------------------
 [ROUSWILE]
 Name = Rouswile
 Types = GRASS,POISON
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+BaseStats = 50,85,55,50,55,85
+GenderRatio = Female50Percent
+GrowthRate = Fast
+BaseExp = 133
+EVs = ATTACK,1,SPEED,1
+CatchRate = 45
+Happiness = 70
+Abilities = POISONPOINT,SHEERFORCE
+HiddenAbility = STRONGJAW
+Moves = 1,GROWL,1,POISONSTING,1,DRAINFANG,4,ABSORB,8,BITE,12,INGRAIN,16,POISONPOWDER,20,SUCKERPUNCH,24,GRASSKNOT,28,POISONFANG,32,SWEETSCENT,36,TOXICSPIKES,40,SPIKYSHIELD,44,CRUNCH,48,CROSSPOISON
+EggGroups = Grass
+HatchSteps = 5355
+Height = 0.6
+Weight = 8
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Espinaflor
+Pokedex = La flor que lleva detrás la utiliza para intimidar a otros Pokémon o para eliminar obstáculos. Las espinas de esta flor pueden inyectar veneno en el cuerpo.
 Generation = 10
-
 
 #-------------------------------
 [STONJORII]
 Name = Stonjorii
 Types = GRASS
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 100,125,70,20,20,135
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 165
+EVs = DEFENSE,2
+CatchRate = 60
+Happiness = 70
+Abilities = MAGICGUARD
+Moves = 1,ABSORB,4,BLOCK,10,ROCKTOMB,18,MEDITATE,22,STOMP,26,AROMATHERAPY,30,MEGADRAIN,38,GIGADRAIN,42,WOODHAMMER,48,WIDEGUARD,54,HEAVYSLAM,66,MEGAKICK
+EggGroups = Grass,Mineral
+HatchSteps = 5355
+Height = 2.5
+Weight = 520
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Puertrascendental
+Pokedex = Estar cerca de uno provoca un ambiente de paz y tranquilidad. Pasar por debajo de ellos simboliza el paso de lo mundano a lo espiritual.
 Generation = 10
-
 
 #-------------------------------
 [ONSENBARA]
 Name = Onsenbara
 Types = NORMAL,WATER
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 65,50,55,40,50,65
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 66
+EVs = SPEED,1
+CatchRate = 225
+Happiness = 70
+Abilities = DAMP,OBLIVIOUS
+Moves = 1,WITHDRAW,1,TACKLE,4,AQUARING,7,PURSUIT,12,DEFENSECURL,16,SPITTLE,20,LIFEDEW,24,HEADBUTT,28,SLACKOFF,32,SCALD,37,REST,41,DIVE
+EggGroups = Water1,Field
+HatchSteps = 5355
+Height = 0.4
+Weight = 1
+Color = Blue
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Termìbara
+Pokedex = Son Pokémon mansos que se llevan bien con cualquier especie. El chichón en su frente asemeja ser una baya anaranjada que suele aromatizar la zona a su alrededor.
 Generation = 10
-
 
 #-------------------------------
 [AUTOMINEUR]
 Name = Automineur
 Types = STEEL,ELECTRIC
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
+BaseStats = 70,80,60,55,80,60
+GenderRatio = Genderless
 GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseExp = 133
+EVs = ATTACK,1,SPECIAL_DEFENSE,1
+CatchRate = 45
+Happiness = 70
+Abilities = MOTORDRIVE,LIGHTNINGROD
+Moves = 1,FLASH,1,ROCKSMASH,1,DIG,4,POUND,7,CHARGE,10,MIRRORSHOT,13,CHARGEBEAM,16,SONICBOOM,19,ROCKPICK,22,BULLETPUNCH,25,RISINGVOLTAGE,28,ELECTRICTERRAIN,31,FLASHCANNON,34,METACONDUCIVITY,37,BRICKBREAK,40,HAMMERARM,43,ZAPCANNON
+EggGroups = Amorphous,Mineral
+HatchSteps = 5355
+Height = 1.0
+Weight = 22
+Color = Gray
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Autómata
+Pokedex = Es un Pokémon creado por el ser humano. Sus fines son ayudar en actividades relacionadas con la minería, como excavar minerales o alumbrar con el ojo que lleva en su casco.
 Generation = 10
-
 
 #-------------------------------
 [RAINTEBOW]
 Name = Raintebow
 Types = WATER
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
+BaseStats = 20,10,55,80,15,20
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 40
+EVs = SPECIAL_ATTACK,1
 CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Happiness = 70
+Abilities = MARVELSCALE
+HiddenAbility = WATERVEIL
+Moves = 1,SPLASH,10,TACKLE,10,WATERGUN,15,BUBBLE,30,FLAIL,30,POUND,30,BUBBLEBEAM,30,QUICKATTACK,40,BITE
+EggGroups = Water2,Dragon
+HatchSteps = 1530
+Height = 0.9
+Weight = 10.0
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Refracción
+Pokedex = Su nombre deriva de los colores que posee, que lo hacen parecer un arcoíris.
 Generation = 10
-
+Evolutions = BOWBORASH,Level,40
 
 #-------------------------------
 [BOWBORASH]
 Name = Bowborash
 Types = WATER,DRAGON
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 95,125,79,81,60,100
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 189
+EVs = ATTACK,2
+CatchRate = 45
+Happiness = 70
+Abilities = WATERVEIL,INTIMIDATE
+HiddenAbility = MOXIE
+Moves = 1,THRASH,20,BITE,23,DRAGONRAGE,26,LEER,29,TWISTER,32,ICEFANG,35,AQUATAIL,38,RAINDANCE,44,DRAGONDANCE,47,HYPERBEAM,50,DRAGONBREATH,57,DRAGONRAGE,69,HYDROPUMP
+EggGroups = Water2,Dragon
+HatchSteps = 1530
+Height = 6.5
+Weight = 235.0
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Arcoiris
+Pokedex = Es considerado un Pokémon extremadamente violento que destruye todo a su paso.
 Generation = 10
-
 
 #-------------------------------
 [SKIMMICE]
 Name = Skimmice
 Types = NORMAL
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
+BaseStats = 50,40,40,50,35,40
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 51
+EVs = SPECIAL_ATTACK,1
 CatchRate = 255
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
+Abilities = STATIC
+Moves = 1,GROWL,6,NUZZLE,11,WITHDRAW,11,CONFUSION,15,BITE,22,FOLLOWME,30,SUBSTITUTE,35,CALMMIND,40,RISINGVOLTAGE,45,CRUNCH,50,PSYCHIC
+EggGroups = Field
+HatchSteps = 5355
 Height = 0.3
-Weight = 3.5
-Color = Green
+Weight = 1
+Color = Gray
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Conducrata
+Pokedex = No parecen tener cuerpo. Si algún Pokémon intenta morder el queso de su cola, recibirá una descarga eléctrica.
 Generation = 10
-
+Evolutions = KINALAITTE,Level,26
 
 #-------------------------------
 [KINALAITTE]
 Name = Kinalaitte
 Types = NORMAL
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
+BaseStats = 90,80,117,20,65,117
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 200
+EVs = DEFENSE,1,SPEED,1
+CatchRate = 45
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+Abilities = STATIC
+Moves = 1,GROWL,1,POPULATIONBOMB,6,NUZZLE,11,WITHDRAW,11,CONFUSION,15,BITE,22,FOLLOWME,30,SUBSTITUTE,35,CALMMIND,40,RISINGVOLTAGE,45,CRUNCH,50,PSYCHIC
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.3
+Weight = 70
+Color = Gray
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Rativerso
+Pokedex = Dentro de él habitan varios Skimmice, siendo comandados por el más grande. Su fortaleza corporal permite no ser derribado fácilmente.
 Generation = 10
-
 
 #-------------------------------
 [DEINU]
 Name = Deinu
 Types = DARK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 50,65,50,52,38,45
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 60
+EVs = ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = SHADOWTAG
+Moves = 1,GROWL,1,TACKLE,4,ODORSLEUTH,8,BITE,12,SHADOWSNEAK,16,ROAR,20,DRACOCHOMP,24,PAYBACK,28,SHADOWCLAW,32,CRUNCH,36,SCARYFACE,40,NASTYPLOT,44,PHANTOMFORCE,48,CALCINATINGROAR
+EggGroups = Field
+HatchSteps = 5355
+Height = 0.8
+Weight = 17
+Color = Black
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Perrosco
+Pokedex = No suele ser agresivo con los humanos. El pelo de sus ojos no le deja ver correctamente, por lo que percibe el entorno a base de mordisquear cualquier obstáculo.
 Generation = 10
-
 
 #-------------------------------
 [ZWEIBEROUS]
 Name = Zweiberous
 Types = DARK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 80,85,70,52,68,65
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 60
+EVs = ATTACK,2
+CatchRate = 45
+Happiness = 70
+Abilities = SHADOWTAG
+Moves = 1,GROWL,1,TACKLE,4,ODORSLEUTH,8,BITE,12,SHADOWSNEAK,16,ROAR,20,DRACOCHOMP,24,PAYBACK,28,SHADOWCLAW,32,CRUNCH,36,SCARYFACE,40,NASTYPLOT,44,PHANTOMFORCE,48,CALCINATINGROAR
+EggGroups = Field
+HatchSteps = 5355
+Height = 1.3
+Weight = 34
+Color = Black
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Perroscos
+Pokedex = Suele ser usado como guardián de los cementerios. Cada esfera negra de su cola representa un alma que guarda para llevarla al más allá.
 Generation = 10
 
 #-------------------------------
 [EXSEEDUTE]
 Name = Exseedute
-Types = GRASS
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+Types = NORMAL
+BaseStats = 60,80,40,40,60,45
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 65
+EVs = ATTACK,1
+CatchRate = 90
+Happiness = 70
+Abilities = SHEERFORCE,NOGUARD
+Moves = 1,LEER,1,POUND,3,DEFENSECURL,10,BULLETSEED,15,FLING,20,DOUBLEHIT,25,SOFTBOILED,30,RAGE,35,PECK,40,UPROAR,45,COUNTER,50,SEISMICTOSS,55,THRASH
+EggGroups = Grass,Undiscovered
+HatchSteps = 5355
+Height = 0.4
+Weight = 2.5
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Semilla
+Pokedex = Aparentan ser semillas, pero en realidad son huevos. Viven en grupos de cinco y se han desarrollado para que sus ojos y picos se adhieran a la cáscara.
 Generation = 10
-
+Evolutions = EXSEEDUTOR,Level,32
 
 #-------------------------------
 [EXSEEDUTOR]
 Name = Exseedutor
 Types = NORMAL,FIGHTING
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 95,95,85,125,55,75
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 186
+EVs = SPECIAL_ATTACK,2
+CatchRate = 45
+Happiness = 70
+Abilities = SHEERFORCE,NOGUARD
+Moves = 1,WARMUP,1,SCARYFACE,1,SCREECH,1,SWAGGER,1,BULKUP,1,LEER,1,SOFTBOILED,1,DEFENSECURL,1,COUNTER,1,FLING,1,SEISMICTOSS,1,RAGE,1,BULLETSEED,1,DOUBLEKICK,1,DOUBLEHIT,1,PECK,1,POUND,1,LOWSWEEP,1,UPROAR,40,BRAVEBIRD,40,THRASH
+EggGroups = Grass,Undiscovered
+HatchSteps = 5355
+Height = 1.4
+Weight = 80
+Color = Blue
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Casuario
+Pokedex = El líder de la manda es aquel que los lleva dentro de su esponjoso pelaje. A pesar de su apariencia, suelen ser mansos.
 Generation = 10
-
 
 #-------------------------------
 [MAGICHRIST]
 Name = Magichrist
 Types = WATER
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 95,79,81,60,100,125
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 189
+EVs = SPEED,2
+CatchRate = 45
+Happiness = 70
+Abilities = ADAPTABILITY,SERENEGRACE
+Moves = 1,BITE,1,THRASH,21,FLASH,24,TWISTER,30,WATERFALL,36,POPULATIONBOMB,39,DRAGONPULSE,42,HYDROPUMP,48,HURRICANE,51,WATERSPOUT,54,HYPERBEAM,100,SPLASH
+EggGroups = Water2,Dragon
+HatchSteps = 1530
+Height = 10
+Weight = 220.0
+Color = Red
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Deidad Carpa
+Pokedex = Era la forma definitiva de Magikarp que fue desapareciendo. En el pasado, a diferencia de sus descendientes, eran mucho más fuertes y versátiles.
 Generation = 10
-
 
 #-------------------------------
 [TANGEL]
 Name = Tangel
 Types = GRASS
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
+BaseStats = 45,35,65,40,60,20
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 42
 EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+CatchRate = 45
+Happiness = 70
+Abilities = CHLOROPHYLL,LEAFGUARD
+HiddenAbility = REGENERATOR
+Moves = 1,INGRAIN,1,CONSTRICT,4,SLEEPPOWDER,7,VINEWHIP,10,ABSORB,14,POISONPOWDER,17,BIND,20,GROWTH,23,MEGADRAIN,27,KNOCKOFF,30,STUNSPORE,33,NATURALGIFT,36,GIGADRAIN,38,ANCIENTPOWER,41,SLAM,44,TICKLE,46,WRINGOUT,48,GRASSYTERRAIN,50,POWERWHIP
+EggGroups = Grass
+HatchSteps = 5355
+Height = 0.8
+Weight = 20
+Color = Blue
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Enredadera
+Pokedex = Se planta en el suelo para pasar desapercibido. Las enredaderas recortadas pueden crecer más.
 Generation = 10
-
+Evolutions = TANGELA,HappinessDay
 
 #-------------------------------
 [GELANLA]
 Name = Gelanla
 Types = GRASS
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 100,110,50,50,100,125
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 187
+EVs = DEFENSE,3
+CatchRate = 30
+Happiness = 70
+Abilities = CHLOROPHYLL,LEAFGUARD
+HiddenAbility = REGENERATOR
+Moves = 1,BLOCK,1,INGRAIN,1,CONSTRICT,4,SLEEPPOWDER,7,VINEWHIP,10,ABSORB,14,POISONPOWDER,17,BIND,20,GROWTH,23,MEGADRAIN,27,KNOCKOFF,30,STUNSPORE,33,NATURALGIFT,36,GIGADRAIN,40,ANCIENTPOWER,43,SLAM,46,TICKLE,49,WRINGOUT,50,GRASSYTERRAIN,53,POWERWHIP,56,BLOCK
+EggGroups = Grass
+HatchSteps = 5355
+Height = 2.0
+Weight = 128.6
+Color = Blue
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Enredadera
+Pokedex = Sus lianas estilizadas son un gran motivo de orgullo.
 Generation = 10
-
 
 #-------------------------------
 [LICKIYROUND]
 Name = Lickiyround
 Types = NORMAL
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+BaseStats = 85,95,50,110,95,80
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 180
+EVs = SPECIAL_ATTACK,3
+CatchRate = 30
+Happiness = 70
+Abilities = OWNTEMPO,OBLIVIOUS
+HiddenAbility = CLOUDNINE
+Moves = 1,LICK,5,SUPERSONIC,9,DEFENSECURL,13,KNOCKOFF,17,CONSTRICT,21,BULKUP,25,SCARYFACE,29,BODYSLAM,33,ROLLOUT,36,REST,40,BELLYDRUM,42,SCREECH,48,BODYPRESS,60,POWERWHIP
+EggGroups = Monster
+HatchSteps = 5355
+Height = 1.6
+Weight = 130
+Color = Pink
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Lamebola
+Pokedex = Se vuelve regordete y usa su lengua para identificar cosas.
 Generation = 10
-
 
 #-------------------------------
 [MISSPIDY]
 Name = Misspidy
 Types = BUG
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
+BaseStats = 50,35,30,20,40,40
+GenderRatio = Female50Percent
+GrowthRate = Erratic
+BaseExp = 50
 EVs = DEFENSE,1
 CatchRate = 255
 Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
+Abilities = MAGICGUARD,POWEROFALCHEMY
+Moves = 1,STRINGSHOT,1,TACKLE,5,HYPNOSIS,9,STRUGGLEBUG,13,BABYDOLLEYES,17,BUGBITE,21,FAERIENSLAUGHT,25,PSYWAVE,29,WILLOWISP,33,SIGNALBEAM,37,AROMATICMIST,41,MOONBLAST,45,SHADOWBALL
+EggGroups = Bug,Fairy
+HatchSteps = 3840
 Height = 0.3
-Weight = 3.5
-Color = Green
+Weight = 4
+Color = Black
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Hechicero
+Pokedex = Se asocia a este Pokémon con la magia. Hace no mucho se creía que este Pokémon era único de algunas tierras oníricas muy lejanas.
 Generation = 10
-
 
 #-------------------------------
-[ARBORICHLES]
+[ARBORICHLES1]
 Name = Arborichles
-Types = GRASS
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
+Types = POISON,GRASS
+BaseStats = 80,70,70,80,70,70
+GenderRatio = Female50Percent
+GrowthRate = Slow
+BaseExp = 77
+EVs = HP,2
+CatchRate = 90
+Happiness = 70
+Abilities = POISONTOUCH
+Moves = 1,POUND,3,GROWL,7,LICK,11,ABSORB,13,ACID,17,POUNCE,19,SLEEPPOWDER,23,GASTROACID,26,SLUDGE,32,ENERGYBALL,36,SLUDGEBOMB
+EggGroups = Dragon,Water1
+HatchSteps = 5355
 Height = 0.3
-Weight = 3.5
+Weight = 0.2
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Ralemental
+Pokedex = Tiene tres formas distintas conocidas. La hoja que tiene en su cola recuerda mucho a una hoja de laurel.
 Generation = 10
-
 
 #-------------------------------
 [FUTALE]
-Name = FUTALE
+Name = Futale
 Types = WATER,ROCK
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
+BaseStats = 65,65,70,35,45,60
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 78
 EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+CatchRate = 120
+Happiness = 70
+Abilities = ROCKHEAD,HYDRATION
+Moves = 1,ENTRAINMENT,1,LEER,3,ECHOEDVOICE,7,SING,10,BUBBLE,14,AQUARING,18,SMACKDOWN,23,ANCIENTPOWER,27,ALLURINGVOICE,31,LIQUIDATION,36,POWERGEM,40,WIDEGUARD,43,SURF,47,DRAGONPULSE,52,METEORBEAM
+EggGroups = Water1,Monster
+HatchSteps = 5355
+Height = 1
+Weight = 35
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Barca
+Pokedex = Debido a su aspecto, muchos lo confunden con las barcas infantiles. La gema que porta en la frente puede llegar a alcanzar altos precios en los mercados.
 Generation = 10
-
 
 #-------------------------------
 [GASTRAMONITE]
 Name = Gastramonite
 Types = WATER,GROUND
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+BaseStats = 121,93,88,49,102,102
+GenderRatio = Female50Percent
+GrowthRate = Medium
+BaseExp = 211
+EVs = HP,2
+CatchRate = 30
+Happiness = 70
+Abilities = STICKYHOLD,STORMDRAIN
+HiddenAbility = SANDFORCE
+Moves = 1,MUDSPORT,1,HARDEN,1,MUDSLAP,1,WATERPULSE,2,MUDSPORT,4,HARDEN,7,WATERPULSE,11,MUDBOMB,16,HIDDENPOWER,22,RAINDANCE,29,BODYSLAM,41,MUDDYWATER,53,ANCIENTPOWER,54,RECOVER
+EggGroups = Water1,Amorphous
+HatchSteps = 5355
+Height = 1.9
+Weight = 59.9
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Babosa Marina
+Pokedex = Se trata de la “forma antigua” de Gastrodon. Al igual que Magichrist, fue desapareciendo con el paso del tiempo.
 Generation = 10
-
 
 #-------------------------------
 [AEROTHAVIS]
 Name = Aerothavis
 Types = ROCK,DARK
-BaseStats = 60,60,60,60,60,60
+BaseStats = 63,70,55,65,55,54
 GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+GrowthRate = Medium
+BaseExp = 72
+EVs = ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = SHEERFORCE,LEVITATE
+HiddenAbility = PRANKSTER
+Moves = 1,ASSURANCE,1,ANCIENTPOWER,3,GROWL,6,DUALWINGBEAT,10,BITE,15,AERIALACE,19,SMACKDOWN,24,THIEF,29,NIGHTSLASH,33,WINDPRESS,39,ROCKSLIDE,43,POWERGEM,47,FLY,52,BRAVEBIRD
+EggGroups = Flying,Field
+HatchSteps = 5355
+Height = 0.7
+Weight = 5
+Color = Black
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Antebuitre
+Pokedex = Surcaba los cielos de Ameuro en tiempos antaños. Por un problema desconocido, tuvieron que migrar a Kojumi junto con su evolución.
 Generation = 10
-
 
 #-------------------------------
 [AEROTHAX]
 Name = Aerothax
 Types = ROCK,DARK
-BaseStats = 60,60,60,60,60,60
+BaseStats = 102,110,90,65,70,84
 GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
+GrowthRate = Medium
+BaseExp = 72
+EVs = ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = SHEERFORCE,LEVITATE
+HiddenAbility = PRANKSTER
+Moves = 1,ASSURANCE,1,ANCIENTPOWER,3,GROWL,6,DUALWINGBEAT,10,BITE,15,AERIALACE,19,SMACKDOWN,24,THIEF,29,NIGHTSLASH,33,WINDPRESS,39,ROCKSLIDE,43,POWERGEM,47,FLY,52,BRAVEBIRD
+EggGroups = Flying,Field
+HatchSteps = 5355
+Height = 1.2
+Weight = 37
+Color = Brown
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Antebuitre
+Pokedex = A pesar de su aspecto, puede volar a grandes alturas en busca de carroña.
 Generation = 10
 
+#-------------------------------
+[QUETZAKO]
+Name = Quetzako
+Types = ROCK,DRAGON
+BaseStats = 63,70,55,65,55,54
+GenderRatio = FemaleOneEighth
+GrowthRate = Medium
+BaseExp = 72
+EVs = ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = SHEDSKIN,LEVITATE
+HiddenAbility = SHEERFORCE
+Moves = 1,DRACOCHOMP,1,ANCIENTPOWER,3,GROWL,6,ABSORB,10,BITE,15,SCALESHOT,19,SMACKDOWN,24,DRAINFANG,29,DRAGONTAIL,33,LEAFBLADE,39,ROCKSLIDE,43,POWERGEM,47,FLY,52,DRAGONRUSH
+EggGroups = Dragon
+HatchSteps = 5355
+Height = 0.7
+Weight = 5
+Color = Green
+Shape = Head
+Category = Quetzaurio
+Pokedex = Endémico de Asere y de una región vecina. Volaba los cielos de ambas zonas en tiempos muy antiguos.
+Generation = 10
 
 #-------------------------------
 [QUETZEUTLAKO]
 Name = Quetzeutlako
 Types = ROCK,DRAGON
-BaseStats = 60,60,60,60,60,60
+BaseStats = 83,110,75,105,73,75
 GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
+GrowthRate = Medium
+BaseExp = 72
+EVs = ATTACK,1,SPECIAL_ATTACK,1
+CatchRate = 45
+Happiness = 70
+Abilities = SHEDSKIN,LEVITATE
+HiddenAbility = SHEERFORCE
+Moves = 1,DRACOCHOMP,1,ANCIENTPOWER,3,GROWL,6,ABSORB,10,BITE,15,SCALESHOT,19,SMACKDOWN,24,DRAINFANG,29,DRAGONTAIL,33,LEAFBLADE,39,ROCKSLIDE,43,POWERGEM,47,FLY,52,DRAGONRUSH
+EggGroups = Dragon
+HatchSteps = 5355
+Height = 1.4
+Weight = 75
 Color = Green
 Shape = Head
-Category = Estrellato
-Pokedex = No se xd
+Category = Quetzaurio
+Pokedex = A pesar de tener patas, no las suele usar, ya que surca los cielos con sus enormes alas.
 Generation = 10
 
-
-#-------------------------------
 [AMULLAPTOR]
-Name = Amullaptor
-Types = ROCK,ELECTRIC
-BaseStats = 60,60,60,60,60,60
-GenderRatio = FemaleOneEighth
-GrowthRate = Parabolic
-BaseExp = 52
-EVs = DEFENSE,1
-CatchRate = 255
-Happiness = 50
-Abilities = OVERGROW
-Moves = 1,TACKLE,
-EggGroups = Undiscovered
-HatchSteps = 5120
-Height = 0.3
-Weight = 3.5
-Color = Green
-Shape = Head
-Category = Estrellato
-Pokedex = No se xd
-Generation = 10
+Name=Amullaptor
+InternalName=AMULLAPTOR
+Type1=ROCK
+Type2=ELECTRIC
+BaseStats=43,75,47,90,60,47
+GenderRate=FemaleOneEighth
+GrowthRate=Medium
+BaseEXP=72
+EffortPoints=0,1,0,0,0,0
+Rareness=45
+Happiness=70
+Abilities=QUICKFEET,RUNAWAY
+Moves=1,QUICKATTACK,1,ANCIENTPOWER,3,GROWL,6,SHOCKONTACT,10,BITE,15,ACCELEROCK,19,THUNDERFANG,24,ROAR,29,POWERGEM,33,DISCHARGE,39,STOMPINGTANTRUM,43,WILDCHARGE,47,AGILITY,52,EXTREMESPEED
+Compatibility=Flying,Field
+StepsToHatch=5355
+Height=0.4
+Weight=3
+Color=Brown
+Habitat=Mountain
+RegionalNumbers=166,0
+Kind=Raptorcito
+Pokedex=Solía cazar en grupos. La piedra que contiene en el pecho almacena electricidad.
+BattlerPlayerY=58
+BattlerEnemyY=14
+BattlerAltitude=0
