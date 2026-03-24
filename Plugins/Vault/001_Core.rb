@@ -174,24 +174,34 @@ module PokemonVault
   #===============================================================================
 
 def import_will_overflow?
-  vault = load_vault
-  current = vault.flatten.compact.length
-
   path = transfer_path
   return false if !File.exist?(path)
 
-data = Marshal.load(File.binread(path))
+  vault = load_vault
+  current = vault.flatten.compact.length
 
-# ⭐ si es formato showdown no calcular overflow
-return false if data[:format] == "SHOWDOWN"
+  data = Marshal.load(File.binread(path))
 
-transfer = data[:pokemon].flatten.compact.length
+  incoming = 0
+
+  if data[:pokemon]
+    data[:pokemon].each do |box|
+      box.each do |pkmn|
+        incoming += 1 if pkmn
+      end
+    end
+  elsif data[:showdown_sets]
+    sets = data[:showdown_sets].split(/\n{2,}/)
+    incoming = sets.length
+  else
+    return false
+  end
 
   capacity =
     PokemonVaultConfig::VAULT_MAX_BOXES *
     PokemonVaultConfig::VAULT_BOX_SIZE
 
-  return (current + transfer) > capacity
+  return (current + incoming) > capacity
 end
 
 def clear_vault_to_pc
@@ -269,9 +279,14 @@ end
   pokemon_list = []
 
   sets.each do |set|
-    pkmn = MPDTransfer.parse_set(set)
-    next if !pkmn
-    pokemon_list << pkmn
+pkmn = MPDTransfer.parse_set(set)
+next if !pkmn
+
+if data[:source_game] == "ESTRELLATO" && data[:format] == "SHOWDOWN"
+  pkmn.obtain_text = "Región de Kojumi"
+end
+
+pokemon_list << pkmn
   end
 
   vault = load_vault

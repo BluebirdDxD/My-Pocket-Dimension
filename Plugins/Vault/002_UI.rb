@@ -351,6 +351,37 @@ if source == "ESTRELLATO"
   pbMessage(_INTL("Importando Pokémon de Estrellato..."))
 end
 
+# ===== DETECTOR PREVIO DE OVERFLOW =====
+vault = load_vault
+current = vault.flatten.compact.length
+
+incoming = 0
+
+if data[:pokemon]
+  data[:pokemon].each do |box|
+    box.each { |pkmn| incoming += 1 if pkmn }
+  end
+elsif data[:showdown_sets]
+  sets = data[:showdown_sets].split(/\n{2,}/)
+  incoming = sets.length
+end
+
+capacity =
+  PokemonVaultConfig::VAULT_MAX_BOXES *
+  PokemonVaultConfig::VAULT_BOX_SIZE
+
+if current + incoming > capacity
+  if !pbConfirmMessage(_INTL(
+    "Hay más Pokémon de los que caben en la Bóveda.\n" \
+    "Los Pokémon actuales serán enviados a las cajas del PC.\n" \
+    "¿Deseas continuar?"
+  ))
+    return
+  end
+
+  return if !clear_vault_to_pc
+end
+
 result = import_transfer
 
 if result == :overflow
