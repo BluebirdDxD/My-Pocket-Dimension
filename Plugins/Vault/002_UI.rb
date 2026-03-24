@@ -349,6 +349,8 @@ pbMessage(_INTL(
 
 if source == "ESTRELLATO"
   pbMessage(_INTL("Importando Pokémon de Estrellato..."))
+elsif source == "ETERNA_EMOCION"
+  pbMessage(_INTL("Importando Pokémon de Eterna Emoción..."))
 end
 
 # ===== DETECTOR PREVIO DE OVERFLOW =====

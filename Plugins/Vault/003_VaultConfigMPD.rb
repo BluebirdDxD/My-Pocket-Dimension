@@ -3,7 +3,7 @@ module PokemonVaultConfig
   GAME_NAME = "My Pocket Dimension"
 
   VAULT_NAME        = "Bóveda Virtual"
-  VAULT_FOLDER_NAME = "Pokemon Vault"
+  VAULT_FOLDER_NAME = "My-Pocket-Dimension"
   VAULT_FILE        = "vault.dat"
   TRANSFER_FILE     = "transfer.dat"
 

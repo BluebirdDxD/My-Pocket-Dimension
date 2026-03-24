@@ -284,6 +284,8 @@ next if !pkmn
 
 if data[:source_game] == "ESTRELLATO" && data[:format] == "SHOWDOWN"
   pkmn.obtain_text = "Región de Kojumi"
+elsif data[:source_game] == "ETERNA_EMOCION" && data[:format] == "SHOWDOWN"
+  pkmn.obtain_text = "Región de Ameuro"
 end
 
 pokemon_list << pkmn

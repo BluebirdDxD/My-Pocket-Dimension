@@ -30,20 +30,31 @@ module PokemonVault
       0, 8,
       Graphics.width,
       32,
-      _INTL("Pokémon Vault"),
+      _INTL("Bóveda Virtual"),
       1
     )
     sprites["overlay"] = overlay
 
     # Iconos (solo primera caja)
+
+cols = 6
+rows = 5
+icon_size = 64
+
+grid_w = cols * icon_size
+grid_h = rows * icon_size
+
+start_x = (Graphics.width - grid_w) / 2
+start_y = (Graphics.height - grid_h) / 2
+
     index = 0
     vault[0].each do |pkmn|
       next if !pkmn
 
       icon = PokemonIconSprite.new(pkmn, viewport)
 
-      x = 40 + (index % 6) * 64
-      y = 80 + (index / 6) * 64
+x = start_x + (index % cols) * icon_size
+y = start_y + (index / cols) * icon_size
 
       icon.x = x
       icon.y = y
