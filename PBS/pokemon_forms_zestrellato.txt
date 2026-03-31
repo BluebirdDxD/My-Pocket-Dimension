@@ -1,0 +1,29 @@
+﻿#-------------------------------
+[CATERPIE,1]
+FormName = Forma Kojumi
+Types = DRAGON,BUG
+UnmegaForm = -2
+BaseStats = 30,45,35,45,20,20
+EVs = ATTACK,1
+Abilities = INTIMIDATE
+HiddenAbilities = INTIMIDATE
+Moves = 1,STRINGSHOT,3,STRUGGLEBUG,8,DRACOCHOMP,12,METAMORPHOSIS
+Height = 0.4
+Weight = 1
+Pokedex = Al vivir en un entorno repleto de Pokémon tipo dragón, el héroe le otorgó una bendición que le permitió transformarse en uno de ellos y adaptarse perfectamente en dicha zona.
+Generation = 10
+Evolutions = CRISSALIDRA,HasMove,METAMORPHOSIS
+
+#-------------------------------
+[VANILLITE,1]
+FormName = Forma Kojumi
+Types = ICE,FAIRY
+BaseStats = 46,65,50,44,50,50
+Happiness = 70
+Moves = 1,ICICLESPEAR,4,HARDEN,7,FAERIENSLAUGHT,10,UPROAR,13,ICYWIND,16,MIST,19,AVALANCHE,22,RAGE,26,SNARL,31,AROMATICMIST,35,ICEBEAM,40,HAIL,44,PLAYROUGH,48,OUTRAGE,53,BLIZZARD,57,MEGAHORN
+Height = 0.4
+Weight = 1
+Category = Helademonio
+Pokedex = Tiene un alto temperamento. Se ha usado su figura como modelo de inspiración para ciertos raspados tradicionales de Ciudad Candente.
+Generation = 10
+UnmegaForm = -2

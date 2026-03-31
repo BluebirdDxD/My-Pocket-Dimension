@@ -15,7 +15,7 @@ BicycleBGM = Bicycle
 [1]
 TrainerType = POKEMONTRAINER_Red
 WalkCharset = ProtaM_caminar
-RunCharset = boy_run
+RunCharset = ProtaM_correr
 CycleCharset = boy_bike
 SurfCharset = boy_surf
 DiveCharset = boy_surf
@@ -25,7 +25,7 @@ SurfFishCharset = boy_fish_offset
 [2]
 TrainerType = POKEMONTRAINER_Leaf
 WalkCharset = ProtaF_caminar
-RunCharset = girl_run
+RunCharset = ProtaF_correr
 CycleCharset = girl_bike
 SurfCharset = girl_surf
 DiveCharset = girl_surf

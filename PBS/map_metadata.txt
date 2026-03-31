@@ -402,3 +402,8 @@ Name = Región Tiall
 Outdoor = true
 MapPosition = 1,13,16
 BattleBack = city
+
+#-------------------------------
+[048]
+Name = Dimension Santuario
+SnapEdges = true

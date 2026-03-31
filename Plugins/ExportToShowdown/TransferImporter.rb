@@ -136,6 +136,7 @@ end
     nature  = nil
     shiny   = false
     ev = Hash.new(0)
+    iv = Hash.new(15) 
     moves = []
 
     lines.each do |l|
@@ -148,16 +149,21 @@ end
         shiny = true
       when /^EVs: (.+)$/
         ev = parse_evs($1)
+     when /^IVs: (.+)$/
+        iv = parse_ivs($1)
       when /^(.+) Nature$/
         nature = nature_symbol($1)
       when /^\- (.+)$/
-        moves << move_symbol($1)
+  moves << move_symbol($1)
       end
     end
 
     return nil unless species
 
     pkmn = Pokemon.new(species, level)
+
+    iv.each { |stat, val| pkmn.iv[stat] = val }
+    pkmn.calc_stats
 
     pkmn.item = item if item
     pkmn.ability = ability if ability
@@ -218,6 +224,28 @@ end
 
     ev
   end
+
+def parse_ivs(str)
+  map = {
+    "HP" => :HP,
+    "Atk" => :ATTACK,
+    "Def" => :DEFENSE,
+    "SpA" => :SPECIAL_ATTACK,
+    "SpD" => :SPECIAL_DEFENSE,
+    "Spe" => :SPEED
+  }
+
+  iv = Hash.new(31)
+
+  str.split("/").each do |part|
+    v, s = part.strip.split(" ")
+    stat = map[s]
+    iv[stat] = v.to_i if stat
+  end
+
+  iv
+end
+
 
 
   #==================================================

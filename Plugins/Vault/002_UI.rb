@@ -155,7 +155,7 @@ module PokemonVault
 
     removed = remove_from_pc(box, slot)
 
-    if add_pokemon(removed)
+    if set_pokemon_at(0, cursor_index, removed)
       pbMessage(_INTL("{1} ha sido depositado en la Bóveda Virtual.", removed.name))
       Game.save
       pbMEPlay("GUI save game")

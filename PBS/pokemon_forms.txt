@@ -4088,3 +4088,4 @@ Height = 1.7
 Weight = 77.0
 Shape = Head
 Pokedex = Adopta esta forma cuando su energía Teracristal se ve amplificada descomunalmente. Se asemeja a la imagen del mundo que la gente tenía antaño.
+

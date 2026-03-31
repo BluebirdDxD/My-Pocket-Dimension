@@ -119,6 +119,17 @@ module PokemonVault
   # Vault Operations
   #===============================================================================
 
+def set_pokemon_at(box, slot, pkmn)
+  return false if !storable_pokemon?(pkmn)
+
+  vault = load_vault
+  return false if vault[box][slot]   # ya ocupado
+
+  vault[box][slot] = pkmn
+  save_vault(vault)
+  return true
+end
+
   def first_empty_slot(vault)
     vault.each_with_index do |box, b|
       box.each_with_index do |slot, s|
@@ -281,6 +292,51 @@ end
   sets.each do |set|
 pkmn = MPDTransfer.parse_set(set)
 next if !pkmn
+
+  #===============================================================================
+  # Special Pokemon
+  #===============================================================================
+
+# ⭐ CAMBIO DE FORMA ESPECIAL (Estrellato)
+if data[:source_game] == "ESTRELLATO"
+  if pkmn.species == :CATERPIE
+    pkmn.forced_form = nil
+    pkmn.form_simple = 1
+    pkmn.calc_stats
+  end
+end
+
+#===============================================================================
+
+# ⭐ CAMBIO DE FORMA ESPECIAL (Estrellato)
+if data[:source_game] == "ESTRELLATO"
+  if pkmn.species == :VANILLITE
+    pkmn.forced_form = nil
+    pkmn.form_simple = 1
+    pkmn.calc_stats
+  end
+end
+
+#===============================================================================
+
+if data[:source_game] == "ESTRELLATO"
+  if pkmn.species == :SLOWPOKE
+
+    has_acid = pkmn.moves.any? { |m| m && m.id == :ACID }
+
+    if has_acid
+      pkmn.forced_form = 1
+      pkmn.form_simple = 1
+      pkmn.calc_stats
+    end
+
+  end
+end
+
+
+  #===============================================================================
+  # Special Pokemon
+  #=============================================================================== 
 
 if data[:source_game] == "ESTRELLATO" && data[:format] == "SHOWDOWN"
   pkmn.obtain_text = "Región de Kojumi"

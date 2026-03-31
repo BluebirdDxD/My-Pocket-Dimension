@@ -1,0 +1,4 @@
+Name       = IconsExtra Sprites
+Version    = 1.0.
+Essentials = 21.1
+Credits    = Robert

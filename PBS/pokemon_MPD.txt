@@ -1,0 +1,22 @@
+#-------------------------------
+[UWIKI]
+Name = U-Wiki
+Types = ELECTRIC,PSYCHIC
+BaseStats = 100,100,100,100,100,100
+GenderRatio = Genderless
+GrowthRate = Parabolic
+BaseExp = 270
+EVs = SPECIAL_ATTACK,3
+CatchRate = 45
+Happiness = 255
+Abilities = ANALYTIC
+Moves = 1,NORMALPULSE,10,FORESIGHT,19,PSYBEAM,28,DISCHARGE,37,TRICKROOM,55,PSYCHIC,64,DRAINFANG,73,THUNDER,82,ELECTROSHOT,91,FUTURESIGHT,100,DRAINFANG
+EggGroups = Undiscovered
+Height = 0.3
+Weight = 2
+Color = Purple
+Habitat = Rare
+Category = Sabelotodo
+Pokedex = Un Pokémon creado por la humanidad destinado a asistir a los entrenadores, especialmente en lo que respecta a las tareas de la Pokédex. Pudiendo operarla dentro de ella. Dependiendo tu línea temporal, fue creado en el pasado, presente o futuro.
+Generation = 10
+Flags = Mythical

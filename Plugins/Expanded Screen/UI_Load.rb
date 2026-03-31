@@ -300,7 +300,9 @@ class PokemonLoadScreen
         commands[cmd_mystery_gift = commands.length] = _INTL("Regalo Misterioso")
       end
     end
-    commands[cmd_new_game = commands.length]  = _INTL("Juego Nuevo")
+    if !show_continue
+  commands[cmd_new_game = commands.length] = _INTL("Nueva partida")
+end
     commands[cmd_options = commands.length]   = _INTL("Opciones")
     commands[cmd_language = commands.length]  = _INTL("Idioma") if Settings::LANGUAGES.length >= 2
     commands[cmd_update=commands.length]      = _INTL("Buscar actualizaciones") if PluginManager.installed?("Pokemon Essentials Game Updater")
