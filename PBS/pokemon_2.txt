@@ -42,3 +42,25 @@ Shape = Head
 Category = Perrito
 Pokedex = El calor que producen sus pulmones hace que su pecho emita un brillo característico. Es un Pokémon muy simpático e inocente.
 Generation = 10
+#-------------------------------
+[GECQUA]
+Name = Gecqua
+Types = WATER
+BaseStats = 60,60,60,60,60,60
+GenderRatio = FemaleOneEighth
+GrowthRate = Parabolic
+BaseExp = 52
+EVs = DEFENSE,1
+CatchRate = 255
+Happiness = 50
+Abilities = TORRENT
+Moves = 1,TACKLE,
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 0.4
+Weight = 6.7
+Color = Blue
+Shape = Head
+Category = Acuageco
+Pokedex = Este Pokémon usa su cola para lanzar esferas de agua saltarinas. Gecqua es inteligente y pretencioso, y sabe cómo moverse con astucia.
+Generation = 10

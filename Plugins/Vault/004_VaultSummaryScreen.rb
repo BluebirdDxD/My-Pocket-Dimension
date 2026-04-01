@@ -46,25 +46,26 @@ overlay.bitmap.draw_text(
 )
 
 # ===== TEXTO INFERIOR =====
-bottom_text = _INTL("D: Opciones de la Bóveda")
+if $game_switches[151]
+  bottom_text = _INTL("D: Opciones de la Bóveda")
 
-# fondo inferior
-overlay.bitmap.fill_rect(
-  0,
-  Graphics.height - 32,
-  Graphics.width,
-  32,
-  Color.new(0, 0, 0, 180)
-)
+  overlay.bitmap.fill_rect(
+    0,
+    Graphics.height - 32,
+    Graphics.width,
+    32,
+    Color.new(0, 0, 0, 180)
+  )
 
-overlay.bitmap.draw_text(
-  0,
-  Graphics.height - 28,
-  Graphics.width,
-  32,
-  bottom_text,
-  1
-)
+  overlay.bitmap.draw_text(
+    0,
+    Graphics.height - 28,
+    Graphics.width,
+    32,
+    bottom_text,
+    1
+  )
+end
     sprites["overlay"] = overlay
 
     # Iconos (solo primera caja)
@@ -149,7 +150,7 @@ loop do
   cursor.y = start_y + (cursor_index / cols) * icon_size
 
   # Selección
-if Input.trigger?(Input::SPECIAL)   # puedes cambiar el botón luego
+if $game_switches[151] && Input.trigger?(Input::SPECIAL)   # puedes cambiar el botón luego
   choice = pbMessage(
     _INTL("Opciones de la bóveda"),
     [
@@ -181,37 +182,72 @@ end
   3
 )
 
-      case choice
-      when 0
-        pbFadeOutIn do
-  scene = PokemonSummary_Scene.new
-  screen = PokemonSummaryScreen.new(scene)
-  screen.pbStartScreen([pkmn], 0)
-end
-      when 1
+case choice
+when 0
+  pbFadeOutIn do
+    scene = PokemonSummary_Scene.new
+    screen = PokemonSummaryScreen.new(scene)
+    screen.pbStartScreen([pkmn], 0)
+  end
+
+when 1
   removed = remove_pokemon(0, cursor_index)
   if removed
 
-    # 👉 Si hay espacio en el equipo
-    if $player.party.length < 6
-      $player.party << removed
-      pbMessage(_INTL("{1} se unió a tu equipo.", removed.name))
+    if $game_switches[151]
+      choice = pbMessage(
+        _INTL("¿Qué quieres hacer con {1}?", removed.name),
+        [
+          _INTL("Enviar al equipo"),
+          _INTL("PC"),
+          _INTL("Cancelar")
+        ],
+        3
+      )
 
-    # 👉 Si no, va al PC
-    elsif add_to_pc(removed)
-      pbMessage(_INTL("{1} fue enviado al PC. \nRevisa tus cajas.", removed.name))
+      case choice
+      when 0
+        if $player.party.length < 6
+          $player.party << removed
+          pbMessage(_INTL("{1} fue añadido a tu equipo.", removed.name))
+        else
+          pbMessage(_INTL("Tu equipo está lleno."))
+          set_pokemon_at(0, cursor_index, removed)
+          next
+        end
+
+      when 1
+        if add_to_pc(removed)
+          pbMessage(_INTL("{1} fue enviado al PC.\nRevisa tus cajas.", removed.name))
+        else
+          pbMessage(_INTL("El PC está lleno."))
+          set_pokemon_at(0, cursor_index, removed)
+          next
+        end
+
+      else
+        set_pokemon_at(0, cursor_index, removed)
+        next
+      end
 
     else
-      pbMessage(_INTL("Equipo y PC llenos."))
-      set_pokemon_at(0, cursor_index, removed)
-      next
+      if $player.party.length < 6
+        $player.party << removed
+        pbMessage(_INTL("{1} se unió a tu equipo.", removed.name))
+      elsif add_to_pc(removed)
+        pbMessage(_INTL("{1} fue enviado al PC.\nRevisa tus cajas.", removed.name))
+      else
+        pbMessage(_INTL("Equipo y PC llenos."))
+        set_pokemon_at(0, cursor_index, removed)
+        next
+      end
     end
 
     Game.save
     pbMEPlay("GUI save game")
     refresh_icons.call
   end
-      end
+end     
 
     else
 choice = pbMessage(
@@ -251,7 +287,10 @@ end
     end
   end
 
-  break if Input.trigger?(Input::BACK)
+  if Input.trigger?(Input::BACK)
+  Input.update   # limpia input
+  break
+end
 end
 
     pbDisposeSpriteHash(sprites)
