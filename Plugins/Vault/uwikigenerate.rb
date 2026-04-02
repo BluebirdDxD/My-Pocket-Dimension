@@ -10,6 +10,7 @@ def pbUwikiVault(overwrite = true)
   # ===== crear UWIKI =====
   pkmn = Pokemon.new(:UWIKI, 5)
   pkmn.calc_stats
+  pkmn.obtain_text = "Región de Kojumi"
 
   # ===== buscar primer espacio =====
   placed = false

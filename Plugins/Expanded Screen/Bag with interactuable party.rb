@@ -133,8 +133,8 @@ class Window_PokemonBag < Window_DrawableCommand
     @sorting  = false
     @party1sel = false
     @party2sel = false
-    @adapter  = PokemonMartAdapter.new
-    super(x +50-16, y, width + 48 + 24, height + 48) # Horiz + 128
+    @adapter  = PokemonItemMartAdapter.new
+    super(x, y, width, height)
     @selarrow   = AnimatedBitmap.new("Graphics/UI/Bag Screen with Party/cursor")
     @swaparrow  = AnimatedBitmap.new("Graphics/UI/Bag Screen with Party/cursor_swap")
     @party1arrow = AnimatedBitmap.new("Graphics/UI/Bag Screen with Party/cursor_party1")
@@ -198,7 +198,8 @@ class Window_PokemonBag < Window_DrawableCommand
 
   def drawItem(index, _count, rect)
     textpos = []
-    rect = Rect.new(rect.x + 16+4, rect.y + 16, rect.width - 16, rect.height)
+    rect = Rect.new(rect.x + 20, rect.y + 16, rect.width - 16, rect.height) #Dev LBDSKY_Pantalla-Ampliada
+    #rect = Rect.new(rect.x + 16, rect.y + 16, rect.width - 16, rect.height)
     thispocket = @bag.pockets[@pocket]
     if index == self.itemCount - 1
       if @selarrow && index == self.index
@@ -228,62 +229,65 @@ class Window_PokemonBag < Window_DrawableCommand
         baseColor   = Color.new(78, 86, 100)
         shadowColor = Color.new(157, 171, 178)
       end
-      item_data = GameData::Item.get(item)
+item_data = GameData::Item.get(item)
       if item_data.is_machine?
-        textpos.push(
-          [@adapter.getDisplayNameMachineNumber(item), rect.x, rect.y + 4, :left, baseColor, shadowColor],
-          [@adapter.getDisplayNameMachineName(item), rect.x+70, rect.y + 4, :left, baseColor, shadowColor]
+        textpos.push([item_data.name, rect.x, rect.y + 4, :left, baseColor, shadowColor],[GameData::Move.get(item_data.move).name, rect.x + 70, rect.y + 4, :left, baseColor, shadowColor]
         )
       else
-        textpos.push(
-          [@adapter.getDisplayName(item), rect.x, rect.y + 4, :left, baseColor, shadowColor]
+        textpos.push([item_data.name, rect.x, rect.y + 4, :left, baseColor, shadowColor]
         )
       end
       showing_register_icon = false
-
-      correcc_der = 4
-
-      if true #item_data.is_important?
+      if true
+      #if item_data.is_important?
         if @bag.registered?(item)
           pbDrawImagePositions(
             self.contents,
-            [["Graphics/UI/Bag Screen with Party/icon_register", rect.x + rect.width - 72 + correcc_der, rect.y + 10, 0, 0, -1, 24]]
+            [["Graphics/UI/Bag Screen with Party/icon_register", rect.x + rect.width  - 68, rect.y + 10, 0, 0, -1, 24]] #Dev LBDSKY_Pantalla-Ampliada
+            #[["Graphics/UI/Bag Screen with Party/icon_register", rect.x + rect.width - 72, rect.y + 10, 0, 0, -1, 24]]
           )
           showing_register_icon = true
         elsif pbCanRegisterItem?(item)
           pbDrawImagePositions(
             self.contents,
-            [["Graphics/UI/Bag Screen with Party/icon_register", rect.x + rect.width - 72 + correcc_der, rect.y + 10, 0, 24, -1, 24]]
+            [["Graphics/UI/Bag Screen with Party/icon_register", rect.x + rect.width - 68, rect.y + 10, 0, 24, -1, 24]] #Dev LBDSKY_Pantalla-Ampliada
+            #[["Graphics/UI/Bag Screen with Party/icon_register", rect.x + rect.width - 72, rect.y + 10, 0, 24, -1, 24]]
           )
           showing_register_icon = true
         end
       end
       if @bag.favourite?(item)
-        if !pbCanRegisterItem?(item) && !item_data.show_quantity? && !item_data.is_key_item? # Pegado a la derecha del todo
+        if !pbCanRegisterItem?(item) && !item_data.show_quantity? && !item_data.is_key_item? 
           pbDrawImagePositions(
             self.contents,
-            [["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 40 + correcc_der, rect.y + 13, 0, 0, -1, 24]]
+            [["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 36, rect.y + 13, 0, 0, -1, 24]] #Dev LBDSKY_Pantalla-Ampliada
+            #[["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 30, rect.y + 13, 0, 0, -1, 24]]
           )
         elsif item_data.is_key_item?
           pbDrawImagePositions(
             self.contents,
-            [["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 140 + correcc_der, rect.y + 13, 0, 0, -1, 24]]
+            [["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 136, rect.y + 13, 0, 0, -1, 24]] #Dev LBDSKY_Pantalla-Ampliada
+            #[["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 92, rect.y + 13, 0, 0, -1, 24]]
           )
         else
           pbDrawImagePositions(
             self.contents,
-            [["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 140 + correcc_der, rect.y + 13, 0, 0, -1, 24]]
+            [["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 136, rect.y + 13, 0, 0, -1, 24]] #Dev LBDSKY_Pantalla-Ampliada
+            #[["Graphics/UI/Bag Screen with Party/favourite", rect.x + rect.width - 88, rect.y + 13, 0, 0, -1, 24]]
           )
         end
       end
-      if item_data.show_quantity? #&& !showing_register_icon
+      if item_data.show_quantity?
+      #if item_data.show_quantity? && !showing_register_icon
         qty = (@filterlist) ? thispocket[@filterlist[@pocket][index]][1] : thispocket[index][1]
         qtytext = _ISPRINTF("x{1: 3d}", qty)
-        xQty    = rect.x + rect.width - self.contents.text_size(qtytext).width - 16  + correcc_der
-        if @bag.registered?(item) || pbCanRegisterItem?(item)
-          xQty -= 46
+        xQty    = (rect.x + rect.width - self.contents.text_size(qtytext).width - 16) + 4 #Dev LBDSKY_Pantalla-Ampliada
+        #xQty    = rect.x + rect.width - self.contents.text_size(qtytext).width - 16
+        if @bag.registered?(item) || pbCanRegisterItem?(item) #Add Dev LBDSKY_Pantalla-Ampliada
+          xQty -= 60
         end
-        textpos.push([qtytext, xQty, rect.y + 2, :left, baseColor, shadowColor])
+        textpos.push([qtytext, xQty, rect.y + 4, :left, baseColor, shadowColor]) #Dev LBDSKY_Pantalla-Ampliada
+        #textpos.push([qtytext, xQty, rect.y + 2, :left, baseColor, shadowColor])
       end
     end
     pbDrawTextPositions(self.contents, textpos)
@@ -317,7 +321,8 @@ class PokemonBagPartyBlankPanel < Sprite
   def initialize(_pokemon,index,viewport=nil)
     super(viewport)
     self.x = (index % 2) * 112 + 4
-    self.y = (index % 2) + 98
+    self.y = (index % 2) + 98 #Dev LBDSKY_Pantalla-Ampliada
+    #self.y = (index % 2) + 96 + 2
     @panelbgsprite = AnimatedBitmap.new("Graphics/UI/Bag Screen with Party/ptpanel_blank")
     self.bitmap = @panelbgsprite.bitmap
     @text = nil
@@ -351,28 +356,28 @@ class PokemonBagPartyPanel < Sprite
     @pokemon = pokemon
     @active = (index == 0)   # true = rounded panel, false = rectangular panel
     @refreshing = true
-    self.x = (index % 2) * 112 + 4
-    self.x += 18
-    self.y = 96 * (index / 2) + 2
-    self.y += 12
+    self.x = ((index % 2) * 112 + 4) + 18 #Dev LBDSKY_Pantalla-Ampliada
+    #self.x = (index % 2) * 112 + 4
+    self.y = (96 * (index / 2) + 2) + 12 #Dev LBDSKY_Pantalla-Ampliada
+    #self.y = 96 * (index / 2) + 2
     @panelbgsprite = ChangelingSprite.new(0, 0, viewport)
     @panelbgsprite.z = self.z
     if @active   # Rounded panel
-      @panelbgsprite.addBitmap("APTO", "Graphics/UI/Bag Screen with Party/ptpanel_round_desel")
-      @panelbgsprite.addBitmap("APTOsel", "Graphics/UI/Bag Screen with Party/ptpanel_round_sel")
-      @panelbgsprite.addBitmap("fainted", "Graphics/UI/Bag Screen with Party/ptpanel_round_faint")
-      @panelbgsprite.addBitmap("faintedsel", "Graphics/UI/Bag Screen with Party/ptpanel_round_faint_sel")
-      @panelbgsprite.addBitmap("swap", "Graphics/UI/Bag Screen with Party/ptpanel_round_move")
-      @panelbgsprite.addBitmap("swapsel", "Graphics/UI/Bag Screen with Party/ptpanel_round_move_sel")
-      @panelbgsprite.addBitmap("swapsel2", "Graphics/UI/Bag Screen with Party/ptpanel_round_move_sel")
+      @panelbgsprite.add_bitmap(:APTO, "Graphics/UI/Bag Screen with Party/ptpanel_round_desel")
+      @panelbgsprite.add_bitmap(:APTOsel, "Graphics/UI/Bag Screen with Party/ptpanel_round_sel")
+      @panelbgsprite.add_bitmap(:fainted, "Graphics/UI/Bag Screen with Party/ptpanel_round_faint")
+      @panelbgsprite.add_bitmap(:faintedsel, "Graphics/UI/Bag Screen with Party/ptpanel_round_faint_sel")
+      @panelbgsprite.add_bitmap(:swap, "Graphics/UI/Bag Screen with Party/ptpanel_round_move")
+      @panelbgsprite.add_bitmap(:swapsel, "Graphics/UI/Bag Screen with Party/ptpanel_round_move_sel")
+      @panelbgsprite.add_bitmap(:swapsel2, "Graphics/UI/Bag Screen with Party/ptpanel_round_move_sel")
     else   # Rectangular panel
-      @panelbgsprite.addBitmap("APTO", "Graphics/UI/Bag Screen with Party/ptpanel_rect_desel")
-      @panelbgsprite.addBitmap("APTOsel", "Graphics/UI/Bag Screen with Party/ptpanel_rect_sel")
-      @panelbgsprite.addBitmap("fainted", "Graphics/UI/Bag Screen with Party/ptpanel_rect_faint")
-      @panelbgsprite.addBitmap("faintedsel", "Graphics/UI/Bag Screen with Party/ptpanel_rect_faint_sel")
-      @panelbgsprite.addBitmap("swap", "Graphics/UI/Bag Screen with Party/ptpanel_rect_move")
-      @panelbgsprite.addBitmap("swapsel", "Graphics/UI/Bag Screen with Party/ptpanel_rect_move_sel")
-      @panelbgsprite.addBitmap("swapsel2", "Graphics/UI/Bag Screen with Party/ptpanel_rect_move_sel")
+      @panelbgsprite.add_bitmap(:APTO, "Graphics/UI/Bag Screen with Party/ptpanel_rect_desel")
+      @panelbgsprite.add_bitmap(:APTOsel, "Graphics/UI/Bag Screen with Party/ptpanel_rect_sel")
+      @panelbgsprite.add_bitmap(:fainted, "Graphics/UI/Bag Screen with Party/ptpanel_rect_faint")
+      @panelbgsprite.add_bitmap(:faintedsel, "Graphics/UI/Bag Screen with Party/ptpanel_rect_faint_sel")
+      @panelbgsprite.add_bitmap(:swap, "Graphics/UI/Bag Screen with Party/ptpanel_rect_move")
+      @panelbgsprite.add_bitmap(:swapsel, "Graphics/UI/Bag Screen with Party/ptpanel_rect_move_sel")
+      @panelbgsprite.add_bitmap(:swapsel2, "Graphics/UI/Bag Screen with Party/ptpanel_rect_move_sel")
     end
     @pkmnsprite = PokemonIconSprite.new(pokemon, viewport)
     @pkmnsprite.setOffset(PictureOrigin::CENTER)
@@ -380,8 +385,8 @@ class PokemonBagPartyPanel < Sprite
     @pkmnsprite.z      = self.z + 1
     @hpbgsprite = ChangelingSprite.new(0, 0, viewport)
     @hpbgsprite.z = self.z + 2
-    @hpbgsprite.addBitmap("APTO", "Graphics/UI/Bag Screen with Party/overlay_hp_back")
-    @hpbgsprite.addBitmap("cursor", "Graphics/UI/Bag Screen with Party/overlay_hp_back")
+    @hpbgsprite.add_bitmap(:APTO, "Graphics/UI/Bag Screen with Party/overlay_hp_back")
+    @hpbgsprite.add_bitmap(:cursor, "Graphics/UI/Bag Screen with Party/overlay_hp_back")
     @helditemsprite = HeldItemIconSprite.new(0, 0, @pokemon, viewport)
     @helditemsprite.z = self.z + 3
     @overlaysprite = BitmapSprite.new(Graphics.width, Graphics.height, viewport)
@@ -479,15 +484,15 @@ class PokemonBagPartyPanel < Sprite
     @refreshing = true
     if @panelbgsprite && !@panelbgsprite.disposed?
       if self.selected
-        if self.preselected;     @panelbgsprite.changeBitmap("swapsel2")
-        elsif @switching;        @panelbgsprite.changeBitmap("swapsel")
-        elsif @pokemon.fainted?; @panelbgsprite.changeBitmap("faintedsel")
-        else;                    @panelbgsprite.changeBitmap("APTOsel")
+        if self.preselected;     @panelbgsprite.change_bitmap(:swapsel2)
+        elsif @switching;        @panelbgsprite.change_bitmap(:swapsel)
+        elsif @pokemon.fainted?; @panelbgsprite.change_bitmap(:faintedsel)
+        else;                    @panelbgsprite.change_bitmap(:APTOsel)
         end
       else
-        if self.preselected;     @panelbgsprite.changeBitmap("swap")
-        elsif @pokemon.fainted?; @panelbgsprite.changeBitmap("fainted")
-        else;                    @panelbgsprite.changeBitmap("APTO")
+        if self.preselected;     @panelbgsprite.change_bitmap(:swap)
+        elsif @pokemon.fainted?; @panelbgsprite.change_bitmap(:fainted)
+        else;                    @panelbgsprite.change_bitmap(:APTO)
         end
       end
       @panelbgsprite.x     = self.x
@@ -497,8 +502,8 @@ class PokemonBagPartyPanel < Sprite
     if @hpbgsprite && !@hpbgsprite.disposed?
       @hpbgsprite.visible = !@pokemon.egg?
       if @hpbgsprite.visible
-        if self.preselected || (self.selected); @hpbgsprite.changeBitmap("cursor")
-        else;                                   @hpbgsprite.changeBitmap("APTO")
+        if self.preselected || (self.selected); @hpbgsprite.change_bitmap(:cursor)
+        else;                                   @hpbgsprite.change_bitmap(:APTO)
         end
         @hpbgsprite.x     = self.x + 6
         @hpbgsprite.y     = self.y + 60
@@ -512,8 +517,10 @@ class PokemonBagPartyPanel < Sprite
       @pkmnsprite.selected = self.selected
     end
     if @helditemsprite&.visible && !@helditemsprite.disposed?
-      @helditemsprite.x     = self.x + 76
-      @helditemsprite.y     = self.y + 40
+      @helditemsprite.x     = self.x + 90 #Dev LBDSKY_Pantalla-Ampliada
+      #@helditemsprite.x     = self.x + 76
+      @helditemsprite.y     = self.y + 34 #Dev LBDSKY_Pantalla-Ampliada
+      #@helditemsprite.y     = self.y + 40
       @helditemsprite.color = self.color
     end
     if @overlaysprite && !@overlaysprite.disposed?
@@ -559,9 +566,11 @@ class PokemonBagPartyPanel < Sprite
         # Draw Pokerus icon
           if BagScreenWiInParty::PKRSICON == true
             if @pokemon.pokerusStage == 1
-              @overlaysprite.bitmap.blt(64, 44, @pokerus.bitmap, Rect.new(0, 0, 16, 16))
+              @overlaysprite.bitmap.blt(52, 44, @pokerus.bitmap, Rect.new(0, 0, 16, 16)) #Dev LBDSKY_Pantalla-Ampliada
+              #@overlaysprite.bitmap.blt(64, 44, @pokerus.bitmap, Rect.new(0, 0, 16, 16))
             elsif @pokemon.pokerusStage == 2
-              @overlaysprite.bitmap.blt(64, 44, @pokerus.bitmap, Rect.new(0, 16, 16, 16))
+              @overlaysprite.bitmap.blt(52, 44, @pokerus.bitmap, Rect.new(0, 16, 16, 16)) #Dev LBDSKY_Pantalla-Ampliada
+              #@overlaysprite.bitmap.blt(64, 44, @pokerus.bitmap, Rect.new(0, 16, 16, 16))
             end
           end
         # Draw gender symbol
@@ -573,7 +582,8 @@ class PokemonBagPartyPanel < Sprite
         # Draw shiny icon
         if @pokemon.shiny? && BagScreenWiInParty::SHINYICON == true
           pbDrawImagePositions(@overlaysprite.bitmap,
-                               [["Graphics/UI/Bag Screen with Party/shiny", 84, 44, 0, 0, 16, 16]])
+                               [["Graphics/UI/Bag Screen with Party/shiny", 74, 44, 0, 0, 16, 16]]) #Dev LBDSKY_Pantalla-Ampliada
+                               #[["Graphics/UI/Bag Screen with Party/shiny", 84, 44, 0, 0, 16, 16]])
         end
       end
       pbDrawTextPositions(@overlaysprite.bitmap, textpos)
@@ -623,7 +633,7 @@ class PokemonBag_Scene
   ITEMTEXTSHADOWCOLOR    = ITEMLISTSHADOWCOLOR
   POCKETNAMEBASECOLOR    = Color.new(255, 255, 255)
   POCKETNAMEOUTLINECOLOR = Color.new(78, 83, 100)
-  ITEMSVISIBLE           = 6
+  ITEMSVISIBLE           = 7
 
   def pbUpdate
     pbUpdateSpriteHash(@sprites)
@@ -699,7 +709,7 @@ class PokemonBag_Scene
     @sprites["ui2"].setBitmap("Graphics/UI/Bag Screen with Party/ui2")
     
     for i in 0...Settings::MAX_PARTY_SIZE
-      if @party[i] 
+      if @party[i]
         @sprites["pokemon#{i}"] = PokemonBagPartyPanel.new(@party[i], i, @viewport)
       else
         @sprites["pokemon#{i}"] = PokemonBagPartyBlankPanel.new(@party[i], i, @viewport)
@@ -711,15 +721,19 @@ class PokemonBag_Scene
     pbSetSystemFont(@sprites["overlay"].bitmap)
     
     @sprites["pocketicon"] = BitmapSprite.new(400, 52, @viewport)
-    @sprites["pocketicon"].x = 350
-    @sprites["pocketicon"].y = -10
+    #@sprites["pocketicon"] = BitmapSprite.new(130, 52, @viewport)
+    @sprites["pocketicon"].x = 350 #Dev LBDSKY_Pantalla-Ampliada
+    #@sprites["pocketicon"].x = 372
+    @sprites["pocketicon"].y = - 10 #Dev LBDSKY_Pantalla-Ampliada
+    #@sprites["pocketicon"].y = 0
     @sprites["currentpocket"] = IconSprite.new(0, 0, @viewport)
     @sprites["currentpocket"].setBitmap("Graphics/UI/Bag Screen with Party/icon_pocket")
     @sprites["currentpocket"].x = 372
     @sprites["currentpocket"].y = 26
     @sprites["currentpocket"].src_rect = Rect.new(0, 0, 28, 28)
     
-    @sprites["itemlist"] = Window_PokemonBag.new(@bag, @filterlist, lastpocket, 204, 40, 314, 280-16) #72 + ITEMSVISIBLE * 32
+    @sprites["itemlist"] = Window_PokemonBag.new(@bag, @filterlist, lastpocket, 238, 50, 386, (72 + 6 * 32) + 30) #Dev LBDSKY_Pantalla-Ampliada
+    #@sprites["itemlist"] = Window_PokemonBag.new(@bag, @filterlist, lastpocket, 204, 40, 314, 72 + ITEMSVISIBLE * 32)
     @sprites["itemlist"].viewport    = @viewport
     @sprites["itemlist"].pocket      = lastpocket
     @sprites["itemlist"].index       = @bag.last_viewed_index(lastpocket)
@@ -727,7 +741,8 @@ class PokemonBag_Scene
     @sprites["itemlist"].shadowColor = ITEMLISTSHADOWCOLOR
     @sprites["itemicon"] = ItemIconSprite.new(48, Graphics.height - 46, nil, @viewport)
     @sprites["itemtext"] = Window_UnformattedTextPokemon.newWithSize(
-      "", 72, 274+56, Graphics.width - 72 - 24, 128, @viewport
+      "", 72, 330, Graphics.width - 72 - 24, 128, @viewport #Dev LBDSKY_Pantalla-Ampliada
+      #"", 72, 274, Graphics.width - 72 - 24, 128, @viewport
     )
     @sprites["itemtext"].baseColor   = ITEMTEXTBASECOLOR
     @sprites["itemtext"].shadowColor = ITEMTEXTSHADOWCOLOR
@@ -742,23 +757,23 @@ class PokemonBag_Scene
     @sprites["msgwindow"].viewport = @viewport
     @sprites["msgwindow"].letterbyletter = true
     pbBottomLeftLines(@sprites["msgwindow"], 2)
-
+    
     ## Dibujar textos de Ordenar y Buscar
     overlay_aux = @sprites["overlay_aux"].bitmap
     pbSetSystemFont(overlay_aux)
+    #pbSetTinyFont(overlay_aux)
     pbDrawTextPositions(
       overlay_aux,
-      [[_INTL("Z: Ordenar"), 20, 316, nil, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, :outline, Graphics.width],
-       [_INTL("D: Buscar"), 156, 316, nil, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, :outline, Graphics.width]]
+      [[_INTL("Z: Ordenar"), 20, 316, nil, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, :outline, Graphics.width], #Dev LBDSKY_Pantalla-Ampliada
+      #[[_INTL("Z: Ordenar"), 232, 7, nil, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, :outline, Graphics.width],
+       [_INTL("D: Buscar"), 156, 316, nil, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, :outline, Graphics.width]] #Dev LBDSKY_Pantalla-Ampliada
+       #[_INTL("D: Buscar"), 317, 7, nil, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, :outline, Graphics.width]]
     )
-    
     pbUpdateAnnotation
-    
     pbDeactivateWindows(@sprites)
     pbRefresh
     pbFadeInAndShow(@sprites)
     $game_temp.bag_scene = self if $bag.has?(:EGGHATCHER)
-
   end
 
   def pbPocketColor
@@ -802,8 +817,8 @@ class PokemonBag_Scene
     @oldsprites = pbFadeOutAndHide(@sprites)
     @oldtext = []
     for i in 0...Settings::MAX_PARTY_SIZE
-      @oldtext.push(@sprites["pokemon#{i}"].text) 
-      @sprites["pokemon#{i}"].dispose 
+      @oldtext.push(@sprites["pokemon#{i}"].text)
+      @sprites["pokemon#{i}"].dispose
     end
   end
   
@@ -872,7 +887,8 @@ class PokemonBag_Scene
 
   def pbRefresh
     # Draw the pocket icons
-    pocketX  = []; incrementX = 50 # Fixes pockets' X coordinates
+    pocketX  = []; incrementX = 50 # Fixes pockets' X coordinates #Dev LBDSKY_Pantalla-Ampliada
+    #pocketX  = []; incrementX = 0 # Fixes pockets' X coordinates
     @bag.pockets.length.times do |i|
       break if pocketX.length == @bag.pockets.length
       pocketX.push(incrementX)
@@ -883,21 +899,26 @@ class PokemonBag_Scene
     (1...@bag.pockets.length).each do |i|
       pocketValue = i - 1
       @sprites["pocketicon"].bitmap.blt(
-        (i - 1) * 28 + pocketX[pocketValue], 26, @pocketbitmap.bitmap,
-        Rect.new((i - 1) * (28), 0, 28, 28)) if pocketValue != pocketAcc # Unblocked icons
+        (i - 1) * 28 + pocketX[pocketValue], 26, @pocketbitmap.bitmap, #Dev LBDSKY_Pantalla-Ampliada
+        #(i - 1) * 14 + pocketX[pocketValue], (i % 2) * 26, @pocketbitmap.bitmap,
+        Rect.new((i - 1) * (28), 0, 28, 28)) if pocketValue != pocketAcc # Unblocked icons #Dev LBDSKY_Pantalla-Ampliada
+        #Rect.new((i - 1) * 28, 0, 28, 28)) if pocketValue != pocketAcc # Unblocked icons
     end
     if @choosing && @filterlist
       (1...@bag.pockets.length).each do |i|
         next if @filterlist[i].length > 0
         pocketValue = i - 1
         @sprites["pocketicon"].bitmap.blt(
-          (i - 1) * 28 + pocketX[pocketValue], 26, @pocketbitmap.bitmap,
-          Rect.new((i - 1) * (28), 56, 28, 28)) # Blocked icons
+          (i - 1) * 28 + pocketX[pocketValue], 26, @pocketbitmap.bitmap, #Dev LBDSKY_Pantalla-Ampliada
+          #(i - 1) * 14 + pocketX[pocketValue], (i % 2) * 26, @pocketbitmap.bitmap,
+          Rect.new((i - 1) * (28), 56, 28, 28)) # Blocked icons #Dev LBDSKY_Pantalla-Ampliada
+          #Rect.new((i - 1) * 28, 56, 28, 28)) # Blocked icons
       end
     end
-    @sprites["currentpocket"].x = 372 + ((pocketAcc) * 28) + pocketX[pocketAcc]
-    @sprites["currentpocket"].x -= 22
-    @sprites["currentpocket"].y = 26 - 10
+    @sprites["currentpocket"].x = (372 + ((pocketAcc) * 28) + pocketX[pocketAcc]) - 22 #Dev LBDSKY_Pantalla-Ampliada
+    #@sprites["currentpocket"].x = 372 + ((pocketAcc) * 14) + pocketX[pocketAcc]
+    @sprites["currentpocket"].y = 16 #Dev LBDSKY_Pantalla-Ampliada
+    #@sprites["currentpocket"].y = 26 - (((pocketAcc) % 2) * 26)
     @sprites["currentpocket"].src_rect = Rect.new((pocketAcc) * 28, 28, 28, 28) # Current pocket icon
     # Refresh stuff
     @sprites["itemlist"].refresh
@@ -908,7 +929,7 @@ class PokemonBag_Scene
   
   def pbRefreshParty
     for i in 0...Settings::MAX_PARTY_SIZE
-      if @party[i] 
+      if @party[i]
         @sprites["pokemon#{i}"].pokemon = @party[i]
       else
       end
@@ -922,34 +943,41 @@ class PokemonBag_Scene
     # Draw the pocket name
     pbDrawTextPositions(
       overlay,
-      [[PokemonBag.pocket_names[@bag.last_viewed_pocket - 1], 297+24, 18, :center, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, true, Graphics.width]]
+      [[PokemonBag.pocket_names[@bag.last_viewed_pocket - 1], 321, 18, :center, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, true, Graphics.width]] #Dev LBDSKY_Pantalla-Ampliada
+      #[[PokemonBag.pocket_names[@bag.last_viewed_pocket - 1], 297, 23, :center, POCKETNAMEBASECOLOR, POCKETNAMEOUTLINECOLOR, true, Graphics.width]]
     )
     # Draw slider arrows
     showslider = false
     if itemlist.top_row > 0
-      overlay.blt(366, 16, @sliderbitmap.bitmap, Rect.new(0, 0, 36, 38))
+      overlay.blt(366, 16, @sliderbitmap.bitmap, Rect.new(0, 0, 36, 38)) #Dev LBDSKY_Pantalla-Ampliada
+      #overlay.blt(356, 16, @sliderbitmap.bitmap, Rect.new(0, 0, 36, 38))
       showslider = true
     end
     if itemlist.top_item + itemlist.page_item_max < itemlist.itemCount
-      overlay.blt(366, 228, @sliderbitmap.bitmap, Rect.new(0, 38, 36, 38))
+      overlay.blt(366, 228, @sliderbitmap.bitmap, Rect.new(0, 38, 36, 38)) #Dev LBDSKY_Pantalla-Ampliada
+      #overlay.blt(356, 228, @sliderbitmap.bitmap, Rect.new(0, 38, 36, 38))
       showslider = true
     end
     # Draw slider box
     if showslider
-      sliderheight = 174+56
+      sliderheight = 230 #Dev LBDSKY_Pantalla-Ampliada
+      #sliderheight = 174
       boxheight = (sliderheight * itemlist.page_row_max / itemlist.row_max).floor
       boxheight += [(sliderheight - boxheight) / 2, sliderheight / 6].min
       boxheight = [boxheight.floor, 38].max
       y = 80
       y += ((sliderheight - boxheight) * itemlist.top_row / (itemlist.row_max - itemlist.page_row_max)).floor
-      overlay.blt(484+112+10, y, @sliderbitmap.bitmap, Rect.new(36, 0, 36, 4))
+      overlay.blt(606, y + 2, @sliderbitmap.bitmap, Rect.new(36, 0, 36, 4)) #Dev LBDSKY_Pantalla-Ampliada
+      #overlay.blt(484, y, @sliderbitmap.bitmap, Rect.new(36, 0, 36, 4))
       i = 0
       while i * 16 < boxheight - 4 - 18
         height = [boxheight - 4 - 18 - (i * 16), 16].min
-        overlay.blt(484+112+10, y + 4 + (i * 16), @sliderbitmap.bitmap, Rect.new(36, 4, 36, height))
+        overlay.blt(606, (y + 4 + (i * 16)) + 2, @sliderbitmap.bitmap, Rect.new(36, 4, 36, height)) #Dev LBDSKY_Pantalla-Ampliada
+        #overlay.blt(484, y + 4 + (i * 16), @sliderbitmap.bitmap, Rect.new(36, 4, 36, height))
         i += 1
       end
-      overlay.blt(484+112+10, y + boxheight - 18, @sliderbitmap.bitmap, Rect.new(36, 20, 36, 18))
+      overlay.blt(606, (y + boxheight - 18) + 2, @sliderbitmap.bitmap, Rect.new(36, 20, 36, 18)) #Dev LBDSKY_Pantalla-Ampliada
+      #overlay.blt(484, y + boxheight - 18, @sliderbitmap.bitmap, Rect.new(36, 20, 36, 18))
     end
     # Set the selected item's icon
     @sprites["itemicon"].item = itemlist.item
@@ -971,15 +999,16 @@ class PokemonBag_Scene
     end
   end
 
+
   def pbHardRefresh
     oldtext      = []
     lastselected = -1
     for i in 0...Settings::MAX_PARTY_SIZE
       if @sprites["pokemon#{i}"].respond_to?(:text)
-        oldtext.push(@sprites["pokemon#{i}"].text) 
+        oldtext.push(@sprites["pokemon#{i}"].text)
       end
-      lastselected = i if @sprites["pokemon#{i}"]&.selected 
-      @sprites["pokemon#{i}"].dispose 
+      lastselected = i if @sprites["pokemon#{i}"]&.selected
+      @sprites["pokemon#{i}"]&.dispose
     end
     lastselected = @party.length - 1 if lastselected >= @party.length
     lastselected = 0 if lastselected < 0
@@ -1021,14 +1050,13 @@ class PokemonBag_Scene
         end
       else
         for i in 0...Settings::MAX_PARTY_SIZE
-          @sprites["pokemon#{i}"].text = annotations[i] if  annotations 
-          @sprites["pokemon#{i}"].text_color = color_annotations[i] if annotations 
+          @sprites["pokemon#{i}"].text = annotations[i] if  annotations
+          @sprites["pokemon#{i}"].text_color = color_annotations[i] if annotations
         end
       end
       for i in 0...Settings::MAX_PARTY_SIZE
         @sprites["pokemon#{i}"].text = annotations[i] if  annotations
-        @sprites["pokemon#{i}"].text_color = color_annotations[i] if annotations 
-
+        @sprites["pokemon#{i}"].text_color = color_annotations[i] if annotations
       end
     elsif @bag.last_viewed_pocket == 4 && item #TMs Pocket
       annotations = nil
@@ -1073,8 +1101,8 @@ class PokemonBag_Scene
         end
       end
       for i in 0...Settings::MAX_PARTY_SIZE
-        @sprites["pokemon#{i}"].text = annotations[i] if annotations 
-        @sprites["pokemon#{i}"].text_color = color_annotations[i] if annotations 
+        @sprites["pokemon#{i}"].text = annotations[i] if annotations
+        @sprites["pokemon#{i}"].text_color = color_annotations[i] if annotations
       end
     else #Others, only show HP
       for i in 0...Settings::MAX_PARTY_SIZE
@@ -1175,8 +1203,8 @@ class PokemonBag_Scene
             BagSearcher.new(thispocket, itemwindow, self)
           elsif Input.trigger?(Input::ACTION) # Sort Items
             sort_keys = @bag.last_viewed_pocket == 4 ? [:number, :name, :type] : [:type, :name]
-            sort_commands = @bag.last_viewed_pocket == 4 ? [_INTL("Número"), _INTL("Alfabeticamente"), _INTL("Tipo")] : [_INTL("Categoría"), _INTL("Alfabeticamente")]
-            option = pbMessage(_INTL("\\l[2]¿Cómo deseas ordenar tus objetos?"), sort_commands, -1)
+            sort_commands = @bag.last_viewed_pocket == 4 ? [_INTL("Número"),_INTL("Alfabeticamente"), _INTL("Tipo")] : [_INTL("Categoría"), _INTL("Alfabeticamente")]
+            option = pbMessage(_INTL("¿Cómo deseas ordenar tus objetos?"), sort_commands, -1)
             if option != -1 && option < sort_keys.length
               sorted_pocket = sort_pocket(sort_keys[option], thispocket, itemwindow.pocket)
               if sorted_pocket && !sorted_pocket.empty?
@@ -1184,7 +1212,6 @@ class PokemonBag_Scene
                 @bag.pockets[itemwindow.pocket] = thispocket
                 pbPlayDecisionSE
                 pbRefresh
-                pbDisplay(_INTL("¡Se ha ordenado el bolsillo!"))
               end
             end
           elsif Input.trigger?(Input::BACK)   # Cancel the item screen
@@ -1262,7 +1289,6 @@ class PokemonBag_Scene
     sorted_pocket = sorted_favs + sorted_non_favs
     sorted_pocket
   end
-  
 
   def pbSetHelpText(helptext)
     helpwindow = @sprites["helpwindow"]
@@ -1274,7 +1300,6 @@ class PokemonBag_Scene
 
   def pbChangeSelection(key,currentsel)
     numsprites = @party.length - 1
-    
     case key
     when Input::LEFT
       begin
@@ -1592,13 +1617,13 @@ class PokemonBagScreen
       item = @scene.pbChooseItem
       break if !item
       itm = GameData::Item.get(item)
-      cmdRead      = -1
-      cmdUse       = -1
-      cmdRegister  = -1
+      cmdRead     = -1
+      cmdUse      = -1
+      cmdRegister = -1
       cmdFavourite = -1
-      cmdGive      = -1
-      cmdToss      = -1
-      cmdDebug     = -1
+      cmdGive     = -1
+      cmdToss     = -1
+      cmdDebug    = -1
       commands = []
       # Generate command list
       commands[cmdRead = commands.length]       = _INTL("Leer") if itm.is_mail?
@@ -1651,7 +1676,7 @@ class PokemonBagScreen
         @scene.pbRefresh
         next
       elsif cmdGive >= 0 && command == cmdGive   # Give item to Pokémon
-        if $player.pokemon_count == 0 
+        if $player.pokemon_count == 0
           @scene.pbDisplay(_INTL("No hay Pokémon."))
         elsif itm.is_important?
           @scene.pbDisplay(_INTL("No se puede equipar {1}.", itm.portion_name))
@@ -1806,7 +1831,8 @@ class PokemonBagScreen
           @scene.pbRefresh
           dispqty  = (itm.is_important?) ? 1 : qty
           itemname = (dispqty > 1) ? itm.portion_name_plural : itm.portion_name
-          pbDisplay(_INTL("Has dejado {1} {2}.", dispqty, itemname))
+          pbDisplay(_INTL("Has dejado {1} {2}.", dispqty, itemname)) #Dev LBDSKY_Pantalla-Ampliada
+          #pbDisplay(_INTL("Ha sdejado {1} {2}.", dispqty, itemname))
         else
           pbDisplay(_INTL("No hay espacio para almacenar objetos."))
         end
@@ -1858,7 +1884,7 @@ def pbBagUseItem(bag, item, scene, screen, chosen, bagscene=nil)
   useType = itm.field_use
   pkmn    = $player.party[chosen]
   if itm.is_machine?    # TM, HM or TR
-    if $player.pokemon_count == 0 
+    if $player.pokemon_count == 0
       pbMessage(_INTL("No hay Pokémon.")) { screen.pbUpdate }
       return 0
     end
@@ -1889,7 +1915,7 @@ def pbBagUseItem(bag, item, scene, screen, chosen, bagscene=nil)
     screen.pbRefresh; screen.pbUpdate
     return 1
   elsif useType == 1 # Item is usable on a Pokémon
-    if $player.pokemon_count == 0 
+    if $player.pokemon_count == 0
       pbMessage(_INTL("No hay Pokémon.")) { screen.pbUpdate }
       return 0
     end

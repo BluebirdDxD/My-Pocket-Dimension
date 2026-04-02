@@ -56,7 +56,7 @@ MenuHandlers.add(:custom_menu, :bag, {
 MenuHandlers.add(:custom_menu, :pokedex, {
   "name" => _INTL("Pokédex"),
   "iconName" => "pokedex",
-"condition" => proc { $game_switches[39] },
+"condition" => proc { $game_switches[157] },
   "effect" => proc do |menu|
     pbPlayDecisionSE
     subscene_handler(menu) do
@@ -74,27 +74,10 @@ MenuHandlers.add(:custom_menu, :pokedex, {
   end
 })
 
-MenuHandlers.add(:custom_menu, :pokenav, {
-  "name" => _INTL("PokéNav"),
-  "iconName" => "pokenav",
-  "condition" => proc { $game_switches[39] },
-
-  "effect" => proc do |menu|
-    pbPlayDecisionSE
-    subscene_handler(menu) do
-      pbFadeOutIn do
-        scene  = PokemonPokenav_Scene.new
-        screen = PokemonPokenavScreen.new(scene)
-        screen.pbStartScreen
-      end
-    end
-  end
-})
-
 MenuHandlers.add(:custom_menu, :boxes, {
   "name" => _INTL("Cajas"),
   "iconName" => "boxes",
-  "condition" => proc { $game_switches[40] },
+  "condition" => proc { $game_switches[152] },
   "effect" => proc do |menu|
     pbPlayDecisionSE
     subscene_handler(menu) { pbFadeOutIn { pbPokemonStorage } }

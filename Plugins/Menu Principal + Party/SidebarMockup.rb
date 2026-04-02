@@ -266,14 +266,28 @@ end
     scaled_width = (rect.width * hp_percent).ceil
     scaled_width = 2 if hp_percent > 0 && scaled_width < 2
 
-    # Crear sprite de fill
-    hp_fill = Sprite.new(@viewport)
-    hp_fill.bitmap = Bitmap.new(scaled_width, rect.height)
-    hp_fill.bitmap.stretch_blt(Rect.new(0, 0, scaled_width, rect.height), fill_bitmap, rect)
-    hp_fill.x = bg.x + 4
-    hp_fill.y = bg.y
-    hp_fill.z = bg.z + 1
-    @sprites["hp_fill_#{index}"] = hp_fill
+# Protección contra tamaños inválidos
+return if rect.width <= 0 || rect.height <= 0
+
+scaled_width = (rect.width * hp_percent).ceil
+
+# Evitar bitmap de tamaño 0
+scaled_width = 1 if scaled_width <= 0
+scaled_width = rect.width if scaled_width > rect.width
+
+# Crear sprite de fill
+hp_fill = Sprite.new(@viewport)
+hp_fill.bitmap = Bitmap.new(scaled_width, rect.height)
+hp_fill.bitmap.stretch_blt(
+  Rect.new(0, 0, scaled_width, rect.height),
+  fill_bitmap,
+  rect
+)
+
+hp_fill.x = bg.x + 4
+hp_fill.y = bg.y
+hp_fill.z = bg.z + 1
+@sprites["hp_fill_#{index}"] = hp_fill
 
     # Texto HP
     if @sprites["hp_text_#{index}"]

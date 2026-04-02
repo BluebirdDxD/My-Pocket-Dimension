@@ -26,17 +26,11 @@ class MenuCustomScene
 
     # Opciones principales
     @menu_options = [{ text: _INTL("Mochila"), icon: "bag.png" }]
-# Pokédex → Switch 39
-if $game_switches[39]
+    if $game_switches[157]
   @menu_options << { text: _INTL("Pokédex"), icon: "pokedex.png" }
 end
 
-if $game_switches[39]
-  @menu_options << { text: _INTL("PokéNav"), icon: "pokenav.png" }
-end
-
-# Cajas → Switch 40
-if $game_switches[40]
+if $game_switches[152]
   @menu_options << { text: _INTL("Cajas"), icon: "boxes.png" }
 end
     @menu_options += [
@@ -405,28 +399,20 @@ end
   # ==============================================================
   # Acciones menú principal
   # ==============================================================
-def perform_menu_action(index)
+  def perform_menu_action(index)
   option = @menu_options[index][:text]
 
   case option
   when _INTL("Mochila")
     call_custom_menu_handler(:bag)
-
   when _INTL("Pokédex")
     call_custom_menu_handler(:pokedex)
-
- when _INTL("PokéNav")
-    call_custom_menu_handler(:pokenav)
-
   when _INTL("Cajas")
     call_custom_menu_handler(:boxes)
-
   when _INTL("Opciones")
     call_custom_menu_handler(:options)
-
   when _INTL("Guardar")
     call_custom_menu_handler(:save)
-
   else
     pbPlayBuzzerSE
   end
@@ -467,13 +453,6 @@ end
         PokemonPokedexScreen.new(scene).pbStartScreen
       end
       menu_proxy.pbRefresh
-when :pokenav
-  pbFadeOutIn do
-    scene  = PokemonPokenav_Scene.new
-    screen = PokemonPokenavScreen.new(scene)
-    screen.pbStartScreen
-  end
-  menu_proxy.pbRefresh
     when :boxes
       pbFadeOutIn do
         scene = PokemonStorageScene.new rescue nil
@@ -487,7 +466,10 @@ when :pokenav
       # IMPORTANTE: forzamos refresh completo al volver de Boxes
       menu_proxy.pbRefresh
     when :options
-      pbFadeOutIn { PokemonOptionScreen.new(PokemonOption_Scene.new).pbStartScreen; pbUpdateSceneMap }
+      pbFadeOutIn do
+        MenuHandlers.call(:pause_menu, :options, "effect", nil)
+pbUpdateSceneMap
+end
     when :save
       PokemonSaveScreen.new(PokemonSave_Scene.new).pbSaveScreen
       menu_proxy.pbRefresh
