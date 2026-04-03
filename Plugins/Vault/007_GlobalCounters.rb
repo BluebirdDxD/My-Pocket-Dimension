@@ -46,9 +46,10 @@ def pbCountPokemonByOrigin(origin)
     next false if !pkmn
 
     begin
-      text   = pkmn.obtain_text.to_s.strip.downcase
-      target = origin.to_s.strip.downcase
-      text == target
+      text = pkmn.obtain_text.to_s.downcase
+      target = origin.to_s.downcase
+
+      text.include?(target)
     rescue
       false
     end
@@ -176,3 +177,14 @@ def pbDebugPokemonOriginsLimited(limit = 60)
 
   pbMessage(text) if text != ""
 end
+
+def pbFixAllPokemonOrigins
+  pbGetAllPokemon.each do |pkmn|
+    next if !pkmn
+
+    if !pkmn.obtain_text || pkmn.obtain_text.strip == ""
+      pkmn.obtain_text = "Dimensión Santuario"
+    end
+  end
+end
+
